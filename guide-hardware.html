@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hardware Selection &amp; Architectural Specification — FORGELUX Guide</title>
+  <meta name="description" content="Technical guide to architectural hardware selection, ANSI/BHMA grading standards, door thickness, backset measurement, and cycle testing by FORGELUX.">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="guide.css">
+</head>
+<body class="guide-detail-page">
+
+  <!-- ==========================================================================
+       Site Header (Preserved Exactly from Home 1 with Guide Active)
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <!-- Left: Logo & Brand Name with Proper Alignment -->
+      <a href="index.html" class="brand-link" aria-label="FORGELUX Home">
+        <div class="logo-icon-wrap">
+          <img src="assets/images/brand_logo.jpg" alt="FORGELUX Hardware &amp; Paint Store Logo" class="brand-logo-img">
+        </div>
+        <div class="brand-meta">
+          <div class="brand-title">FORGE<span>LUX</span></div>
+          <div class="brand-tagline">HARDWARE &amp; PAINT STORE</div>
+        </div>
+      </a>
+
+      <!-- Middle: Navigation Order (Identical to Home 1, Guide Active) -->
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <!-- 1. Home (Dropdown) -->
+          <li class="nav-item">
+            <button type="button" class="nav-link dropdown-toggle" id="homeDropdownToggle" aria-haspopup="true" aria-expanded="false" aria-controls="homeDropdownMenu">
+              Home
+              <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="dropdown-menu" id="homeDropdownMenu" role="menu" aria-labelledby="homeDropdownToggle">
+              <a href="index.html" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Home 1</strong>
+                  <span class="dropdown-item-desc">Flagship Showroom &amp; Retail</span>
+                </div>
+                <span class="dropdown-tag">Retail</span>
+              </a>
+              <a href="Home 2.html" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Home 2</strong>
+                  <span class="dropdown-item-desc">Pro Atelier &amp; Contractor Depot</span>
+                </div>
+                <span class="dropdown-tag">Depot</span>
+              </a>
+            </div>
+          </li>
+          <!-- 2. About -->
+          <li class="nav-item">
+            <a href="About.html" class="nav-link">About</a>
+          </li>
+          <!-- 4. Products -->
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">Products</a>
+          </li>
+          <!-- 5. Guide (Active) -->
+          <li class="nav-item">
+            <a href="guide.html" class="nav-link active" aria-current="page">Guide</a>
+          </li>
+          <!-- 6. Pricing -->
+          <li class="nav-item">
+            <a href="pricing.html" class="nav-link">Pricing</a>
+          </li>
+          <!-- 7. Contact -->
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Right: Controls & Primary CTA -->
+      <div class="header-controls">
+        <button type="button" class="control-btn" id="themeToggle" aria-label="Switch between light and dark mode" title="Toggle Light / Dark Mode">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="control-btn" id="rtlToggle" aria-label="Switch between LTR and RTL layout" title="Toggle LTR / RTL Direction">
+          <span class="rtl-indicator">RTL</span>
+        </button>
+
+        <button type="button" class="btn-cta open-quote-modal" id="headerCtaBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <span>Get a Quote</span>
+        </button>
+
+        <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-backdrop" id="mobileBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <a href="index.html" class="brand-link" aria-label="FORGELUX Home">
+        <div class="logo-icon-wrap">
+          <img src="assets/images/brand_logo.jpg" alt="FORGELUX Hardware &amp; Paint Store Logo" class="brand-logo-img">
+        </div>
+        <div class="brand-meta">
+          <div class="brand-title">FORGE<span>LUX</span></div>
+          <div class="brand-tagline">HARDWARE &amp; PAINT STORE</div>
+        </div>
+      </a>
+      <button type="button" class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-drawer-body">
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item">
+          <button type="button" class="mobile-nav-link" id="mobileHomeDropdownBtn" aria-expanded="false" style="width: 100%; display: flex; justify-content: space-between; align-items: center; background: none; border: none; padding: 0.85rem 0; font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-main); font-weight: 700; border-bottom: 1px solid var(--border-subtle); text-align: left; cursor: pointer;">
+            <span>Home</span>
+            <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 18px; height: 18px;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="mobile-subnav" id="mobileHomeDropdown" style="display: none; padding-left: 1rem; border-left: 2px solid var(--c-primary); margin: 0.5rem 0 0.75rem;">
+            <a href="index.html" class="dropdown-item" style="padding: 0.5rem 0; display: block; text-decoration: none;">
+              <strong style="display: block; color: var(--c-primary); font-size: 0.95rem;">Home 1</strong>
+              <span style="font-size: 0.75rem; color: var(--text-muted);">Flagship Showroom &amp; Retail</span>
+            </a>
+            <a href="Home 2.html" class="dropdown-item" style="padding: 0.5rem 0; display: block; text-decoration: none;">
+              <strong style="display: block; color: var(--text-main); font-size: 0.95rem;">Home 2</strong>
+              <span style="font-size: 0.75rem; color: var(--text-muted);">Pro Atelier &amp; Contractor Depot</span>
+            </a>
+          </div>
+        </li>
+        <li class="mobile-nav-item"><a href="About.html" class="mobile-nav-link">About</a></li>
+        <li class="mobile-nav-item"><a href="products.html" class="mobile-nav-link">Products</a></li>
+        <li class="mobile-nav-item"><a href="guide.html" class="mobile-nav-link active">Guide</a></li>
+        <li class="mobile-nav-item"><a href="pricing.html" class="mobile-nav-link">Pricing</a></li>
+        <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">Contact Us</a></li>
+      </ul>
+
+      <div style="margin-top: 2rem; display: flex; flex-direction: column; gap: 0.75rem;">
+        <button type="button" class="btn-cta open-quote-modal" style="width: 100%; justify-content: center;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <span>Get a Quote</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Hero -->
+  <main id="main-content">
+    <section class="guide-hero">
+      <div class="container guide-hero-grid">
+        <div class="guide-hero-content">
+          <nav class="guide-breadcrumbs" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="breadcrumb-sep">&gt;</span>
+            <a href="guide.html">Guide</a>
+            <span class="breadcrumb-sep">&gt;</span>
+            <span class="breadcrumb-current">Hardware Selection</span>
+          </nav>
+
+          <span class="hero-subtitle">ANSI / BHMA Specification &bull; Metallurgy</span>
+
+          <h1 class="guide-hero-title">
+            Architectural Hardware Selection <br>
+            <span class="highlight">&amp; Specification Guide</span>
+          </h1>
+
+          <p class="guide-hero-desc">
+            A master technical reference on backset measurement, mortise vs tubular latches, door weight bearing ratios, ADA compliance, and cold-forged brass metallurgy.
+          </p>
+
+          <div class="guide-hero-actions">
+            <a href="#selection-protocol" class="btn-cta">
+              <span>View Hardware Protocol</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+            <button type="button" class="btn-outline open-quote-modal">Request Door Schedule Takeoff</button>
+          </div>
+        </div>
+
+        <div class="guide-hero-visual">
+          <div class="guide-hero-frame">
+            <img src="assets/images/product_hardware.jpg" alt="Solid brass mortise handle set with precision strike plate" class="guide-hero-img" width="800" height="600">
+            <div class="hero-floating-glass-pill">
+              <div>
+                <div class="glass-pill-title">ANSI Grade 1 Certified</div>
+                <div class="glass-pill-sub">Tested beyond 1,000,000 continuous operating cycles</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detail Content -->
+    <section class="detail-content-section">
+      <div class="container">
+
+        <!-- 1. Anatomy of Architectural Hardware -->
+        <article class="detail-section-card">
+          <div class="detail-card-header">
+            <span class="detail-card-badge">ENGINEERING FUNDAMENTALS</span>
+            <h2 class="detail-card-title">1. Anatomy of High-Performance Door Hardware</h2>
+          </div>
+          <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 1.5rem;">
+            Architectural door sets consist of four critical mechanical assemblies that work in harmonic alignment. Low-grade commercial fittings use stamped tin faceplates and zinc pot-metal gears that develop play within 18 months. FORGELUX components are machined from solid billet brass:
+          </p>
+
+          <div class="hardware-guide-grid">
+            <div class="sheen-level-card">
+              <span class="sheen-badge">01</span>
+              <h3 class="sheen-name">Heavy Mortise Cassette</h3>
+              <p class="sheen-desc">The heavy steel box mortised directly into the door edge. Features an integrated deadbolt, anti-friction latch, and heavy spring return.</p>
+            </div>
+            <div class="sheen-level-card">
+              <span class="sheen-badge">02</span>
+              <h3 class="sheen-name">Forged Brass Escutcheon</h3>
+              <p class="sheen-desc">Machined backplate or round rose that secures the lever to the door face, concealing mounting screws behind threaded trim rings.</p>
+            </div>
+            <div class="sheen-level-card">
+              <span class="sheen-badge">03</span>
+              <h3 class="sheen-name">Hardened Steel Spindle</h3>
+              <p class="sheen-desc">Split 8mm or 9mm square steel spindle connecting interior and exterior levers with grub-screw grubbing for zero rotation slop.</p>
+            </div>
+            <div class="sheen-level-card">
+              <span class="sheen-badge">04</span>
+              <h3 class="sheen-name">Anti-Pick Euro/Mortise Cylinder</h3>
+              <p class="sheen-desc">Precision brass keyway cylinder with mushroom anti-bump pins and drill-resistant hardened carbide rods.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Step-by-Step Specification Protocol -->
+        <article class="detail-section-card" id="selection-protocol">
+          <div class="detail-card-header">
+            <span class="detail-card-badge">TAILING &amp; MEASUREMENT</span>
+            <h2 class="detail-card-title">2. Step-by-Step Hardware Specification Protocol</h2>
+          </div>
+
+          <div class="detail-step-flow">
+            <div class="step-flow-item">
+              <div class="step-flow-num">01</div>
+              <div class="step-flow-body">
+                <h3 class="step-flow-title">Audit Door Thickness &amp; Material Density</h3>
+                <p class="step-flow-desc">
+                  Measure the door edge with calipers. Standard interior doors are 1-3/8&Prime; (35 mm) thick, while exterior residential doors are 1-3/4&Prime; (45 mm). Custom oversized timber pivot doors often measure 2-1/4&Prime; (57 mm) and require extended-length screw kits and longer spindle bars.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-flow-item">
+              <div class="step-flow-num">02</div>
+              <div class="step-flow-body">
+                <h3 class="step-flow-title">Measure Backset Dimension Accurately</h3>
+                <p class="step-flow-desc">
+                  The backset is the distance from the door edge to the center of the keyhole or spindle hole. In residential homes, 2-3/8&Prime; (60 mm) is standard. For commercial doors or doors with wide decorative moldings, specify 2-3/4&Prime; (70 mm) to prevent knuckles striking the door jamb casing.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-flow-item">
+              <div class="step-flow-num">03</div>
+              <div class="step-flow-body">
+                <h3 class="step-flow-title">Confirm Door Handing (Left vs Right)</h3>
+                <p class="step-flow-desc">
+                  Stand outside the door facing the opening. If the hinges are on your left, it is a Left-Hand (LH) door. If the hinges are on your right, it is a Right-Hand (RH) door. Handing is crucial for asymmetric lever grips and mortise bevel strikes.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-flow-item">
+              <div class="step-flow-num">04</div>
+              <div class="step-flow-body">
+                <h3 class="step-flow-title">Calculate Hinge Load &amp; Quantity</h3>
+                <p class="step-flow-desc">
+                  Follow the golden architectural rule: Doors up to 60&Prime; height require 2 hinges. Doors 60&Prime;&ndash;90&Prime; require 3 hinges. Doors exceeding 90&Prime; or 150 lbs require 4 heavy-gauge ball-bearing hinges. Place top and bottom hinges within 5–7 inches of door edges to maximize leverage against sag.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Hardware Comparison Matrix -->
+        <article class="detail-section-card">
+          <div class="detail-card-header">
+            <span class="detail-card-badge">TECHNICAL MATRIX</span>
+            <h2 class="detail-card-title">3. ANSI/BHMA Hardware Grading Comparison</h2>
+          </div>
+
+          <div class="guide-table-wrap">
+            <table class="guide-table">
+              <thead>
+                <tr>
+                  <th>Grade Level</th>
+                  <th>Operational Cycles</th>
+                  <th>Deadbolt Impact Resistance</th>
+                  <th>Primary Application</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>ANSI Grade 1</strong></td>
+                  <td>1,000,000+ Cycles</td>
+                  <td>10 Hammer Blows (360 ft-lbs)</td>
+                  <td>Commercial buildings, luxury main entry doors, high-traffic corridors</td>
+                </tr>
+                <tr>
+                  <td><strong>ANSI Grade 2</strong></td>
+                  <td>400,000 Cycles</td>
+                  <td>5 Hammer Blows (150 ft-lbs)</td>
+                  <td>Standard residential exterior entries, light commercial offices</td>
+                </tr>
+                <tr>
+                  <td><strong>ANSI Grade 3</strong></td>
+                  <td>200,000 Cycles</td>
+                  <td>2 Hammer Blows (60 ft-lbs)</td>
+                  <td>Interior bedroom/closet passage doors with lightweight hollow cores</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <!-- 4. FAQ -->
+        <article class="detail-section-card">
+          <div class="detail-card-header">
+            <span class="detail-card-badge">HARDWARE FAQ</span>
+            <h2 class="detail-card-title">4. Frequently Asked Questions</h2>
+          </div>
+
+          <div class="faq-accordion-list">
+            <div class="faq-card is-open">
+              <button type="button" class="faq-question-btn" aria-expanded="true">
+                <span>What is the difference between tubular and mortise locks?</span>
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="faq-answer">
+                Tubular locks require only two bore holes through the door face and edge, making them fast to install but mechanically lighter. Mortise locks require a deep rectangular pocket routed into the door edge to house an integrated cast-iron or heavy steel lock case. Mortise locks offer far superior anti-pick security, heavier handle return springs, and heirloom longevity.
+              </div>
+            </div>
+
+            <div class="faq-card">
+              <button type="button" class="faq-question-btn" aria-expanded="false">
+                <span>How should I clean and maintain unlacquered brass hardware?</span>
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="faq-answer">
+                For routine care, wipe handles with a microfiber cloth dampened with warm water and neutral Castile soap. Avoid abrasive chemical scourers or acidic metal dips, which strip the protective natural oxide layer. To preserve the glowing golden highlight on contact areas, apply a light coat of pure beeswax once annually.
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION: Premium Door Schedule & Hardware Takeoff CTA Card (Exact 380px Height)
+         ========================================================================== -->
+    <section class="premium-cta-section" id="hardware-cta" aria-label="Submit Blueprint Door Schedule">
+      <div class="container">
+        <div class="premium-cta-card">
+          <div class="premium-cta-grid">
+            <div class="premium-cta-content">
+              <div class="premium-cta-badge">
+                <span class="badge-dot"></span>
+                <span>BLUEPRINT DOOR SCHEDULING &bull; TAKEOFF DESK</span>
+              </div>
+              <h2 class="premium-cta-title">
+                Upload Blueprint Door Schedule for <span class="highlight-gold">Itemized Takeoff</span>
+              </h2>
+              <p class="premium-cta-desc">
+                Our certified architectural hardware consultants verify ADA compliance, ANSI/BHMA Grade 1 ratings, UL fire codes, and itemize door packages room-by-room.
+              </p>
+              <div class="premium-cta-specs">
+                <div class="premium-cta-spec-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>ADA &amp; UL Fire Code Check</span>
+                </div>
+                <div class="premium-cta-spec-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Itemized Mortise Takeoffs</span>
+                </div>
+                <div class="premium-cta-spec-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Master Keying Systems</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="premium-cta-actions-box">
+              <button type="button" class="premium-cta-btn-primary open-quote-modal">
+                <span>Submit Blueprint Takeoff</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+              <a href="tel:+18004893674" class="premium-cta-hotline-item">
+                <div class="premium-cta-hotline-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="premium-cta-hotline-text">
+                  <span class="premium-cta-hotline-label">Hardware Engineering Desk</span>
+                  <span class="premium-cta-hotline-num">+1 (800) 489-FORGE</span>
+                </div>
+              </a>
+              <p class="premium-cta-micro-note">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>Full mortise schedule audits in under 4 hours</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Reused Footer -->
+  <!-- ==========================================================================
+       Footer (Exact Home 1 Palette 4: Charcoal + Warm Cream + Copper Gold)
+       ========================================================================== -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand-link" aria-label="FORGELUX Home">
+          <div class="logo-icon-wrap">
+            <img src="assets/images/brand_logo.jpg" alt="FORGELUX Hardware &amp; Paint Store Logo" class="brand-logo-img">
+          </div>
+          <div class="brand-meta">
+            <div class="brand-title">FORGE<span>LUX</span></div>
+            <div class="brand-tagline">HARDWARE &amp; PAINT STORE</div>
+          </div>
+        </a>
+        <p class="footer-brand-statement">
+          Supplying certified architectural hardware, pigment-pure mineral paints, engineered fasteners, and specialist advisory to discerning builders and craftspeople since 1991.
+        </p>
+        <div class="footer-socials" aria-label="Social Media Links">
+          <a href="#" class="social-link" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram" title="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Houzz" title="Houzz">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="X / Twitter" title="X / Twitter">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Shop &amp; Services</h4>
+        <ul class="footer-links-list">
+          <li><a href="products.html#fittings" class="footer-link">&bull; Hardware and fittings</a></li>
+          <li><a href="products.html#tools" class="footer-link">&bull; Tools and equipment</a></li>
+          <li><a href="products.html#paints" class="footer-link">&bull; Paints and finishes</a></li>
+          <li><a href="index.html#services" class="footer-link">&bull; Store services</a></li>
+          <li><a href="index.html#services" class="footer-link">&bull; Bulk orders</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Explore</h4>
+        <ul class="footer-links-list">
+          <li><a href="About.html" class="footer-link">&bull; About</a></li>
+          <li><a href="products.html" class="footer-link">&bull; Products</a></li>
+          <li><a href="guide.html" class="footer-link">&bull; Guides &amp; Color Shades</a></li>
+          <li><a href="pricing.html" class="footer-link">&bull; Pricing &amp; Plans</a></li>
+          <li><a href="index.html#calculator" class="footer-link">&bull; Paint Calculator</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Contact &amp; Support</h4>
+        <div class="footer-contact-list">
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <div>
+              <strong>Store Email:</strong><br>
+              concierge@forgelux.com
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <div>
+              <strong>Store Address:</strong><br>
+              450 Foundry &amp; Artisan Blvd, District 7
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <div>
+              <strong>Contact Number:</strong><br>
+              +1 (800) 489-FORGE
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <div>
+              <strong>Opening Hours:</strong><br>
+              Mon&ndash;Fri: 7:00 AM &ndash; 6:30 PM<br>
+              Sat: 8:00 AM &ndash; 5:00 PM
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div>
+          &copy; 2026 FORGELUX Hardware &amp; Paint Store. All rights reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Specification</a>
+          <a href="#">Trade Standards</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal (Exact Home 1 Modal) -->
+  <div class="modal-backdrop" id="quoteModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="quoteModalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <h2 class="modal-title" id="quoteModalTitle">Request Project Specification Quote</h2>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">
+            Immediate trade estimation backed by Palette 4 architectural standards
+          </p>
+        </div>
+        <button type="button" class="modal-close" id="quoteModalClose" aria-label="Close dialog">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <form id="quoteForm">
+        <div class="form-group-grid">
+          <div class="form-group">
+            <label for="quoteCategory" class="form-label">Material Category</label>
+            <select id="quoteCategory" class="form-select">
+              <option value="hardware">Architectural Hardware &amp; Mortise Sets</option>
+              <option value="paint">Bespoke Mineral Paint &amp; Tinting</option>
+              <option value="tools">Precision Artisan Tooling</option>
+              <option value="bulk">Bulk Fasteners &amp; Structural Hardware</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="quoteQuantity" class="form-label">Quantity / Coverage (Sq Ft or Units)</label>
+            <input type="number" id="quoteQuantity" class="form-input" value="150" min="10" step="10">
+          </div>
+        </div>
+
+        <div class="form-group-grid">
+          <div class="form-group">
+            <label for="quoteGrade" class="form-label">Procurement Tier</label>
+            <select id="quoteGrade" class="form-select">
+              <option value="retail">Studio / Retail Standard</option>
+              <option value="trade" selected>Licensed Trade Contractor (-15%)</option>
+              <option value="architectural">Architectural Custom Specification (+35%)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="quoteFinish" class="form-label">Preferred Finish</label>
+            <select id="quoteFinish" class="form-select">
+              <option value="copper-brown">Copper Brown Patina (#B45309)</option>
+              <option value="copper-gold">Burnished Copper Gold (#F59E0B)</option>
+              <option value="cream">Warm Cream Enamel (#FDF6E3)</option>
+              <option value="charcoal">Smoked Charcoal Bronze (#2E2E2E)</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="background: var(--bg-surface-accent); border: 1px solid var(--border-medium); border-radius: var(--radius-sm); padding: 1rem; margin-bottom: 1.25rem; display: flex; align-items: center; justify-content: space-between;">
+          <div>
+            <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--c-primary); letter-spacing: 0.08em; display: block;">
+              Estimated Trade Specification Total
+            </span>
+            <span style="font-size: 0.75rem; color: var(--text-muted);">
+              Excludes freight discounts and specialized job-site crane delivery
+            </span>
+          </div>
+          <div style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: var(--c-primary);" id="quoteEstimatedValue">
+            $2,295
+          </div>
+        </div>
+
+        <div class="form-group-grid">
+          <div class="form-group">
+            <label for="quoteClientName" class="form-label">Your Name *</label>
+            <input type="text" id="quoteClientName" class="form-input" placeholder="e.g. Marcus Stone" required>
+          </div>
+          <div class="form-group">
+            <label for="quoteClientEmail" class="form-label">Email Address *</label>
+            <input type="email" id="quoteClientEmail" class="form-input" placeholder="e.g. mstone@forgearchitecture.com" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="quoteNotes" class="form-label">Job Site Location &amp; Requirements</label>
+          <textarea id="quoteNotes" class="form-textarea" style="min-height: 80px;" placeholder="Include blueprint references, delivery date requirements, or custom door handings..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-cta" style="width: 100%; margin-top: 1rem;">
+          Confirm &amp; Transmit Quotation Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+  <script src="guide.js"></script>
+</body>
+</html>

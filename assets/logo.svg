@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- Precision Architectural Hexagonal Monogram with Copper Detailing -->
+  <defs>
+    <linearGradient id="forgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+    <linearGradient id="bevelGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#92400E"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer Architectural Diamond / Hexagon Shield -->
+  <path d="M24 4 L42 14 V34 L24 44 L6 34 V14 Z" stroke="#F59E0B" stroke-width="2" stroke-linejoin="round" fill="none"/>
+  
+  <!-- Inner Faceted Geometry (Hardware Anvil / Paint Finetip Prism / Structural Truss) -->
+  <path d="M24 4 L24 24 L42 34" stroke="#F59E0B" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M24 24 L6 34" stroke="#F59E0B" stroke-width="1.75" stroke-linejoin="round"/>
+  <path d="M24 24 L6 14" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="2 2"/>
+  <path d="M24 24 L42 14" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="2 2"/>
+  
+  <!-- Central Forged Prism (Monogram 'F' & 'L' subtle fusion) -->
+  <polygon points="24,10 35,17 35,31 24,38 13,31 13,17" fill="url(#forgeGrad)" fill-opacity="0.25"/>
+  <path d="M18 16 H30 M18 16 V32 M18 24 H28" stroke="#FDF6E3" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Subtle Copper Accent Spark -->
+  <circle cx="24" cy="24" r="2.5" fill="#F59E0B"/>
+</svg>

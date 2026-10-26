@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Architectural Guides &amp; Color Shade Specification â€” FORGELUX | Paints &bull; Hardware &bull; Materials</title>
+  <meta name="description" content="Master architectural guides by FORGELUX: Mineral paint shade guides, certified hardware selection, substrate surface preparation protocols, finish comparisons, and precision project quantity calculators.">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="guide.css">
+</head>
+<body class="guide-page">
+
+  <!-- ==========================================================================
+       Site Header (Preserved Exactly from Home 1 with Guide Active)
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <!-- Left: Logo & Brand Name with Proper Alignment -->
+      <a href="index.html" class="brand-link" aria-label="FORGELUX Home">
+        <div class="logo-icon-wrap">
+          <img src="assets/images/brand_logo.jpg" alt="FORGELUX Hardware &amp; Paint Store Logo" class="brand-logo-img">
+        </div>
+        <div class="brand-meta">
+          <div class="brand-title">FORGE<span>LUX</span></div>
+          <div class="brand-tagline">HARDWARE &amp; PAINT STORE</div>
+        </div>
+      </a>
+
+      <!-- Middle: Navigation Order (Identical to Home 1, Guide Active) -->
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <!-- 1. Home (Dropdown) -->
+          <li class="nav-item">
+            <button type="button" class="nav-link dropdown-toggle" id="homeDropdownToggle" aria-haspopup="true" aria-expanded="false" aria-controls="homeDropdownMenu">
+              Home
+              <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="dropdown-menu" id="homeDropdownMenu" role="menu" aria-labelledby="homeDropdownToggle">
+              <a href="index.html" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Home 1</strong>
+                  <span class="dropdown-item-desc">Flagship Showroom &amp; Retail</span>
+                </div>
+                <span class="dropdown-tag">Retail</span>
+              </a>
+              <a href="Home 2.html" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Home 2</strong>
+                  <span class="dropdown-item-desc">Pro Atelier &amp; Contractor Depot</span>
+                </div>
+                <span class="dropdown-tag">Depot</span>
+              </a>
+            </div>
+          </li>
+          <!-- 2. About -->
+          <li class="nav-item">
+            <a href="About.html" class="nav-link">About</a>
+          </li>
+          <!-- 4. Products -->
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">Products</a>
+          </li>
+          <!-- 5. Guide (Active) -->
+          <li class="nav-item">
+            <a href="guide.html" class="nav-link active" aria-current="page">Guide</a>
+          </li>
+          <!-- 6. Pricing -->
+          <li class="nav-item">
+            <a href="pricing.html" class="nav-link">Pricing</a>
+          </li>
+          <!-- 7. Contact -->
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Right: Controls & Primary CTA -->
+      <div class="header-controls">
+        <button type="button" class="control-btn" id="themeToggle" aria-label="Switch between light and dark mode" title="Toggle Light / Dark Mode">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="control-btn" id="rtlToggle" aria-label="Switch between LTR and RTL layout" title="Toggle LTR / RTL Direction">
+          <span class="rtl-indicator">RTL</span>
+        </button>
+
+        <button type="button" class="btn-cta open-quote-modal" id="headerCtaBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <span>Get a Quote</span>
+        </button>
+
+        <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-backdrop" id="mobileBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <a href="index.html" class="brand-link" aria-label="FORGELUX Home">
+        <div class="logo-icon-wrap">
+          <img src="assets/images/brand_logo.jpg" alt="FORGELUX Hardware &amp; Paint Store Logo" class="brand-logo-img">
+        </div>
+        <div class="brand-meta">
+          <div class="brand-title">FORGE<span>LUX</span></div>
+          <div class="brand-tagline">HARDWARE &amp; PAINT STORE</div>
+        </div>
+      </a>
+      <button type="button" class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="mobile-drawer-nav">
+      <div>
+        <div class="mobile-nav-link">Home Versions</div>
+        <div class="mobile-submenu">
+          <a href="index.html" class="mobile-sub-link">Home 1 (Flagship Showroom) <span>Retail</span></a>
+          <a href="Home 2.html" class="mobile-sub-link">Home 2 (Pro Atelier &amp; Depot) <span>Depot</span></a>
+        </div>
+      </div>
+      <a href="About.html" class="mobile-nav-link">About</a>
+      <a href="products.html" class="mobile-nav-link">Products</a>
+      <a href="guide.html" class="mobile-nav-link active">Guide</a>
+      <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+    </nav>
+
+    <div class="mobile-drawer-footer">
+      <button type="button" class="btn-cta open-quote-modal" style="width: 100%;">
+        Get a Quote
+      </button>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       Guide Page Hero Banner (2-Column Balanced Layout)
+       ========================================================================== -->
+  <main id="main-content">
+    <section class="guide-hero" id="guideHero">
+      <div class="container guide-hero-grid">
+        <div class="guide-hero-content">
+          <span class="hero-subtitle">Architectural Color Atelier &bull; Mineral Pigment Specification</span>
+
+          <h1 class="guide-hero-title">
+            Mastering Light &amp; Chroma with <br>
+            <span class="guide-hero-highlight">Mineral Paint &amp; Finish Chemistry</span>
+          </h1>
+
+          <p class="guide-hero-desc">
+            Explore precision light reflectance values (LRV), zero-VOC natural slaked binders, and computerized spectrophotometer color formulas. From historic restorations to contemporary architectural estates, discover formulations engineered to live with light.
+          </p>
+
+          <div class="guide-hero-actions">
+            <a href="#paint-shades" class="btn-cta guide-hero-btn-primary">
+              <span>Explore Swatch Atelier</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <button type="button" class="btn-outline guide-hero-btn-secondary open-quote-modal" id="guideHeroQuoteBtn">
+              <span>Consult Colorists</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <!-- 4 Stats in a clean horizontal strip (matching reference design) -->
+          <div class="guide-hero-stats-strip">
+            <div class="guide-stat-item">
+              <span class="guide-stat-num">99.8%</span>
+              <span class="guide-stat-label">LRV Accuracy</span>
+            </div>
+            <div class="guide-stat-sep" aria-hidden="true"></div>
+            <div class="guide-stat-item">
+              <span class="guide-stat-num">240+</span>
+              <span class="guide-stat-label">Mineral Pigments</span>
+            </div>
+            <div class="guide-stat-sep" aria-hidden="true"></div>
+            <div class="guide-stat-item">
+              <span class="guide-stat-num">0% VOC</span>
+              <span class="guide-stat-label">Slaked Binders</span>
+            </div>
+            <div class="guide-stat-sep" aria-hidden="true"></div>
+            <div class="guide-stat-item">
+              <span class="guide-stat-num">&Delta;E &lt;0.3</span>
+              <span class="guide-stat-label">Spectro Precision</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Layered Luxury Composition (Matching Reference Image) -->
+        <div class="guide-hero-visual">
+          <div class="guide-visual-composition" id="guideVisualComposition">
+            <!-- Primary Top-Right Card (Backside card) -->
+            <div class="guide-card-primary" id="guideCardPrimary" tabindex="0">
+              <img 
+                src="assets/images/guide_color_atelier_primary.jpg" 
+                alt="Architectural paint atelier workbench with raw mineral pigment jars, marble muller, and hand-painted drawdowns" 
+                class="guide-primary-img" 
+                width="800" 
+                height="600"
+                loading="eager"
+              >
+              <div class="guide-card-pill pill-top-left">
+                <span class="badge-dot-live"></span>
+                <span>Mineral Color Studio &bull; Spectrophotometry Lab</span>
+              </div>
+            </div>
+
+            <!-- Overlapping Secondary Bottom-Left Card (Front card) -->
+            <div class="guide-card-secondary" id="guideCardSecondary" tabindex="0">
+              <img 
+                src="assets/images/guide_color_swatches_secondary.jpg" 
+                alt="Textured architectural lime-wash and roman clay paint swatches on linen cards with ceramic mixing palette" 
+                class="guide-secondary-img" 
+                width="640" 
+                height="480"
+                loading="eager"
+              >
+              <div class="guide-card-pill pill-accent pill-top-left">
+                <span class="badge-star-icon">&#9733;</span>
+                <span>ARTISANAL DRAWDOWN ATELIER</span>
+              </div>
+            </div>
+
+            <!-- Floating Honor / Accreditation Card (Bottom-Right) -->
+            <div class="guide-award-card">
+              <div class="guide-award-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <div class="guide-award-meta">
+                <span class="guide-award-title">ASTM &amp; DIN Certified Mineral Purity</span>
+                <span class="guide-award-sub">Natural Slaked Pigments &bull; Zero Glare 2% Sheen</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 01: Paint Shade Guide ("Find Your Perfect Shade")
+         Featuring Curated Swatches, Light Reflectance Values & Palette Harmonization
+         ========================================================================== -->
+    <section class="section" id="paint-shades" aria-label="Paint Shade Guide">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Chromatic Formulation &amp; Mineral Bases</span>
+          <h2 class="section-title">Find Your Perfect Shade</h2>
+          <p class="section-desc">
+            Discover our curated portfolio of breathable mineral paints, Italian slaked lime washes, and raw earth ochres. Engineered with optical pigments that respond gracefully to ambient sunlight and evening warmth.
+          </p>
+        </div>
+
+        <!-- Filter Dock: Category Filters -->
+        <div class="shade-filter-dock">
+          <div class="shade-filter-bar" role="tablist" aria-label="Filter Paint Shades">
+            <button type="button" class="shade-filter-btn active" data-shade-filter="all" role="tab" aria-selected="true">
+              All Palettes (12 Curated)
+            </button>
+            <button type="button" class="shade-filter-btn" data-shade-filter="warm" role="tab" aria-selected="false">
+              Warm Earth &amp; Terracotta
+            </button>
+            <button type="button" class="shade-filter-btn" data-shade-filter="cool" role="tab" aria-selected="false">
+              Cool Mineral &amp; Slate
+            </button>
+            <button type="button" class="shade-filter-btn" data-shade-filter="neutral" role="tab" aria-selected="false">
+              Architectural Neutrals
+            </button>
+            <button type="button" class="shade-filter-btn" data-shade-filter="contemporary" role="tab" aria-selected="false">
+              Contemporary Statement
+            </button>
+          </div>
+        </div>
+
+        <!-- Swatch Cards Grid (12 Comprehensive Curated Mineral Shades) -->
+        <div class="swatches-grid">
+          <!-- Swatch 1 -->
+          <article class="swatch-card" data-category="warm neutral">
+            <div class="swatch-color-box" style="background-color: #EFECE1;">
+              <span class="swatch-lrv-pill">LRV 78%</span>
+            </div>
+            <div class="swatch-info">
+              <div class="swatch-header-row">
+                <h3 class="swatch-name">Limewash Parchment</h3>
+                <span class="swatch-code">FL-SH-101</span>
+              </div>
+              <p class="swatch-desc">Warm, velvety off-white infused with crushed calcitic limestone. Softens morning glare.</p>
+              <div class="swatch-spec-chips">
+                <span class="spec-chip">Living &amp; Ceilings</span>
+                <span class="spec-chip">Dead Flat (2%)</span>
+                <span class="spec-chip">Interior</span>
+              </div>
+            </div>
+            <div class="swatch-card-footer">
+              <span style="font-size: 0.725rem; color: var(--text-muted); font-weight: 600;">Tone: Calcite Warm</span>
+              <a href="guide-paint-shades.html" class="swatch-action-link">
+                <span>View Shade</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Swatch 2 -->
+          <article class="swatch-card" data-category="warm contemporary">
+            <div class="swatch-color-box" style="background-color: #B45309;">
+              <span class="swatch-lrv-pill">LRV 32%</span>
+            </div>
+            <div class="swatch-info">
+              <div class="swatch-header-row">
+                <h3 class="swatch-name">Raw Sienna Earth</h3>
+                <span class="swatch-code">FL-SH-204</span>
+              </div>
+              <p class="swatch-desc">Noble burnt copper ochre derived from iron oxide clay. Delivers rich spatial drama.</p>
+              <div class="swatch-spec-chips">
+                <span class="spec-chip">Dining &amp; Library</span>
+                <span class="spec-chip">Matte Velvet (7%)</span>
+                <span class="spec-chip">Dual Rated</span>
+              </div>
+            </div>
+            <div class="swatch-card-footer">
+              <span style="font-size: 0.725rem; color: var(--text-muted); font-weight: 600;">Tone: Burnt Terracotta</span>
+              <a href="guide-paint-shades.html" class="swatch-action-link">
+                <span>View Shade</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Swatch 3 -->
+          <article class="swatch-card" data-category="cool neutral">
+            <div class="swatch-color-box" style="background-color: #3F3F46;">
+              <span class="swatch-lrv-pill">LRV 18%</span>
+            </div>
+            <div class="swatch-info">
+              <div class="swatch-header-row">
+                <h3 class="swatch-name">Nordic Basalt Slate</h3>
+                <span class="swatch-code">FL-SH-310</span>
+              </div>
+              <p class="swatch-desc">Deep volcanic charcoal with undertones of weathered granite. Anchors open-plan lofts.</p>
+              <div class="swatch-spec-chips">
+                <span class="spec-chip">Accent &amp; Facade</span>
+                <span class="spec-chip">Eggshell (18%)</span>
+                <span class="spec-chip">Exterior Ready</span>
+              </div>
+            </div>
+            <div class="swatch-card-footer">
+              <span style="font-size: 0.725rem; color: var(--text-muted); font-weight: 600;">Tone: Mineral Charcoal</span>
+              <a href="guide-paint-shades.html" class="swatch-action-link">
+                <span>View Shade</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Swatch 4 -->
+          <article class="swatch-card" data-category="cool">
+            <div class="swatch-color-box" style="background-color: #8FA89B;">
+              <span class="swatch-lrv-pill">LRV 54%</span>
+            </div>
+            <div class="swatch-info">
+              <div class="swatch-header-row">
+                <h3 class="swatch-name">Misty Sage Silicate</h3>
+                <span class="swatch-code">FL-SH-415</span>
+              </div>
+              <p class="swatch-desc">Serene herbal green suspended in breathable potassium silicate. Perfect for bedrooms.</p>
+              <div class="swatch-spec-chips">
+                <span class="spec-chip">Bedroom &amp; Study</span>
+                <span class="spec-chip">Matte Velvet (7%)</span>
+                <span class="spec-chip">Breathable</span>
+              </div>
+            </div>
+            <div class="swatch-card-footer">
+              <span style="font-size: 0.725rem; color: var(--text-muted); font-weight: 600;">Tone: Botanical Cool</span>
+              <a href="guide-paint-shades.html" class="swatch-action-link">
+                <span>View Shade</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Swatch 5 -->
+          <article class="swatch-card" data-category="neutral">
+            <div class="swatch-color-box" style="background-color: #F8F9FA;">
+              <span class="swatch-lrv-pill">LRV 86%</span>
+            </div>
+            <div class="swatch-info">
+              <div class="swatch-header-row">
+                <h3 class="swatch-name">Fluted Calacatta White</h3>
+                <span class="swatch-code">FL-SH-102</span>
+              </div>
+              <p class="swatch-desc">High-reflectance pure architectural white with ultra-subtle warm undertone to prevent cold glare.</p>
+              <div class="swatch-spec-chips">
+                <span class="spec-chip">Whole-House Base</span>
+                <span class="spec-chip">Dead Flat (2%)</span>
+                <span class="spec-chip">Ultra High Hide</span>
+              </div>
+            </div>
+            <div class="swatch-card-footer">
+              <span style="font-size: 0.725rem; color: var(--text-muted); font-weight: 600;">Tone: Luminous White</span>
+              <a href="guide-paint-shades.html" class="swatch-action-link">
+                <span>View Shade</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Swatch 6 -->
+          <article class="swatch-card" data-category="warm">
+            <div class="swatch-color-box" style="background-color: #D97706;">
+              <span class="swatch-lrv-pill">LRV 44%</span>
+            </div>
+            <div class="swatch-info">
+              <div class="swatch-header-row">
+                <h3 class="swatch-name">Burnished Amber Ochre</h3>
+                <span class="swatch-code">FL-SH-205</span>
+              </div>
+              <p class="swatch-desc">Honeyed golden ochre that pairs masterfully with unlacquered brass hardware and oak trims.</p>
+              <div class="swatch-spec-chips">
+                <span class="spec-chip">Hallway &amp; Foyer</span>
+                <span class="spec-chip">Eggshell (18%)</span>
+                <span class="spec-chip">Washable</span>
+              </div>
+            </div>
+            <div class="swatch-card-footer">
+              <span style="font-size: 0.725rem; color: var(--text-muted); font-weight: 600;">Tone: Warm Honey</span>
+              <a href="guide-paint-shades.html" class="swatch-action-link">
+                <span>View Shade</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Swatch 7 -->
+          <article class="swatch-card" data-category="neutral warm">
+            <div class="swatch-color-box" style="background-color: #F3EFE6;">
+              <span class="swatch-lrv-pill">LRV 79%</span>
+            </div>
+            <div class="swatch-info">
+              <div class="swatch-header-row">
+                <h3 class="swatch-name">Parisian Alabaster</h3>
+                <span class="swatch-code">FL-SH-108</span>
+              </div>
+              <p class="swatch-desc">Timeless classic French salon neutral. Provides an antique museum gallery feel.</p>
+              <div class="swatch-spec-chips">
+                <span class="spec-chip">Living &amp; Bedroom</span>
+                <span class="spec-chip">Matte Velvet (7%)</span>
+                <span class="spec-chip">Interior</span>
+              </div>
+            </div>
+            <div class="swatch-card-footer">
+              <span style="font-size: 0.725rem; color: var(--text-muted); font-weight: 600;">Tone: Cream Velvet</span>
+              <a href="guide-paint-shades.html" class="swatch-action-link">
+                <span>View Shade</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Swatch 8 -->
+          <article class="swatch-card" data-category="contemporary">
+            <div class="swatch-color-box" style="background-color: #18181B;">
+              <span class="swatch-lrv-pill">LRV 6%</span>
+            </div>
+            <div class="swatch-info">
+              <div class="swatch-header-row">
+                <h3 class="swatch-name">Ebonized Foundry Iron</h3>
+                <span class="swatch-code">FL-SH-501</span>
+              </div>
+              <p class="swatch-desc">Ultra-deep non-reflective blackened carbon mineral paint. Maximum architectural contrast.</p>
+              <div class="swatch-spec-chips">
+                <span class="spec-chip">Doors &amp; Trims</span>
+                <span class="spec-chip">Semi-Gloss (35%)</span>
+                <span class="spec-chip">Scuff Shield</span>
+              </div>
+            </div>
+            <div class="swatch-card-footer">
+              <span style="font-size: 0.725rem; color: var(--text-muted); font-weight: 600;">Tone: Carbon Black</span>
+              <a href="guide-paint-shades.html" class="swatch-action-link">
+                <span>View Shade</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Swatch 9 -->
+          <article class="swatch-card" data-category="warm contemporary">
+            <div class="swatch-color-box" style="background-color: #78350F;">
+              <span class="swatch-lrv-pill">LRV 22%</span>
+            </div>
+            <div class="swatch-info">
+              <div class="swatch-header-row">
+                <h3 class="swatch-name">Smoked Walnut Husk</h3>
+                <span class="swatch-code">FL-SH-209</span>
+              </div>
+              <p class="swatch-desc">Muted deep timber brown formulated with natural vegetable alkyd binders.</p>
+              <div class="swatch-spec-chips">
+                <span class="spec-chip">Dining &amp; Cabinetry</span>
+                <span class="spec-chip">Semi-Gloss (35%)</span>
+                <span class="spec-chip">Interior</span>
+              </div>
+            </div>
+            <div class="swatch-card-footer">
+              <span style="font-size: 0.725rem; color: var(--text-muted); font-weight: 600;">Tone: Deep Espresso</span>
+              <a href="guide-paint-shades.html" class="swatch-action-link">
+                <span>View Shade</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Swatch 10 -->
+          <article class="swatch-card" data-category="cool">
+            <div class="swatch-color-box" style="background-color: #E2E8F0;">
+              <span class="swatch-lrv-pill">LRV 68%</span>
+            </div>
+            <div class="swatch-info">
+              <div class="swatch-header-row">
+                <h3 class="swatch-name">Maritime Salt Spray</h3>
+                <span class="swatch-code">FL-SH-305</span>
+              </div>
+              <p class="swatch-desc">Pale misty mineral blue-grey with cooling maritime freshness under direct sunlight.</p>
+              <div class="swatch-spec-chips">
+                <span class="spec-chip">Bathroom &amp; Kitchen</span>
+                <span class="spec-chip">Eggshell (18%)</span>
+                <span class="spec-chip">Mildew Barrier</span>
+              </div>
+            </div>
+            <div class="swatch-card-footer">
+              <span style="font-size: 0.725rem; color: var(--text-muted); font-weight: 600;">Tone: Cool Pale Grey</span>
+              <a href="guide-paint-shades.html" class="swatch-action-link">
+                <span>View Shade</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Swatch 11 -->
+          <article class="swatch-card" data-category="contemporary">
+            <div class="swatch-color-box" style="background-color: #451A03;">
+              <span class="swatch-lrv-pill">LRV 12%</span>
+            </div>
+            <div class="swatch-info">
+              <div class="swatch-header-row">
+                <h3 class="swatch-name">Florentine Cocoa Bronze</h3>
+                <span class="swatch-code">FL-SH-508</span>
+              </div>
+              <p class="swatch-desc">Earthy chocolate velvet with copper undertones. Matches burnished bronze pulls.</p>
+              <div class="swatch-spec-chips">
+                <span class="spec-chip">Feature Walls</span>
+                <span class="spec-chip">Matte Velvet (7%)</span>
+                <span class="spec-chip">Low Sheen</span>
+              </div>
+            </div>
+            <div class="swatch-card-footer">
+              <span style="font-size: 0.725rem; color: var(--text-muted); font-weight: 600;">Tone: Cocoa Bronze</span>
+              <a href="guide-paint-shades.html" class="swatch-action-link">
+                <span>View Shade</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Swatch 12 -->
+          <article class="swatch-card" data-category="warm contemporary">
+            <div class="swatch-color-box" style="background-color: #F59E0B;">
+              <span class="swatch-lrv-pill">LRV 48%</span>
+            </div>
+            <div class="swatch-info">
+              <div class="swatch-header-row">
+                <h3 class="swatch-name">Antique Copper Gold</h3>
+                <span class="swatch-code">FL-SH-212</span>
+              </div>
+              <p class="swatch-desc">Real copper mica pigment glaze for architectural friezes, ceiling coffers, and accents.</p>
+              <div class="swatch-spec-chips">
+                <span class="spec-chip">Coffered Ceilings</span>
+                <span class="spec-chip">Metallic Lustre</span>
+                <span class="spec-chip">Exterior Safe</span>
+              </div>
+            </div>
+            <div class="swatch-card-footer">
+              <span style="font-size: 0.725rem; color: var(--text-muted); font-weight: 600;">Tone: Metallic Glaze</span>
+              <a href="guide-paint-shades.html" class="swatch-action-link">
+                <span>View Shade</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Trending Curated Color Trios Showcase -->
+        <div style="background: var(--bg-surface-elevated); border: 1.5px solid var(--border-subtle); border-radius: var(--radius-lg); padding: clamp(1.5rem, 3vw, 2.25rem); margin-top: 2rem;">
+          <div style="display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.25rem;">
+            <div>
+              <span style="font-size: 0.7rem; font-weight: 800; letter-spacing: 0.1em; color: var(--c-primary); text-transform: uppercase;">DESIGNER RECOMMENDATIONS</span>
+              <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 800; color: var(--text-main); margin-top: 0.2rem;">
+                Trending Color Harmonization Trios (Wall &bull; Trim &bull; Ceiling)
+              </h3>
+            </div>
+            <span style="font-size: 0.775rem; color: var(--text-muted);">Calibrated 60-30-10 Spatial Balance</span>
+          </div>
+
+          <div class="trios-grid">
+            <!-- Trio 1 -->
+            <div class="trio-card">
+              <div class="trio-swatches">
+                <div class="trio-swatch-slot" style="background: #EFECE1;">
+                  <span class="trio-swatch-label">Walls (60%)</span>
+                </div>
+                <div class="trio-swatch-slot" style="background: #B45309;">
+                  <span class="trio-swatch-label">Trims (30%)</span>
+                </div>
+                <div class="trio-swatch-slot" style="background: #F8F9FA;">
+                  <span class="trio-swatch-label">Ceiling (10%)</span>
+                </div>
+              </div>
+              <h4 class="trio-title">Tuscan Hearth Harmony</h4>
+              <p class="trio-desc">Limewash Parchment walls grounded by Raw Sienna baseboards and pure Calacatta white ceiling.</p>
+            </div>
+
+            <!-- Trio 2 -->
+            <div class="trio-card">
+              <div class="trio-swatches">
+                <div class="trio-swatch-slot" style="background: #8FA89B;">
+                  <span class="trio-swatch-label">Walls (60%)</span>
+                </div>
+                <div class="trio-swatch-slot" style="background: #3F3F46;">
+                  <span class="trio-swatch-label">Trims (30%)</span>
+                </div>
+                <div class="trio-swatch-slot" style="background: #E2E8F0;">
+                  <span class="trio-swatch-label">Ceiling (10%)</span>
+                </div>
+              </div>
+              <h4 class="trio-title">Nordic Coastal Sanctuary</h4>
+              <p class="trio-desc">Misty Sage Silicate with contrasting Basalt Slate door casings and airy Salt Spray ceiling.</p>
+            </div>
+
+            <!-- Trio 3 -->
+            <div class="trio-card">
+              <div class="trio-swatches">
+                <div class="trio-swatch-slot" style="background: #F3EFE6;">
+                  <span class="trio-swatch-label">Walls (60%)</span>
+                </div>
+                <div class="trio-swatch-slot" style="background: #18181B;">
+                  <span class="trio-swatch-label">Trims (30%)</span>
+                </div>
+                <div class="trio-swatch-slot" style="background: #F59E0B;">
+                  <span class="trio-swatch-label">Ceiling (10%)</span>
+                </div>
+              </div>
+              <h4 class="trio-title">Haussmann Grand Atelier</h4>
+              <p class="trio-desc">Parisian Alabaster walls framed by bold Ebonized Iron millwork with an Antique Copper coffered ceiling.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: clamp(2rem, 3vw, 2.75rem);">
+          <a href="guide-paint-shades.html" class="btn-cta">
+            <span>Explore Complete Paint Shades Guide</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 02: Hardware Selection Guide ("Choose the Right Hardware")
+         Door Handles, Hinges, Locks, Fittings, Durability & Application Matrix
+         ========================================================================== -->
+    <section class="section section-alt" id="hardware-guide" aria-label="Hardware Selection Guide">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Metallurgy &bull; ANSI Standards &bull; Cycle Life</span>
+          <h2 class="section-title">Choose the Right Hardware</h2>
+          <p class="section-desc">
+            Architectural fittings must deliver enduring mechanical integrity and satisfying tactile heft. From solid forged brass entrysets to commercial European soft-close hinges, select components engineered for generational longevity.
+          </p>
+        </div>
+
+        <div class="hardware-guide-grid">
+          <!-- Card 1 -->
+          <article class="hw-guide-card">
+            <div class="hw-guide-media">
+              <img src="assets/images/guide_hw_levers.jpg" alt="Solid forged brass door lever set with diamond knurling on rift oak" class="hw-guide-img" loading="lazy">
+              <span class="hw-guide-badge">ANSI Grade 1</span>
+            </div>
+            <div class="hw-guide-body">
+              <h3 class="hw-guide-title">Architectural Door Levers &amp; Escutcheons</h3>
+              <p class="hw-guide-desc">Solid virgin C36000 cold-forged brass bodies with anti-pick hardened cylinder pins and independent lever return springs.</p>
+              <div class="hw-guide-spec-list">
+                <div class="hw-spec-item">
+                  <span class="hw-spec-label">Substrate Compatibility:</span>
+                  <span class="hw-spec-val">1-3/8&Prime; to 2-1/4&Prime; Doors</span>
+                </div>
+                <div class="hw-spec-item">
+                  <span class="hw-spec-label">Cycle Endurance:</span>
+                  <span class="hw-spec-val">1,000,000+ Operations</span>
+                </div>
+              </div>
+            </div>
+            <div class="hw-guide-footer">
+              <a href="guide-hardware.html" class="swatch-action-link" style="width: 100%; justify-content: space-between;">
+                <span>View Lever Specifications</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="hw-guide-card">
+            <div class="hw-guide-media">
+              <img src="assets/images/guide_hw_hinges.jpg" alt="Solid satin bronze and antiqued brass ball bearing butt hinges" class="hw-guide-img" loading="lazy">
+              <span class="hw-guide-badge">Heavy Duty</span>
+            </div>
+            <div class="hw-guide-body">
+              <h3 class="hw-guide-title">Ball-Bearing Hinges &amp; Pivots</h3>
+              <p class="hw-guide-desc">Non-removable pin butt hinges with dual permanently lubricated stainless ball bearings. Eliminates door sag under heavy timber loads.</p>
+              <div class="hw-guide-spec-list">
+                <div class="hw-spec-item">
+                  <span class="hw-spec-label">Load Capacity:</span>
+                  <span class="hw-spec-val">Up to 350 lbs / 3 hinges</span>
+                </div>
+                <div class="hw-spec-item">
+                  <span class="hw-spec-label">Material Alloy:</span>
+                  <span class="hw-spec-val">Grade 304 Stainless / Bronze</span>
+                </div>
+              </div>
+            </div>
+            <div class="hw-guide-footer">
+              <a href="guide-hardware.html" class="swatch-action-link" style="width: 100%; justify-content: space-between;">
+                <span>View Hinge Sizing Guide</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="hw-guide-card">
+            <div class="hw-guide-media">
+              <img src="assets/images/guide_hw_locks.jpg" alt="Heavy duty euro profile mortise lock body in solid brushed bronze with brass keys" class="hw-guide-img" loading="lazy">
+              <span class="hw-guide-badge">High Security</span>
+            </div>
+            <div class="hw-guide-body">
+              <h3 class="hw-guide-title">Euro-Profile Mortise Locks &amp; Cylinders</h3>
+              <p class="hw-guide-desc">Heavy-duty mortise lock cassettes with anti-saw hardened steel deadbolts and drill-resistant high-precision brass cylinders.</p>
+              <div class="hw-guide-spec-list">
+                <div class="hw-spec-item">
+                  <span class="hw-spec-label">Security Tier:</span>
+                  <span class="hw-spec-val">EN 12209 Grade 7 Rated</span>
+                </div>
+                <div class="hw-spec-item">
+                  <span class="hw-spec-label">Deadbolt Throw:</span>
+                  <span class="hw-spec-val">20 mm Double-Throw Throw</span>
+                </div>
+              </div>
+            </div>
+            <div class="hw-guide-footer">
+              <a href="guide-hardware.html" class="swatch-action-link" style="width: 100%; justify-content: space-between;">
+                <span>View Lock Specifications</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="hw-guide-card">
+            <div class="hw-guide-media">
+              <img src="assets/images/guide_hw_pulls.jpg" alt="Precision knurled solid brass and copper cabinetry t-bar handles on fluted oak" class="hw-guide-img" loading="lazy">
+              <span class="hw-guide-badge">Architectural</span>
+            </div>
+            <div class="hw-guide-body">
+              <h3 class="hw-guide-title">Cabinetry Pulls &amp; Precision Fittings</h3>
+              <p class="hw-guide-desc">Tactile knurled solid copper and brass drawer pulls, minimalist edge lip handles, and flush recessed finger pulls for bespoke millwork.</p>
+              <div class="hw-guide-spec-list">
+                <div class="hw-spec-item">
+                  <span class="hw-spec-label">Center-to-Center:</span>
+                  <span class="hw-spec-val">96 mm to 320 mm CC</span>
+                </div>
+                <div class="hw-spec-item">
+                  <span class="hw-spec-label">Base Metal:</span>
+                  <span class="hw-spec-val">Solid Forged Brass &amp; Copper</span>
+                </div>
+              </div>
+            </div>
+            <div class="hw-guide-footer">
+              <a href="guide-hardware.html" class="swatch-action-link" style="width: 100%; justify-content: space-between;">
+                <span>View Structural Specs</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Residential vs Commercial Specification Matrix Table -->
+        <div class="guide-table-wrap">
+          <div style="padding: 1.25rem 1.5rem; background: var(--bg-surface); border-bottom: 1.5px solid var(--border-subtle); display: flex; align-items: center; justify-content: space-between;">
+            <div>
+              <span style="font-size: 0.7rem; font-weight: 800; letter-spacing: 0.1em; color: var(--c-primary); text-transform: uppercase;">ENGINEERING MATRIX</span>
+              <h4 style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-top: 2px;">
+                Residential vs Commercial Specification Comparison
+              </h4>
+            </div>
+            <span class="table-tag table-tag-res">ANSI Grade Standard</span>
+          </div>
+          <table class="guide-table">
+            <thead>
+              <tr>
+                <th>Factor</th>
+                <th>Residential Tier</th>
+                <th>Commercial / High-Traffic</th>
+                <th>FORGELUX Benchmark</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Cycle Life Rating</strong></td>
+                <td>200,000 cycles (ANSI Grade 3)</td>
+                <td>1,000,000 cycles (ANSI Grade 1)</td>
+                <td><span class="table-tag table-tag-com">1,250,000+ Cycles Certified</span></td>
+              </tr>
+              <tr>
+                <td><strong>Base Metallurgy</strong></td>
+                <td>Die-cast Zamak or stamped steel</td>
+                <td>Forged brass or 304/316 stainless</td>
+                <td><span class="table-tag table-tag-com">Solid Cold-Forged Brass C36000</span></td>
+              </tr>
+              <tr>
+                <td><strong>Fire Resistance (UL)</strong></td>
+                <td>20-Minute smoke rating</td>
+                <td>3-Hour positive pressure (UL 10C)</td>
+                <td><span class="table-tag table-tag-com">3-Hour Fire Rated Available</span></td>
+              </tr>
+              <tr>
+                <td><strong>Standard Backset</strong></td>
+                <td>2-3/8&Prime; (60 mm)</td>
+                <td>2-3/4&Prime; (70 mm)</td>
+                <td><span class="table-tag table-tag-res">Dual-Field Reversible Backsets</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="text-align: center; margin-top: clamp(2rem, 3vw, 2.75rem);">
+          <a href="guide-hardware.html" class="btn-cta">
+            <span>Explore Complete Hardware Selection Guide</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 03: Painting & Surface Preparation Guide ("Prepare Better. Paint Better.")
+         Numbered Process Cards, Primer Selection & Defect Remediation
+         ========================================================================== -->
+    <section class="section" id="surface-prep" aria-label="Surface Preparation Guide">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Substrate Adhesion &amp; Remediation Protocols</span>
+          <h2 class="section-title">Prepare Better. Paint Better.</h2>
+          <p class="section-desc">
+            Over 85% of premature coating failuresâ€”including flaking, bubbling, and flash-marksâ€”are caused by hurried substrate preparation. Follow our master trade sequence to build an indestructible bond.
+          </p>
+        </div>
+
+        <!-- Surface Prep Artisan Feature Showcase -->
+        <div class="prep-visual-showcase" style="display: grid; grid-template-columns: 0.95fr 1.05fr; gap: clamp(1.5rem, 3vw, 2.5rem); align-items: center; background: var(--bg-surface-elevated); border: 1.5px solid var(--border-subtle); border-radius: var(--radius-lg); overflow: hidden; margin-bottom: 2.5rem; box-shadow: var(--shadow-sm);">
+          <div style="position: relative; overflow: hidden; aspect-ratio: 4/3; max-height: 380px;">
+            <img src="assets/images/guide_prep_process.jpg" alt="Master painter rolling premium slaked mineral paint with crisp edges" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy">
+          </div>
+          <div style="padding: clamp(1.5rem, 2.5vw, 2.5rem);">
+            <span style="font-size: 0.7rem; font-weight: 800; letter-spacing: 0.12em; color: var(--c-primary); text-transform: uppercase;">MASTER COATING DISCIPLINE</span>
+            <h3 style="font-family: var(--font-heading); font-size: clamp(1.3rem, 2vw, 1.65rem); font-weight: 800; color: var(--text-main); margin-top: 0.35rem; margin-bottom: 0.75rem;">
+              The Micro-Film Rolling Sequence
+            </h3>
+            <p style="font-size: 0.925rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.25rem;">
+              Achieving a velvety, streak-free surface requires methodical loading. Saturate 3/8&Prime; microfiber sleeves evenly, roll ceiling-to-floor in overlapping &lsquo;W&rsquo; passes, and never stretch thin paint over dry edges.
+            </p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <div style="background: var(--bg-surface); border: 1px solid var(--border-medium); border-radius: var(--radius-md); padding: 0.65rem 1rem;">
+                <div style="font-size: 0.7rem; color: var(--text-muted); font-weight: 700;">WET EDGE WINDOW</div>
+                <div style="font-family: var(--font-heading); font-size: 1.1rem; font-weight: 800; color: var(--c-primary);">12â€“15 Mins</div>
+              </div>
+              <div style="background: var(--bg-surface); border: 1px solid var(--border-medium); border-radius: var(--radius-md); padding: 0.65rem 1rem;">
+                <div style="font-size: 0.7rem; color: var(--text-muted); font-weight: 700;">SUBSTRATE MOISTURE</div>
+                <div style="font-family: var(--font-heading); font-size: 1.1rem; font-weight: 800; color: var(--c-primary);">&lt; 12% Max</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Step-by-Step Process Cards -->
+        <div class="prep-steps-grid">
+          <!-- Step 1 -->
+          <div class="prep-step-card">
+            <span class="step-num-badge">STEP 01</span>
+            <h3 class="step-title">Surface Decontamination</h3>
+            <p class="step-desc">
+              Scrub walls with low-residue TSP substitute to eliminate airborne kitchen greases, candle soot, and fingerprints. Check substrate moisture with a pinless meter (under 12% moisture required).
+            </p>
+            <div class="step-tools-box">
+              <span class="step-tools-label">Required Equipment:</span>
+              <div class="step-tools-list">Cellulose sponge, TSP degreaser, digital moisture detector.</div>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="prep-step-card">
+            <span class="step-num-badge">STEP 02</span>
+            <h3 class="step-title">Mechanical Abrasion &amp; Patch</h3>
+            <p class="step-desc">
+              Feather-edge existing glossy coatings with 150-grit abrasive sheets. Fill screw dents and micro-hairlines with lightweight non-shrinking vinyl compound, followed by 220-grit dry sanding.
+            </p>
+            <div class="step-tools-box">
+              <span class="step-tools-label">Required Equipment:</span>
+              <div class="step-tools-list">Aluminum oxide sandpaper (150/220), flexible joint knife, vacuum tack cloth.</div>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="prep-step-card">
+            <span class="step-num-badge">STEP 03</span>
+            <h3 class="step-title">Targeted Primer Bonding</h3>
+            <p class="step-desc">
+              Apply breathable mineral silicate primer over bare plaster or alkali masonry. For drywall patches, apply high-hide stain-blocking primer to equalize porosity and prevent flash spots.
+            </p>
+            <div class="step-tools-box">
+              <span class="step-tools-label">Required Equipment:</span>
+              <div class="step-tools-list">FORGELUX High-Hide Primer, 1/2&Prime; microfiber roller, 14-day tape.</div>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="prep-step-card">
+            <span class="step-num-badge">STEP 04</span>
+            <h3 class="step-title">Two-Coat Topcoat Master</h3>
+            <p class="step-desc">
+              Cut in ceiling borders and baseboards using a 2.5&Prime; chiseled sash brush. Maintain a continuous wet edge using an architectural roller, rolling in ceiling-to-floor 'W' patterns without overworking.
+            </p>
+            <div class="step-tools-box">
+              <span class="step-tools-label">Required Equipment:</span>
+              <div class="step-tools-list">2.5&Prime; angled sash brush, 9&Prime; heavy-duty roller cage, 9x12 drop canvas.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Mistakes & Practical Prevention Box -->
+        <div style="background: var(--bg-surface-elevated); border: 1.5px solid var(--border-subtle); border-radius: var(--radius-lg); padding: clamp(1.5rem, 3vw, 2.25rem);">
+          <div style="display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1rem;">
+            <div>
+              <span style="font-size: 0.7rem; font-weight: 800; letter-spacing: 0.1em; color: #DC2626; text-transform: uppercase;">DEFECT AVOIDANCE MANUAL</span>
+              <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 800; color: var(--text-main); margin-top: 0.2rem;">
+                3 Common Painting Mistakes &amp; How to Prevent Them
+              </h3>
+            </div>
+            <span style="font-size: 0.775rem; color: var(--text-muted);">Trade Standards: ASTM D3928</span>
+          </div>
+
+          <div class="mistakes-grid">
+            <div class="mistake-card">
+              <div class="mistake-header">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <span>Mistake #1: Flashing / Lap Marks</span>
+              </div>
+              <h4 class="mistake-title">Uneven Sheen Over Drywall Repairs</h4>
+              <p class="mistake-body">
+                Applying topcoat paint directly over spackled patches causes the porous joint compound to suck moisture out of the paint, creating chalky dull spots when viewed at raking angles.
+              </p>
+              <div class="mistake-fix">
+                âœ” <strong>Trade Remedy:</strong> Always spot-prime compound patches with 1 dedicated coat of high-hide primer prior to rolling whole walls.
+              </div>
+            </div>
+
+            <div class="mistake-card">
+              <div class="mistake-header">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <span>Mistake #2: Peeling Tape Bleed</span>
+              </div>
+              <h4 class="mistake-title">Jagged Edges Along Baseboard Moldings</h4>
+              <p class="mistake-body">
+                Leaving masking tape on walls until paint is bone-dry creates a rubbery acrylic film across the tape edge. Pulling it tears the freshly cured paint layer away from the substrate.
+              </p>
+              <div class="mistake-fix">
+                âœ” <strong>Trade Remedy:</strong> Peel masking tape while topcoat is still damp to the touch at a sharp 45-degree angle downward.
+              </div>
+            </div>
+
+            <div class="mistake-card">
+              <div class="mistake-header">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <span>Mistake #3: Micro-Blistering</span>
+              </div>
+              <h4 class="mistake-title">Trapped Humidity Under Enamel Films</h4>
+              <p class="mistake-body">
+                Painting in humid weather (&gt;75% RH) or over damp masonry traps water vapor beneath the drying paint film. As temperatures warm, moisture evaporates, forcing bubbles to the surface.
+              </p>
+              <div class="mistake-fix">
+                âœ” <strong>Trade Remedy:</strong> Paint strictly when indoor temperatures are 55&deg;F&ndash;80&deg;F and relative humidity is below 65%.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: clamp(2rem, 3vw, 2.75rem);">
+          <a href="guide-surface-prep.html" class="btn-cta">
+            <span>View Complete Surface Prep Guide</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 04: Materials & Finish Guide ("The Right Finish Makes the Difference")
+         Sheen Spectrum, Substrates, Durability & Maintenance Considerations
+         ========================================================================== -->
+    <section class="section section-alt" id="materials-finishes" aria-label="Materials and Finish Guide">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Sheen Spectral Index &amp; Solid Metallurgy</span>
+          <h2 class="section-title">The Right Finish Makes the Difference</h2>
+          <p class="section-desc">
+            Light reflectancy and tactile durability define how spaces feel throughout the day. Compare optical sheen ratings from ultra-flat 2% mineral washes to high-durability 35% semi-gloss enamels, alongside solid metal durability.
+          </p>
+        </div>
+
+        <!-- Sheen & Tactile Visual Demonstration -->
+        <div class="finishes-visual-showcase" style="display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(1.5rem, 3vw, 2.5rem); align-items: center; background: var(--bg-surface); border: 1.5px solid var(--border-subtle); border-radius: var(--radius-lg); overflow: hidden; margin-bottom: 2.5rem; box-shadow: var(--shadow-sm);">
+          <div style="padding: clamp(1.5rem, 2.5vw, 2.5rem);">
+            <span style="font-size: 0.7rem; font-weight: 800; letter-spacing: 0.12em; color: var(--c-primary); text-transform: uppercase;">TACTILE REFLECTANCE ATELIER</span>
+            <h3 style="font-family: var(--font-heading); font-size: clamp(1.3rem, 2vw, 1.65rem); font-weight: 800; color: var(--text-main); margin-top: 0.35rem; margin-bottom: 0.75rem;">
+              Light Bounce Across Substrates
+            </h3>
+            <p style="font-size: 0.925rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.25rem;">
+              From the deep chalky absorption of dead-flat slaked plaster to the warm burnished sheen of solid unlacquered copper bronze, every surface responds uniquely to directional architectural lighting.
+            </p>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <span class="table-tag table-tag-res">Matte Slaked Plaster (2%)</span>
+              <span class="table-tag table-tag-res">Satin Walnut Wood (18%)</span>
+              <span class="table-tag table-tag-com">Semi-Gloss Lacquer (35%)</span>
+              <span class="table-tag table-tag-com">Burnished Copper Bronze</span>
+            </div>
+          </div>
+          <div style="position: relative; overflow: hidden; aspect-ratio: 4/3; max-height: 380px;">
+            <img src="assets/images/guide_finishes_sheen.jpg" alt="Four architectural finish sample blocks comparing matte plaster, satin walnut, semi-gloss lacquer, and burnished copper bronze" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Sheen Level Spectrum Grid -->
+        <div class="sheen-spectrum-grid">
+          <!-- Sheen 1 -->
+          <div class="sheen-level-card">
+            <div class="sheen-header-row">
+              <span class="sheen-badge">01</span>
+              <span class="sheen-percent-tag">2% Sheen</span>
+            </div>
+            <h3 class="sheen-name">Dead Flat Silicate</h3>
+            <p class="sheen-desc">Zero specular bounce. Softens harsh raking light and completely conceals drywall seams and minor surface undulations.</p>
+            <div class="sheen-suitability">
+              <strong>Best Applications:</strong>
+              Ceilings, master bedrooms, low-traffic formal dining rooms, historic lime restorations.
+            </div>
+          </div>
+
+          <!-- Sheen 2 -->
+          <div class="sheen-level-card">
+            <div class="sheen-header-row">
+              <span class="sheen-badge">02</span>
+              <span class="sheen-percent-tag">7% Sheen</span>
+            </div>
+            <h3 class="sheen-name">Matte Velvet Emulsion</h3>
+            <p class="sheen-desc">The designer standard. Offers the chalky aesthetic of flat paint with added wipeable ceramic resin durability for active homes.</p>
+            <div class="sheen-suitability">
+              <strong>Best Applications:</strong>
+              Family living rooms, home offices, primary bedrooms, adult guest suites.
+            </div>
+          </div>
+
+          <!-- Sheen 3 -->
+          <div class="sheen-level-card">
+            <div class="sheen-header-row">
+              <span class="sheen-badge">03</span>
+              <span class="sheen-percent-tag">18% Sheen</span>
+            </div>
+            <h3 class="sheen-name">Eggshell Satin Shield</h3>
+            <p class="sheen-desc">Smooth, light-catching sheen with tight cross-linked polymers. Withstands routine scrub downs, moisture vapor, and muddy paws.</p>
+            <div class="sheen-suitability">
+              <strong>Best Applications:</strong>
+              Kitchens, laundry rooms, bathrooms, children's playrooms, entry corridors.
+            </div>
+          </div>
+
+          <!-- Sheen 4 -->
+          <div class="sheen-level-card">
+            <div class="sheen-header-row">
+              <span class="sheen-badge">04</span>
+              <span class="sheen-percent-tag">35% Sheen</span>
+            </div>
+            <h3 class="sheen-name">Semi-Gloss Enamel</h3>
+            <p class="sheen-desc">Glass-smooth protective armour. High resistance to shoe scuffs, hand oils, and frequent cleaning chemicals.</p>
+            <div class="sheen-suitability">
+              <strong>Best Applications:</strong>
+              Interior doors, crown moldings, baseboard trim, kitchen cabinetry, custom millwork.
+            </div>
+          </div>
+        </div>
+
+        <!-- Substrate Material Comparison Cards (Wood, Metal, Concrete) -->
+        <div class="substrate-grid">
+          <!-- Wood -->
+          <div class="substrate-card">
+            <h4 class="substrate-title">Architectural Wood &amp; Joinery</h4>
+            <p class="substrate-desc">
+              French oak, European walnut, and teak require penetrating vegetable oils or alkyd enamels that allow natural timber grain expansion without cracking the coating skin.
+            </p>
+            <div class="substrate-specs">
+              <div class="substrate-spec-row">
+                <span style="color: var(--text-muted);">Recommended Primer:</span>
+                <strong>Tannin-Block Shellac Base</strong>
+              </div>
+              <div class="substrate-spec-row">
+                <span style="color: var(--text-muted);">Maintenance Schedule:</span>
+                <strong>Beeswax re-buff every 24 mos</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Metal -->
+          <div class="substrate-card">
+            <h4 class="substrate-title">Solid Metallurgy &amp; Forged Alloys</h4>
+            <p class="substrate-desc">
+              Unlacquered virgin brass (C36000) and Grade 316 marine stainless develop self-healing oxide patinas. Electroplated commercial metals blister once clearcoat breaks.
+            </p>
+            <div class="substrate-specs">
+              <div class="substrate-spec-row">
+                <span style="color: var(--text-muted);">Corrosion Barrier:</span>
+                <strong>ASTM B117 500-hr Salt Spray</strong>
+              </div>
+              <div class="substrate-spec-row">
+                <span style="color: var(--text-muted);">Finish Integrity:</span>
+                <strong>Unsealed Living Patina</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Masonry -->
+          <div class="substrate-card">
+            <h4 class="substrate-title">Mineral Concrete &amp; Plaster</h4>
+            <p class="substrate-desc">
+              Masonry walls contain high internal moisture and alkaline salts. Breathable potassium silicate bonds crystallize directly with stone minerals, eliminating trapped blistering.
+            </p>
+            <div class="substrate-specs">
+              <div class="substrate-spec-row">
+                <span style="color: var(--text-muted);">Permeability Rating:</span>
+                <strong>Sd &lt; 0.05m (Vapor Open)</strong>
+              </div>
+              <div class="substrate-spec-row">
+                <span style="color: var(--text-muted);">Alkali Resistance:</span>
+                <strong>pH 13+ Stable</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: clamp(2rem, 3vw, 2.75rem);">
+          <a href="guide-materials-finishes.html" class="btn-cta">
+            <span>Compare Materials &amp; Finishes</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 05: Project Planning & Quantity Calculator ("Plan Your Project with Confidence")
+         Interactive Material Estimator Using Strict Formulas:
+         Paintable Area = (Wall Width Ã— Wall Height Ã— Number of Walls) âˆ’ Deducted Opening Area
+         Estimated Paint Quantity = (Paintable Area Ã— Number of Coats) Ã· Coverage per Litre
+         ========================================================================== -->
+    <section class="section" id="calculator-guide" aria-label="Project Planning and Quantity Calculator">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Precision Estimation &amp; Zero Material Waste</span>
+          <h2 class="section-title">Plan Your Project with Confidence</h2>
+          <p class="section-desc">
+            Calculate accurate paint litres, required primer coatings, and hardware quantities in seconds. Avoid expensive job-site stoppages and surplus tinted paint with certified trade mathematics.
+          </p>
+        </div>
+
+        <div class="calc-container-card">
+          <!-- Active Formula Verification Banner -->
+          <div class="calc-formula-banner">
+            <div class="calc-formula-text">
+              <strong>Official Specification Formulas Applied:</strong><br>
+              &bull; <em>Paintable Area = (Wall Width &times; Wall Height &times; Number of Walls) &minus; Deducted Opening Area</em><br>
+              &bull; <em>Estimated Paint Quantity = (Paintable Area &times; Number of Coats) &divide; Coverage per Litre</em>
+            </div>
+            <span class="calc-formula-code">FORMULA: ASTM-CALC-PNT-V2</span>
+          </div>
+
+          <div class="calc-interactive-grid">
+            <!-- Left Column: Inputs -->
+            <div class="calc-fields-col">
+              <!-- Unit Selector -->
+              <div class="calc-unit-bar">
+                <span class="calc-label">Measurement Standard:</span>
+                <div class="unit-toggle-wrap" role="group" aria-label="Units">
+                  <button type="button" class="unit-toggle-btn active" data-unit="metric">Metric (Meters &bull; Litres)</button>
+                  <button type="button" class="unit-toggle-btn" data-unit="imperial">Imperial (Feet &bull; Gallons)</button>
+                </div>
+              </div>
+
+              <!-- Width & Height -->
+              <div class="calc-input-2col">
+                <div class="calc-input-group">
+                  <label for="calcWallWidth" class="calc-label">Wall Width (<span class="calc-unit-label">m</span>):</label>
+                  <input type="number" id="calcWallWidth" class="calc-input" value="5.0" min="1" step="0.5" aria-describedby="widthHelp">
+                  <span id="widthHelp" class="calc-help">Average single wall width</span>
+                </div>
+                <div class="calc-input-group">
+                  <label for="calcWallHeight" class="calc-label">Wall Height (<span class="calc-unit-label">m</span>):</label>
+                  <input type="number" id="calcWallHeight" class="calc-input" value="2.8" min="1" step="0.1" aria-describedby="heightHelp">
+                  <span id="heightHelp" class="calc-help">Floor to finished ceiling</span>
+                </div>
+              </div>
+
+              <!-- Number of Walls & Openings Deductions -->
+              <div class="calc-input-2col">
+                <div class="calc-input-group">
+                  <label for="calcWallCount" class="calc-label">Number of Walls:</label>
+                  <input type="number" id="calcWallCount" class="calc-input" value="4" min="1" max="20" aria-describedby="wallCountHelp">
+                  <span id="wallCountHelp" class="calc-help">Standard rectangular room has 4 walls</span>
+                </div>
+                <div class="calc-input-group">
+                  <label for="calcDeductions" class="calc-label">Deducted Opening Area (<span class="calc-unit-label">mÂ²</span>):</label>
+                  <input type="number" id="calcDeductions" class="calc-input" value="4.0" min="0" step="0.5" aria-describedby="deductHelp">
+                  <span id="deductHelp" class="calc-help">Doors (~2 mÂ²) &amp; windows (~1.5 mÂ²)</span>
+                </div>
+              </div>
+
+              <!-- Coverage per Litre -->
+              <div class="calc-input-group">
+                <label for="calcCoverage" class="calc-label">Paint Coverage (<span class="calc-unit-label">mÂ²</span> per <span class="calc-vol-unit">L</span>):</label>
+                <input type="number" id="calcCoverage" class="calc-input" value="12" min="6" max="20" step="0.5" aria-describedby="covHelp">
+                <span id="covHelp" class="calc-help">FORGELUX Mineral Slaked Emulsion covers 12 mÂ²/L (or 350 sq ft/gal)</span>
+              </div>
+
+              <!-- Number of Coats -->
+              <div class="calc-input-group">
+                <label class="calc-label">Number of Finished Coats:</label>
+                <div class="calc-coats-pills" role="radiogroup" aria-label="Select coat count">
+                  <button type="button" class="coat-pill" data-coats="1">1 Coat (Refresh)</button>
+                  <button type="button" class="coat-pill active" data-coats="2">2 Coats (Standard)</button>
+                  <button type="button" class="coat-pill" data-coats="3">3 Coats (Major Shift)</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Live Dynamic Results Card -->
+            <div class="calc-summary-card">
+              <div class="calc-summary-header">
+                <span class="calc-summary-tag">CERTIFIED SPECIFICATION RESULT</span>
+                <h3 class="calc-summary-title">Project Material Schedule</h3>
+              </div>
+
+              <div class="calc-metrics-row">
+                <div class="calc-metric-box">
+                  <span class="calc-metric-num" id="calcNetPaintableArea">52.0 mÂ²</span>
+                  <span class="calc-metric-lbl">Net Paintable Surface</span>
+                </div>
+                <div class="calc-metric-box">
+                  <span class="calc-metric-num" id="calcEstimatedPaintQty">8.7 L</span>
+                  <span class="calc-metric-lbl">Finish Paint Required</span>
+                </div>
+              </div>
+
+              <div class="calc-breakdown-box">
+                <div class="breakdown-row">
+                  <span>Gross Wall Area:</span>
+                  <strong id="calcGrossArea">56.0 mÂ²</strong>
+                </div>
+                <div class="breakdown-row">
+                  <span>Deducted Openings:</span>
+                  <strong id="calcDeductedArea">-4.0 mÂ²</strong>
+                </div>
+                <div class="breakdown-row">
+                  <span>Bonding Primer Volume:</span>
+                  <strong id="calcPrimerQty">3.8 L</strong>
+                </div>
+                <div class="breakdown-row">
+                  <span>Recommended Roller Nap:</span>
+                  <strong>3/8&Prime; (9.5mm) Microfiber</strong>
+                </div>
+                <div class="breakdown-row total-breakdown">
+                  <span>Total Est. Paint Supply:</span>
+                  <strong id="calcTotalSummaryDisplay">8.7 L Finish + Primer</strong>
+                </div>
+              </div>
+
+              <div class="calc-note-box">
+                Actual coverage may vary slightly with wall texture and substrate porosity. Batch tinting in a single order guarantees zero color variation.
+              </div>
+
+              <button type="button" class="btn-cta" id="calcAddToQuote" style="width: 100%;">
+                <span>Add Calculated Spec to Project Quote</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: clamp(2rem, 3vw, 2.75rem);">
+          <a href="guide-calculator.html" class="btn-cta">
+            <span>Open Advanced Multi-Room Calculator</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ==========================================================================
+         SECTION 7: Premium Knowledge & Blueprint Takeoff CTA Card (Exact 380px Height)
+         ========================================================================== -->
+    <section class="premium-cta-section" id="guide-cta" aria-label="Technical Guidance Concierge">
+      <div class="container">
+        <div class="premium-cta-card">
+          <!-- Gilded Corner Accents -->
+          <span class="cta-corner cta-corner-tl" aria-hidden="true"></span>
+          <span class="cta-corner cta-corner-tr" aria-hidden="true"></span>
+          <span class="cta-corner cta-corner-bl" aria-hidden="true"></span>
+          <span class="cta-corner cta-corner-br" aria-hidden="true"></span>
+
+          <div class="premium-cta-grid">
+            <!-- Left: Haute Editorial Presentation -->
+            <div class="premium-cta-content">
+              <div class="premium-cta-eyebrow">
+                <span class="eyebrow-line"></span>
+                <span class="eyebrow-text">ARCHITECTURAL KNOWLEDGE DESK &bull; EXPERT CONSULTATION</span>
+                <span class="eyebrow-line"></span>
+              </div>
+
+              <h2 class="premium-cta-title">
+                Need Personalized Guidance on <span class="highlight-gold">Substrates or Codes?</span>
+              </h2>
+
+              <p class="premium-cta-desc">
+                Our master mechanics and finish chemists evaluate structural substrates, fastener load ratings, and light reflectance values to recommend optimal systems for your project.
+              </p>
+
+              <div class="premium-cta-pillars">
+                <div class="cta-pillar-item">
+                  <div class="pillar-icon-box">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  </div>
+                  <div class="pillar-info">
+                    <span class="pillar-title">Substrate Audits</span>
+                    <span class="pillar-sub">Moisture &amp; Load Check</span>
+                  </div>
+                </div>
+
+                <div class="cta-pillar-item">
+                  <div class="pillar-icon-box">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                  </div>
+                  <div class="pillar-info">
+                    <span class="pillar-title">ASTM Validation</span>
+                    <span class="pillar-sub">Fire &amp; Structural Codes</span>
+                  </div>
+                </div>
+
+                <div class="cta-pillar-item">
+                  <div class="pillar-icon-box">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                  </div>
+                  <div class="pillar-info">
+                    <span class="pillar-title">Sample Drawdowns</span>
+                    <span class="pillar-sub">Hand-Finished Samples</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: The Private Client Portal -->
+            <div class="premium-cta-portal">
+              <div class="portal-header">
+                <span class="portal-status-pulse"></span>
+                <span class="portal-status-label">SENIOR TECHNICAL SPECIFIER &bull; LIVE ADVISORY</span>
+              </div>
+
+              <button type="button" class="premium-cta-btn-primary open-quote-modal" id="guideCtaQuoteBtn">
+                <span class="btn-text">REQUEST EXPERT CONSULTATION</span>
+                <span class="btn-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </span>
+              </button>
+
+              <a href="tel:+18004893674" class="premium-cta-hotline-item" aria-label="Call Technical Help Hotline">
+                <div class="hotline-badge-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="hotline-meta">
+                  <span class="hotline-caption">TECHNICAL HELP HOTLINE</span>
+                  <span class="hotline-tel">+1 (800) 489-FORGE</span>
+                </div>
+              </a>
+
+              <div class="portal-hallmarks">
+                <span>&bull; Free Substrate Audits</span>
+                <span>&bull; AIA Continuing Partner</span>
+                <span>&bull; Mon&ndash;Fri 7AM&ndash;6:30PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Footer (Exact Reused Home 1 Footer)
+       ========================================================================== -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand-link" aria-label="FORGELUX Home">
+          <div class="logo-icon-wrap">
+            <img src="assets/images/brand_logo.jpg" alt="FORGELUX Hardware &amp; Paint Store Logo" class="brand-logo-img">
+          </div>
+          <div class="brand-meta">
+            <div class="brand-title">FORGE<span>LUX</span></div>
+            <div class="brand-tagline">HARDWARE &amp; PAINT STORE</div>
+          </div>
+        </a>
+        <p class="footer-brand-statement">
+          Supplying certified architectural hardware, pigment-pure mineral paints, engineered fasteners, and specialist advisory to discerning builders and craftspeople since 1991.
+        </p>
+        <div class="footer-socials" aria-label="Social Media Links">
+          <a href="#" class="social-link" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram" title="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Houzz" title="Houzz">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="X / Twitter" title="X / Twitter">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Shop &amp; Services</h4>
+        <ul class="footer-links-list">
+          <li><a href="products.html#fittings" class="footer-link">&bull; Hardware and fittings</a></li>
+          <li><a href="products.html#tools" class="footer-link">&bull; Tools and equipment</a></li>
+          <li><a href="products.html#paints" class="footer-link">&bull; Paints and finishes</a></li>
+          <li><a href="index.html#services" class="footer-link">&bull; Bulk orders</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Explore</h4>
+        <ul class="footer-links-list">
+          <li><a href="About.html" class="footer-link">&bull; About</a></li>
+          <li><a href="products.html" class="footer-link">&bull; Products</a></li>
+          <li><a href="guide.html" class="footer-link">&bull; Guides &amp; Color Shades</a></li>
+          <li><a href="pricing.html" class="footer-link">&bull; Pricing &amp; Plans</a></li>
+          <li><a href="index.html#calculator" class="footer-link">&bull; Paint Calculator</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Contact &amp; Support</h4>
+        <div class="footer-contact-list">
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <div>
+              <strong>Store Email:</strong><br>
+              concierge@forgelux.com
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <div>
+              <strong>Store Address:</strong><br>
+              450 Foundry &amp; Artisan Blvd, District 7
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <div>
+              <strong>Contact Number:</strong><br>
+              +1 (800) 489-FORGE
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <div>
+              <strong>Opening Hours:</strong><br>
+              Mon&ndash;Fri: 7:00 AM &ndash; 6:30 PM<br>
+              Sat: 8:00 AM &ndash; 5:00 PM
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div>
+          &copy; 2026 FORGELUX Hardware &amp; Paint Store. All rights reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Specification</a>
+          <a href="#">Trade Standards</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Interactive Project Specification Quote Modal (Exact Reused from Home 1)
+       ========================================================================== -->
+  <div class="modal-backdrop" id="quoteModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="quoteModalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <h2 class="modal-title" id="quoteModalTitle">Request Project Specification Quote</h2>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">
+            Immediate trade estimation backed by Palette 4 architectural standards
+          </p>
+        </div>
+        <button type="button" class="modal-close" id="quoteModalClose" aria-label="Close dialog">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <form id="quoteForm">
+        <div class="form-group-grid">
+          <div class="form-group">
+            <label for="quoteCategory" class="form-label">Material Category</label>
+            <select id="quoteCategory" class="form-select">
+              <option value="paint" selected>Bespoke Mineral Paint &amp; Tinting</option>
+              <option value="hardware">Architectural Hardware &amp; Mortise Sets</option>
+              <option value="tools">Precision Artisan Tooling</option>
+              <option value="bulk">Bulk Fasteners &amp; Structural Hardware</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="quoteQuantity" class="form-label">Quantity / Coverage (Sq Ft or Litres)</label>
+            <input type="number" id="quoteQuantity" class="form-input" value="150" min="10" step="10">
+          </div>
+        </div>
+
+        <div class="form-group-grid">
+          <div class="form-group">
+            <label for="quoteGrade" class="form-label">Procurement Tier</label>
+            <select id="quoteGrade" class="form-select">
+              <option value="retail">Studio / Retail Standard</option>
+              <option value="trade" selected>Licensed Trade Contractor (-15%)</option>
+              <option value="architectural">Architectural Custom Specification (+35%)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="quoteFinish" class="form-label">Preferred Finish</label>
+            <select id="quoteFinish" class="form-select">
+              <option value="dead-flat">Dead Flat Silicate (2%)</option>
+              <option value="matte-velvet" selected>Matte Velvet Emulsion (7%)</option>
+              <option value="eggshell">Eggshell Satin Shield (18%)</option>
+              <option value="semi-gloss">Semi-Gloss Enamel (35%)</option>
+              <option value="copper-brown">Copper Brown Patina (#B45309)</option>
+              <option value="copper-gold">Burnished Copper Gold (#F59E0B)</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="background: var(--bg-surface-accent); border: 1px solid var(--border-medium); border-radius: var(--radius-sm); padding: 1rem; margin-bottom: 1.25rem; display: flex; align-items: center; justify-content: space-between;">
+          <div>
+            <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--c-primary); letter-spacing: 0.08em; display: block;">
+              Estimated Trade Specification Total
+            </span>
+            <span style="font-size: 0.75rem; color: var(--text-muted);">
+              Excludes freight discounts and specialized job-site crane delivery
+            </span>
+          </div>
+          <div style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: var(--c-primary);" id="quoteEstimatedValue">
+            $2,295
+          </div>
+        </div>
+
+        <div class="form-group-grid">
+          <div class="form-group">
+            <label for="quoteClientName" class="form-label">Your Name *</label>
+            <input type="text" id="quoteClientName" class="form-input" placeholder="e.g. Marcus Stone" required>
+          </div>
+          <div class="form-group">
+            <label for="quoteClientEmail" class="form-label">Email Address *</label>
+            <input type="email" id="quoteClientEmail" class="form-input" placeholder="e.g. mstone@forgearchitecture.com" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="quoteNotes" class="form-label">Job Site Location &amp; Requirements</label>
+          <textarea id="quoteNotes" class="form-textarea" style="min-height: 80px;" placeholder="Include blueprint references, delivery date requirements, or calculated paint quantities..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-cta" style="width: 100%; margin-top: 1rem;">
+          Confirm &amp; Transmit Quotation Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Shared App & Guide Scripts -->
+  <script src="index.js"></script>
+  <script src="guide.js"></script>
+</body>
+</html>

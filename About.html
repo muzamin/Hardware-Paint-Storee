@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us â€” FORGELUX | Hardware â€¢ Paints â€¢ Building Materials</title>
+  <meta name="description" content="Discover FORGELUX: Built on craftsmanship, quality hardware, premium paints, and dependable guidance for homeowners, DIYers, and trade professionals.">
+  <!-- Favicon / Brand Icon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="About.css">
+</head>
+<body class="about-page">
+
+  <!-- ==========================================================================
+       Site Header (Preserved Exactly from Home 1)
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <!-- Left: Logo & Brand Name with Proper Alignment -->
+      <a href="index.html" class="brand-link" aria-label="FORGELUX Home">
+        <div class="logo-icon-wrap">
+          <img src="assets/images/brand_logo.jpg" alt="FORGELUX Hardware &amp; Paint Store Logo" class="brand-logo-img">
+        </div>
+        <div class="brand-meta">
+          <div class="brand-title">FORGE<span>LUX</span></div>
+          <div class="brand-tagline">HARDWARE &amp; PAINT STORE</div>
+        </div>
+      </a>
+
+      <!-- Middle: Preserved Navigation Order -->
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <!-- 1. Home (Dropdown) -->
+          <li class="nav-item">
+            <button type="button" class="nav-link dropdown-toggle" id="homeDropdownToggle" aria-haspopup="true" aria-expanded="false" aria-controls="homeDropdownMenu">
+              Home
+              <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="dropdown-menu" id="homeDropdownMenu" role="menu" aria-labelledby="homeDropdownToggle">
+              <a href="index.html" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Home 1</strong>
+                  <span class="dropdown-item-desc">Flagship Showroom &amp; Retail</span>
+                </div>
+                <span class="dropdown-tag">Retail</span>
+              </a>
+              <a href="Home 2.html" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Home 2</strong>
+                  <span class="dropdown-item-desc">Trade &amp; Contractor Depot</span>
+                </div>
+                <span class="dropdown-tag">Depot</span>
+              </a>
+            </div>
+          </li>
+          <!-- 2. About (Active on About page) -->
+          <li class="nav-item">
+            <a href="About.html" class="nav-link active" aria-current="page">About</a>
+          </li>
+          <!-- 4. Products -->
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">Products</a>
+          </li>
+          <!-- 5. Guide -->
+          <li class="nav-item">
+            <a href="guide.html" class="nav-link">Guide</a>
+          </li>
+          <!-- 6. Pricing -->
+          <li class="nav-item">
+            <a href="pricing.html" class="nav-link">Pricing</a>
+          </li>
+          <!-- 7. Contact -->
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Right: Controls & Primary CTA -->
+      <div class="header-controls">
+        <button type="button" class="control-btn" id="themeToggle" aria-label="Switch between light and dark mode" title="Toggle Light / Dark Mode">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="control-btn" id="rtlToggle" aria-label="Switch between LTR and RTL layout" title="Toggle LTR / RTL Direction">
+          <span class="rtl-indicator">RTL</span>
+        </button>
+
+        <button type="button" class="btn-cta open-quote-modal" id="headerCtaBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <span>Get a Quote</span>
+        </button>
+
+        <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-backdrop" id="mobileBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <a href="index.html" class="brand-link" aria-label="FORGELUX Home">
+        <div class="logo-icon-wrap">
+          <img src="assets/images/brand_logo.jpg" alt="FORGELUX Hardware &amp; Paint Store Logo" class="brand-logo-img">
+        </div>
+        <div class="brand-meta">
+          <div class="brand-title">FORGE<span>LUX</span></div>
+          <div class="brand-tagline">HARDWARE &amp; PAINT STORE</div>
+        </div>
+      </a>
+      <button type="button" class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="mobile-drawer-nav">
+      <div>
+        <div class="mobile-nav-link">Home Versions</div>
+        <div class="mobile-submenu">
+          <a href="index.html" class="mobile-sub-link">
+            Home 1 (Retail Showroom) <span>Showroom</span>
+          </a>
+          <a href="Home 2.html" class="mobile-sub-link">
+            Home 2 (Trade &amp; Contractor Depot) <span>Depot</span>
+          </a>
+        </div>
+      </div>
+      <a href="About.html" class="mobile-nav-link active">About</a>
+      <a href="products.html" class="mobile-nav-link">Products</a>
+      <a href="guide.html" class="mobile-nav-link">Guide</a>
+      <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+    </nav>
+
+    <div class="mobile-drawer-footer">
+      <button type="button" class="btn-cta open-quote-modal" style="width: 100%;">
+        Get a Quote
+      </button>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       MAIN CONTENT: 7 REQUIRED ABOUT US SECTIONS
+       ========================================================================== -->
+  <main id="main-content">
+
+    <!-- ========================================================================
+         SECTION 01 — Architectural Perspectives & Atelier Hero Banner
+         ======================================================================== -->
+    <section class="about-hero" id="aboutHero" aria-labelledby="aboutHeroHeadline">
+      <div class="container">
+        <div class="about-hero-grid">
+          <!-- Left: Hero Editorial & Meta Column -->
+          <div class="about-hero-content">
+            <!-- Eyebrow Subtitle -->
+            <span class="hero-subtitle">Architectural Foundry &bull; Mineral Color Atelier</span>
+
+            <!-- Main Headline -->
+            <h1 class="about-hero-headline" id="aboutHeroHeadline">
+              Forging <span class="about-hero-highlight">Architectural Legacies</span> of Material Mastery
+            </h1>
+
+            <!-- Lead Paragraph -->
+            <p class="about-hero-lead">
+              Explore the technical precision, metallurgical integrity, and bespoke mineral color chemistry behind our dual-discipline atelier. From solid forged brass fittings to computerized mineral tinting, we equip every build with lasting structural strength and timeless surface beauty.
+            </p>
+
+            <!-- Discipline Filter Pills (matching reference layout) -->
+            <div class="hero-discipline-pills" role="tablist" aria-label="Atelier Disciplines">
+              <button type="button" class="discipline-pill active" role="tab" aria-selected="true">All Disciplines</button>
+              <button type="button" class="discipline-pill" role="tab" aria-selected="false">Solid Brass Metallurgy</button>
+              <button type="button" class="discipline-pill" role="tab" aria-selected="false">Mineral Pigment Studio</button>
+              <button type="button" class="discipline-pill" role="tab" aria-selected="false">Architectural Ironmongery</button>
+              <button type="button" class="discipline-pill" role="tab" aria-selected="false">Living Patinas</button>
+              <button type="button" class="discipline-pill" role="tab" aria-selected="false">Structural Fasteners</button>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="about-hero-actions">
+              <a href="products.html" class="btn-cta about-hero-btn-primary">
+                <span>Explore Atelier Collection</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#mission" class="btn-outline about-hero-btn-secondary">
+                <span>Atelier Heritage</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Stats Strip (Clean numbers with vertical dividers) -->
+            <div class="about-hero-stats">
+              <div class="hero-stat-item">
+                <span class="hero-stat-number">35+</span>
+                <span class="hero-stat-label">Years Atelier Heritage</span>
+              </div>
+              <div class="hero-stat-divider" aria-hidden="true"></div>
+              <div class="hero-stat-item">
+                <span class="hero-stat-number">12,000+</span>
+                <span class="hero-stat-label">Architectural SKUs</span>
+              </div>
+              <div class="hero-stat-divider" aria-hidden="true"></div>
+              <div class="hero-stat-item">
+                <span class="hero-stat-number">100%</span>
+                <span class="hero-stat-label">Zero-VOC Mineral Purity</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: 3D Stacked Editorial Monograph Card with Hover Depth -->
+          <div class="about-hero-visual">
+            <div class="about-hero-stack" id="heroCardStack">
+              <!-- Background Stack Layer 2 (Furthest Back) -->
+              <div class="hero-card-layer hero-card-layer-back" aria-hidden="true"></div>
+
+              <!-- Background Stack Layer 1 (Middle) -->
+              <div class="hero-card-layer hero-card-layer-mid" aria-hidden="true"></div>
+
+              <!-- Main Front Feature Card -->
+              <article class="hero-feature-card">
+                <!-- Top Image Container with Overlaid Badges -->
+                <div class="hero-card-media">
+                  <img 
+                    src="assets/images/about_monograph_craft.jpg" 
+                    alt="Master artisan workbench with hand-turned knurled brass door lever, natural mineral pigments, horsehair brush, and calipers" 
+                    class="hero-card-img"
+                    loading="eager"
+                  >
+                  <!-- Top Floating Badges -->
+                  <div class="hero-media-badge badge-left">
+                    <span class="badge-star">&#9733;</span>
+                    <span>FEATURED MONOGRAPH</span>
+                  </div>
+                  <div class="hero-media-badge badge-right">
+                    <span class="badge-star gold">&#9733; 4.9</span>
+                    <span>Craft Guild Rating</span>
+                  </div>
+                </div>
+
+                <!-- Card Content -->
+                <div class="hero-card-body">
+                  <span class="hero-card-category">METALLURGY &amp; MINERAL PIGMENTS</span>
+                  <h3 class="hero-card-title">The Art of Hand-Turned Brass &amp; Living Mineral Patinas</h3>
+                  <p class="hero-card-excerpt">
+                    Uniting hot-forged architectural brassware with deep-tinted mineral limewashes for enduring sensory harmony.
+                  </p>
+
+                  <!-- Card Footer Strip with Author Avatar & Read Action -->
+                  <div class="hero-card-footer">
+                    <div class="hero-author-meta">
+                      <img 
+                        src="assets/images/artisan_director_avatar.jpg" 
+                        alt="Julian Vance, Master Ironmonger &amp; Foundry Director" 
+                        class="hero-author-avatar"
+                        width="38" 
+                        height="38"
+                      >
+                      <div class="hero-author-text">
+                        <strong class="hero-author-name">Julian Vance</strong>
+                        <span class="hero-author-role">7 min read &bull; Foundry Guild Lead</span>
+                      </div>
+                    </div>
+                    <a href="guide.html" class="hero-card-read-btn" aria-label="Read featured monograph on brass and patinas">
+                      <span>Read</span>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         SECTION 02 â€” Our Mission (Image Left, Text Right)
+         ======================================================================== -->
+    <section class="about-section about-section-alt" id="mission" aria-labelledby="missionHeading">
+      <div class="container">
+        <div class="mission-grid">
+          <!-- Left side: High Quality Image -->
+          <div class="mission-visual">
+            <div class="mission-frame">
+              <img 
+                src="assets/images/mission_luxury_showroom.jpg" 
+                alt="Curated architectural hardware and designer paint materials library showroom" 
+                class="mission-img"
+                loading="lazy"
+              >
+              <div class="mission-caption-tag">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>HARDWARE ATELIER &bull; COLOR LAB</span>
+              </div>
+              <div class="mission-floating-stat">
+                <div class="mission-stat-num">100%</div>
+                <div class="mission-stat-meta">
+                  <div class="mission-stat-title">Architectural Grade</div>
+                  <div class="mission-stat-sub">Structural Hardware &bull; Custom Tints</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right side: Content -->
+          <div class="mission-content">
+            <span class="section-subtitle">Our Mission &bull; Foundation &amp; Finish</span>
+            <h2 class="mission-heading" id="missionHeading">
+              Empowering every build with <span class="mission-highlight">dependable hardware &amp; inspired paint.</span>
+            </h2>
+            <p class="mission-lead">
+              Our mission is to bring dependable structural hardware, precision trade tools, and rich architectural paint finishes under one dependable roof for homeowners, architects, and professional builders. We believe every project demands uncompromising physical strength beneath the surface and flawless color and texture on top.
+            </p>
+
+            <div class="mission-values-list">
+              <div class="mission-value-item">
+                <div class="mission-value-num">01</div>
+                <div class="mission-value-body">
+                  <h3 class="mission-value-title">Certified Hardware &amp; Structural Fasteners</h3>
+                  <p class="mission-value-desc">Every door mortise, timber connector, and precision fastener meets rigorous trade load ratings before entering our inventory.</p>
+                </div>
+              </div>
+
+              <div class="mission-value-item">
+                <div class="mission-value-num">02</div>
+                <div class="mission-value-body">
+                  <h3 class="mission-value-title">Artisanal Paints &amp; Computerized Tinting</h3>
+                  <p class="mission-value-desc">Micro-pigmented mineral coatings, breathable low-VOC finishes, and spectrophotometer color matching for unmatched depth.</p>
+                </div>
+              </div>
+
+              <div class="mission-value-item">
+                <div class="mission-value-num">03</div>
+                <div class="mission-value-body">
+                  <h3 class="mission-value-title">Dual-Discipline Expert Advice</h3>
+                  <p class="mission-value-desc">Get knowledgeable guidance on fastener weight ratings, substrate preparation, and paint sheen selection in a single visit.</p>
+                </div>
+              </div>
+
+              <div class="mission-value-item">
+                <div class="mission-value-num">04</div>
+                <div class="mission-value-body">
+                  <h3 class="mission-value-title">Trade Logistics &amp; Site Dispatch</h3>
+                  <p class="mission-value-desc">Scheduled job-site flatbed deliveries, crane coordination, and batch-inspected manufacturer compliance certificates.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         SECTION 03 â€” Our Vision (Text Left, Image Right)
+         ======================================================================== -->
+    <section class="about-section" id="vision" aria-labelledby="visionHeading">
+      <div class="container">
+        <div class="vision-grid">
+          <!-- Left side: Text Content -->
+          <div class="vision-content">
+            <span class="section-subtitle">Our Vision &bull; Architectural Integrity</span>
+            <h2 class="vision-heading" id="visionHeading">
+              The premier partner for <span class="vision-highlight">hardware craft &amp; color excellence.</span>
+            </h2>
+            <p class="vision-lead">
+              We envision FORGELUX as the definitive destination where structural durability and decorative beauty unite. Whether you are framing a home, upgrading door hardware, or seeking an ethereal limewash or satin paint finish, we eliminate the divide between rough construction and fine interior finish.
+            </p>
+            
+            <div class="vision-highlight-card">
+              <div class="vision-highlight-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div class="vision-highlight-text">
+                <strong>Dual-Discipline Excellence: From Substrate to Sheen</strong>
+                <p>By pairing heavy-duty fasteners and solid architectural fittings with low-emission paints and sustainable tint chemistries, we make project planning simpler, cohesive, and deeply inspiring.</p>
+              </div>
+            </div>
+
+            <div class="vision-pillars">
+              <div class="vision-pillar-item">
+                <span class="vision-pillar-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span>Substrate &amp; Fastener Integrity</span>
+              </div>
+              <div class="vision-pillar-item">
+                <span class="vision-pillar-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span>Pigment Depth &amp; Eco-Finishes</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right side: High Quality Image -->
+          <div class="vision-visual">
+            <div class="vision-frame">
+              <img 
+                src="assets/images/vision_luxury_atelier.jpg" 
+                alt="Luxury architectural atelier featuring bespoke mineral wall coatings and designer brass fixtures" 
+                class="vision-img"
+                loading="lazy"
+              >
+              <div class="vision-floating-stat">
+                <div class="vision-stat-num">100%</div>
+                <div class="vision-stat-label">
+                  <strong>PIGMENT &amp; ALLOY PURITY</strong><br>
+                  <span>Certified Hardware &bull; Custom Paints</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         SECTION 04 â€” Our Journey & Success Timeline
+         ======================================================================== -->
+    <section class="about-section about-section-alt" id="journey" aria-labelledby="journeyHeading">
+      <div class="container">
+        <div class="about-section-header">
+          <span class="section-subtitle">Milestones &amp; Steady Growth</span>
+          <h2 class="about-title" id="journeyHeading">
+            A Journey Built on <span class="about-hero-highlight">Hardware &amp; Paint Trust.</span>
+          </h2>
+          <p class="about-desc">
+            From a dedicated local hardware counter to a flagship architectural hardware depot and designer paint studio.
+          </p>
+        </div>
+
+        <!-- Vertical Timeline with Premium Milestone Images -->
+        <div class="timeline-vertical-wrapper">
+          <!-- Central Spine Line -->
+          <div class="timeline-v-spine" aria-hidden="true"></div>
+
+          <!-- Milestone 01 (Left) -->
+          <div class="timeline-v-item item-left">
+            <div class="timeline-v-node">01</div>
+            <article class="timeline-v-card">
+              <div class="timeline-card-media">
+                <img 
+                  src="assets/images/timeline_1991_brass.jpg" 
+                  alt="Solid brass architectural hardware and hand-forged mortises from 1991 founding" 
+                  class="timeline-card-img"
+                  loading="lazy"
+                >
+                <span class="timeline-year-badge">1991</span>
+              </div>
+              <div class="timeline-card-body">
+                <span class="timeline-phase-eyebrow">FOUNDING CHAPTER</span>
+                <h3 class="timeline-v-title">The Hardware Foundation</h3>
+                <p class="timeline-v-desc">
+                  The store opened its doors focusing on certified structural fasteners, heavy-duty hinges, mortise locks, and trade tools for local craftsmen.
+                </p>
+                <div class="timeline-v-highlight">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Certified Fasteners &bull; Load-Rated</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Milestone 02 (Right) -->
+          <div class="timeline-v-item item-right">
+            <div class="timeline-v-node">02</div>
+            <article class="timeline-v-card">
+              <div class="timeline-card-media">
+                <img 
+                  src="assets/images/timeline_2004_pigment.jpg" 
+                  alt="Artisanal mineral paint pigment studio, color swatches and bespoke tinting" 
+                  class="timeline-card-img"
+                  loading="lazy"
+                >
+                <span class="timeline-year-badge">2004</span>
+              </div>
+              <div class="timeline-card-body">
+                <span class="timeline-phase-eyebrow">COLOR EXPANSION</span>
+                <h3 class="timeline-v-title">The Paint &amp; Tinting Studio</h3>
+                <p class="timeline-v-desc">
+                  Responding to architectural demands, we installed computerized tinting carousels, mineral pigments, and dedicated color consultation desks.
+                </p>
+                <div class="timeline-v-highlight">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Spectrophotometer &bull; Bespoke Sheens</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Milestone 03 (Left) -->
+          <div class="timeline-v-item item-left">
+            <div class="timeline-v-node">03</div>
+            <article class="timeline-v-card">
+              <div class="timeline-card-media">
+                <img 
+                  src="assets/images/timeline_2016_depot.jpg" 
+                  alt="High-capacity architectural showroom and organized contractor depot" 
+                  class="timeline-card-img"
+                  loading="lazy"
+                >
+                <span class="timeline-year-badge">2016</span>
+              </div>
+              <div class="timeline-card-body">
+                <span class="timeline-phase-eyebrow">UNIFIED DEPOT</span>
+                <h3 class="timeline-v-title">Hardware &amp; Paint Integration</h3>
+                <p class="timeline-v-desc">
+                  Coordinated contractor staging: trade accounts pick up palletized bulk fasteners, heavy fixtures, and pre-mixed coatings in a single streamlined visit.
+                </p>
+                <div class="timeline-v-highlight">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Palletized Staging &bull; Priority Will-Call</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Milestone 04 (Right) -->
+          <div class="timeline-v-item item-right">
+            <div class="timeline-v-node">04</div>
+            <article class="timeline-v-card">
+              <div class="timeline-card-media">
+                <img 
+                  src="assets/images/timeline_future_interior.jpg" 
+                  alt="Luxury modern architectural residence featuring flawless mineral paint walls and designer brass fittings" 
+                  class="timeline-card-img"
+                  loading="lazy"
+                >
+                <span class="timeline-year-badge">BEYOND</span>
+              </div>
+              <div class="timeline-card-body">
+                <span class="timeline-phase-eyebrow">CONTINUOUS INNOVATION</span>
+                <h3 class="timeline-v-title">Smart Hardware &amp; Eco-Paints</h3>
+                <p class="timeline-v-desc">
+                  Leading the industry forward with zero-emission breathable mineral paints, smart security architectural hardware, and blueprint takeoffs.
+                </p>
+                <div class="timeline-v-highlight">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Zero-VOC Chemistries &bull; Smart Access</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         SECTION 05 â€” Meet Our Team
+         ======================================================================== -->
+    <section class="about-section" id="team" aria-labelledby="teamHeading">
+      <div class="container">
+        <div class="about-section-header">
+          <span class="section-subtitle">In-Store Advisory</span>
+          <h2 class="about-title" id="teamHeading">
+            The Specialists Behind <span class="about-hero-highlight">the Hardware &amp; Paint.</span>
+          </h2>
+          <p class="about-desc">
+            Dedicated guidance in mechanical hardware and architectural paint craft makes every project run smoothly.
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <!-- Member 1: Store Manager -->
+          <article class="team-card">
+            <div class="team-portrait-box">
+              <img src="assets/images/team_manager.jpg" alt="Marcus Vance - General Store Manager" class="team-portrait-img">
+              <div class="team-role-tag">Leadership</div>
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">Marcus Vance</h3>
+              <div class="team-title">General Store Manager &amp; Procurement</div>
+              <p class="team-bio">
+                Directing inventory across both hardware and paint departments, guaranteeing premium brand availability and seamless trade fulfillment.
+              </p>
+              <div class="team-social-row">
+                <span class="team-social-btn" title="In-Store Desk A" aria-label="In-Store Desk A">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                </span>
+                <span class="team-social-btn" title="Mon-Fri Available" aria-label="Mon-Fri Available">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Member 2: Hardware Specialist -->
+          <article class="team-card">
+            <div class="team-portrait-box">
+              <img src="assets/images/team_hardware.jpg" alt="David Sterling - Hardware & Structural Specialist" class="team-portrait-img">
+              <div class="team-role-tag">Hardware Lead</div>
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">David Sterling</h3>
+              <div class="team-title">Architectural Hardware &amp; Security Specialist</div>
+              <p class="team-bio">
+                Advising on door hardware schedules, mortise locksets, stainless structural anchors, and heavy-duty hinges for residential and trade builds.
+              </p>
+              <div class="team-social-row">
+                <span class="team-social-btn" title="Hardware Counter 2" aria-label="Hardware Counter 2">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                </span>
+                <span class="team-social-btn" title="Trade Desk" aria-label="Trade Desk">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Member 3: Paint & Color Advisor -->
+          <article class="team-card">
+            <div class="team-portrait-box">
+              <img src="assets/images/team_paint.jpg" alt="Elena Rostova - Paint & Color Advisory Lead" class="team-portrait-img">
+              <div class="team-role-tag">Paint Lead</div>
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">Elena Rostova</h3>
+              <div class="team-title">Color Studio Director &amp; Paint Technologist</div>
+              <p class="team-bio">
+                Specializing in bespoke paint formulation, computerized color spectrophotometry, sheen selection, and breathable mineral wall coatings.
+              </p>
+              <div class="team-social-row">
+                <span class="team-social-btn" title="Color Lab Station" aria-label="Color Lab Station">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a10 10 0 0 1 10 10c0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2z"></path></svg>
+                </span>
+                <span class="team-social-btn" title="Sample Consultation" aria-label="Sample Consultation">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Member 4: Customer Support Specialist -->
+          <article class="team-card">
+            <div class="team-portrait-box">
+              <img src="assets/images/team_support.jpg" alt="Sarah Jenkins - Trade Desk & Concierge" class="team-portrait-img">
+              <div class="team-role-tag">Concierge</div>
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">Sarah Jenkins</h3>
+              <div class="team-title">Trade Desk &amp; Project Concierge</div>
+              <p class="team-bio">
+                Managing combined hardware and paint orders, coordinating jobsite paint deliveries, and organizing contractor takeoffs.
+              </p>
+              <div class="team-social-row">
+                <span class="team-social-btn" title="Concierge Desk" aria-label="Concierge Desk">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                </span>
+                <span class="team-social-btn" title="Ext. 104" aria-label="Ext. 104">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         SECTION 06 â€” Why Choose Our Hardware & Paint Store? (Dual Craft Advantage)
+         ======================================================================== -->
+    <section class="about-section about-section-alt" id="benefits" aria-labelledby="whyHeading">
+      <div class="container">
+        <div class="about-section-header">
+          <span class="section-subtitle">The Forgelux Advantage</span>
+          <h2 class="about-title" id="whyHeading">
+            The Full Spectrum: <span class="about-hero-highlight">From Rough Hardware to Final Coat.</span>
+          </h2>
+          <p class="about-desc">
+            Everything required for structural strength and surface beauty in one seamless, high-touch destination.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <!-- Feature 1: Hardware -->
+          <article class="why-card">
+            <div class="why-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+              </svg>
+            </div>
+            <h3 class="why-card-title">Architectural &amp; Structural Hardware</h3>
+            <p class="why-card-desc">
+              Forged solid brass mortises, structural timber ties, architectural door furniture, and contractor fasteners engineered for lasting durability.
+            </p>
+          </article>
+
+          <!-- Feature 2: Paint -->
+          <article class="why-card">
+            <div class="why-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+            </div>
+            <h3 class="why-card-title">Artisanal Paint &amp; Custom Tinting</h3>
+            <p class="why-card-desc">
+              Computerized spectrophotometer matching, micro-pigmented mineral coatings, breathable limewashes, and tailored sheen selection.
+            </p>
+          </article>
+
+          <!-- Feature 3: Combined Project Convenience -->
+          <article class="why-card">
+            <div class="why-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <h3 class="why-card-title">Unified Project Coordination</h3>
+            <p class="why-card-desc">
+              Pick up structural anchors, door fixtures, and matching paint finishes in one visit, saving contractors and homeowners valuable project hours.
+            </p>
+          </article>
+
+          <!-- Feature 4: Dual Technical Advisory -->
+          <article class="why-card">
+            <div class="why-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="why-card-title">Dual Technical Advisory</h3>
+            <p class="why-card-desc">
+              Direct access to both certified hardware mechanics and color specialists who coordinate fastener ratings with surface preparation.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         SECTION 07: Premium Heritage & Advisory CTA Card (Exact 380px Height)
+         ======================================================================== -->
+    <section class="premium-cta-section" id="cta" aria-labelledby="ctaHeadline">
+      <div class="container">
+        <div class="premium-cta-card">
+          <!-- Gilded Corner Accents -->
+          <span class="cta-corner cta-corner-tl" aria-hidden="true"></span>
+          <span class="cta-corner cta-corner-tr" aria-hidden="true"></span>
+          <span class="cta-corner cta-corner-bl" aria-hidden="true"></span>
+          <span class="cta-corner cta-corner-br" aria-hidden="true"></span>
+
+          <div class="premium-cta-grid">
+            <!-- Left: Haute Editorial Presentation -->
+            <div class="premium-cta-content">
+              <div class="premium-cta-eyebrow">
+                <span class="eyebrow-line"></span>
+                <span class="eyebrow-text">ESTABLISHED 1991 &bull; DUAL TECHNICAL ADVISORY</span>
+                <span class="eyebrow-line"></span>
+              </div>
+
+              <h2 class="premium-cta-title" id="ctaHeadline">
+                Crafting Enduring Spaces with <span class="highlight-gold">Artisanal Integrity</span>
+              </h2>
+
+              <p class="premium-cta-desc">
+                Whether framing a historic restoration or specifying architectural door hardware, our certified hardware mechanics and color chemists guide your build from blueprint to final coat.
+              </p>
+
+              <div class="premium-cta-pillars">
+                <div class="cta-pillar-item">
+                  <div class="pillar-icon-box">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  </div>
+                  <div class="pillar-info">
+                    <span class="pillar-title">Dual Master Advisory</span>
+                    <span class="pillar-sub">Mechanics &amp; Colorists</span>
+                  </div>
+                </div>
+
+                <div class="cta-pillar-item">
+                  <div class="pillar-icon-box">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                  </div>
+                  <div class="pillar-info">
+                    <span class="pillar-title">30+ Years Heritage</span>
+                    <span class="pillar-sub">Masterwork Standards</span>
+                  </div>
+                </div>
+
+                <div class="cta-pillar-item">
+                  <div class="pillar-icon-box">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                  </div>
+                  <div class="pillar-info">
+                    <span class="pillar-title">Zero-VOC Lab</span>
+                    <span class="pillar-sub">Custom Pigment Matching</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: The Private Client Portal -->
+            <div class="premium-cta-portal">
+              <div class="portal-header">
+                <span class="portal-status-pulse"></span>
+                <span class="portal-status-label">SENIOR SPECIFIER ON DUTY &bull; IMMEDIATE ACCESS</span>
+              </div>
+
+              <button type="button" class="premium-cta-btn-primary open-quote-modal" id="aboutCtaQuoteBtn">
+                <span class="btn-text">CONSULT WITH OUR SPECIALISTS</span>
+                <span class="btn-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </span>
+              </button>
+
+              <a href="tel:+18004893674" class="premium-cta-hotline-item" aria-label="Call Direct Atelier Concierge">
+                <div class="hotline-badge-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="hotline-meta">
+                  <span class="hotline-caption">DIRECT ATELIER CONCIERGE</span>
+                  <span class="hotline-tel">+1 (800) 489-FORGE</span>
+                </div>
+              </a>
+
+              <div class="portal-hallmarks">
+                <span>&bull; In-Person &amp; Digital Takeoffs</span>
+                <span>&bull; CSLB Validated</span>
+                <span>&bull; Mon&ndash;Fri 7AM&ndash;6:30PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==========================================================================
+       Footer (Preserved Exactly from Home 1)
+       ========================================================================== -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand-link" aria-label="FORGELUX Home">
+          <div class="logo-icon-wrap">
+            <img src="assets/images/brand_logo.jpg" alt="FORGELUX Hardware &amp; Paint Store Logo" class="brand-logo-img">
+          </div>
+          <div class="brand-meta">
+            <div class="brand-title">FORGE<span>LUX</span></div>
+            <div class="brand-tagline">HARDWARE &amp; PAINT STORE</div>
+          </div>
+        </a>
+        <p class="footer-brand-statement">
+          Supplying certified architectural hardware, pigment-pure mineral paints, engineered fasteners, and specialist advisory to discerning builders and craftspeople since 1991.
+        </p>
+        <div class="footer-socials" aria-label="Social Media Links">
+          <a href="#" class="social-link" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram" title="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Houzz" title="Houzz">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="X / Twitter" title="X / Twitter">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Shop &amp; Services</h4>
+        <ul class="footer-links-list">
+          <li><a href="products.html#fittings" class="footer-link">&bull; Hardware and fittings</a></li>
+          <li><a href="products.html#tools" class="footer-link">&bull; Tools and equipment</a></li>
+          <li><a href="products.html#paints" class="footer-link">&bull; Paints and finishes</a></li>
+          <li><a href="index.html#services" class="footer-link">&bull; Bulk orders</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Explore</h4>
+        <ul class="footer-links-list">
+          <li><a href="About.html" class="footer-link">&bull; About</a></li>
+          <li><a href="products.html" class="footer-link">&bull; Products</a></li>
+          <li><a href="guide.html" class="footer-link">&bull; Guides &amp; Color Shades</a></li>
+          <li><a href="pricing.html" class="footer-link">&bull; Pricing &amp; Plans</a></li>
+          <li><a href="index.html#calculator" class="footer-link">&bull; Paint Calculator</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Contact &amp; Support</h4>
+        <div class="footer-contact-list">
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <div>
+              <strong>Store Email:</strong><br>
+              concierge@forgelux.com
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <div>
+              <strong>Store Address:</strong><br>
+              450 Foundry &amp; Artisan Blvd, District 7
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <div>
+              <strong>Contact Number:</strong><br>
+              +1 (800) 489-FORGE
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <div>
+              <strong>Opening Hours:</strong><br>
+              Mon&ndash;Fri: 7:00 AM &ndash; 6:30 PM<br>
+              Sat: 8:00 AM &ndash; 5:00 PM
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div>
+          &copy; 2026 FORGELUX Hardware &amp; Paint Store. All rights reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Specification</a>
+          <a href="#">Trade Standards</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal (Preserved Exactly from Home 1) -->
+  <div class="modal-backdrop" id="quoteModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="quoteModalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <h2 class="modal-title" id="quoteModalTitle">Request Project Specification Quote</h2>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">
+            Immediate trade estimation backed by Palette 4 architectural standards
+          </p>
+        </div>
+        <button type="button" class="modal-close" id="quoteModalClose" aria-label="Close dialog">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <form id="quoteForm">
+        <div class="form-group-grid">
+          <div class="form-group">
+            <label for="quoteCategory" class="form-label">Material Category</label>
+            <select id="quoteCategory" class="form-select">
+              <option value="hardware">Architectural Hardware &amp; Mortise Sets</option>
+              <option value="paint">Bespoke Mineral Paint &amp; Tinting</option>
+              <option value="tools">Precision Artisan Tooling</option>
+              <option value="bulk">Bulk Fasteners &amp; Structural Hardware</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="quoteQuantity" class="form-label">Quantity / Coverage (Sq Ft or Units)</label>
+            <input type="number" id="quoteQuantity" class="form-input" value="150" min="10" step="10">
+          </div>
+        </div>
+
+        <div class="form-group-grid">
+          <div class="form-group">
+            <label for="quoteGrade" class="form-label">Procurement Tier</label>
+            <select id="quoteGrade" class="form-select">
+              <option value="retail">Studio / Retail Standard</option>
+              <option value="trade" selected>Licensed Trade Contractor (-15%)</option>
+              <option value="architectural">Architectural Custom Specification (+35%)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="quoteFinish" class="form-label">Preferred Finish</label>
+            <select id="quoteFinish" class="form-select">
+              <option value="copper-brown">Copper Brown Patina (#B45309)</option>
+              <option value="copper-gold">Burnished Copper Gold (#F59E0B)</option>
+              <option value="cream">Warm Cream Enamel (#FDF6E3)</option>
+              <option value="charcoal">Smoked Charcoal Bronze (#2E2E2E)</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="background: var(--bg-surface-accent); border: 1px solid var(--border-medium); border-radius: var(--radius-sm); padding: 1rem; margin-bottom: 1.25rem; display: flex; align-items: center; justify-content: space-between;">
+          <div>
+            <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--c-primary); letter-spacing: 0.08em; display: block;">
+              Estimated Trade Specification Total
+            </span>
+            <span style="font-size: 0.75rem; color: var(--text-muted);">
+              Excludes freight discounts and specialized job-site crane delivery
+            </span>
+          </div>
+          <div style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: var(--c-primary);" id="quoteEstimatedValue">
+            $2,295
+          </div>
+        </div>
+
+        <div class="form-group-grid">
+          <div class="form-group">
+            <label for="quoteClientName" class="form-label">Your Name *</label>
+            <input type="text" id="quoteClientName" class="form-input" placeholder="e.g. Marcus Stone" required>
+          </div>
+          <div class="form-group">
+            <label for="quoteClientEmail" class="form-label">Email Address *</label>
+            <input type="email" id="quoteClientEmail" class="form-input" placeholder="e.g. mstone@forgearchitecture.com" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="quoteNotes" class="form-label">Job Site Location &amp; Requirements</label>
+          <textarea id="quoteNotes" class="form-textarea" style="min-height: 80px;" placeholder="Include blueprint references, delivery date requirements, or custom door handings..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-cta" style="width: 100%; margin-top: 1rem;">
+          Confirm &amp; Transmit Quotation Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Shared Application Scripts (preserves Header, Footer, Theme, RTL, Modal) -->
+  <script src="index.js"></script>
+  <!-- Page-specific Interactive Enhancements -->
+  <script src="About.js"></script>
+</body>
+</html>
