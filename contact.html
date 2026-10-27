@@ -7,8 +7,11 @@
   <meta name="description" content="Connect with FORGELUX Hardware &amp; Paint Store at 450 Foundry &amp; Artisan Blvd. Speak with architectural ironmongers, custom mineral paint chemists, and contractor trade desks.">
   <meta name="keywords" content="FORGELUX contact, hardware store location, architectural ironmongery showroom, paint color studio, trade contractor counter, 450 Foundry Artisan Blvd">
   
-  <!-- Favicon -->
-  <link rel="icon" type="image/jpeg" href="assets/images/brand_logo.jpg">
+  <!-- Favicon / Brand Icon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
 
   <!-- Google Fonts: Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,28 +43,30 @@
       <!-- Center: Desktop Navigation -->
       <nav class="main-nav" aria-label="Primary Navigation">
         <ul class="nav-list">
-          <!-- 1. Home with Dropdown -->
-          <li class="nav-item nav-item-dropdown">
-            <a href="index.html" class="nav-link dropdown-toggle" id="homeDropdownLink" aria-expanded="false" aria-haspopup="true">
+          <!-- 1. Home (Dropdown) -->
+          <li class="nav-item">
+            <button type="button" class="nav-link dropdown-toggle" id="homeDropdownToggle" aria-haspopup="true" aria-expanded="false" aria-controls="homeDropdownMenu">
               Home
-              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="6 9 12 15 18 9"></polyline>
               </svg>
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="homeDropdownLink">
-              <li>
-                <a href="index.html" class="dropdown-item">
-                  <div class="dropdown-item-title">Home 1</div>
-                  <div class="dropdown-item-desc">Architectural trade store &amp; material catalog</div>
-                </a>
-              </li>
-              <li>
-                <a href="Home 2.html" class="dropdown-item">
-                  <div class="dropdown-item-title">Home 2</div>
-                  <div class="dropdown-item-desc">Industrial depot &amp; trade logistics center</div>
-                </a>
-              </li>
-            </ul>
+            </button>
+            <div class="dropdown-menu" id="homeDropdownMenu" role="menu" aria-labelledby="homeDropdownToggle">
+              <a href="index.html" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Home 1</strong>
+                  <span class="dropdown-item-desc">Flagship Showroom &amp; Retail</span>
+                </div>
+                <span class="dropdown-tag">Retail</span>
+              </a>
+              <a href="Home 2.html" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Home 2</strong>
+                  <span class="dropdown-item-desc">Pro Atelier &amp; Contractor Depot</span>
+                </div>
+                <span class="dropdown-tag">Depot</span>
+              </a>
+            </div>
           </li>
           <!-- 2. About -->
           <li class="nav-item">
@@ -71,7 +76,11 @@
           <li class="nav-item">
             <a href="products.html" class="nav-link">Products</a>
           </li>
-          <!-- 5. Guide -->
+          <!-- 5. Services -->
+          <li class="nav-item">
+            <a href="Services.html" class="nav-link">Services</a>
+          </li>
+          <!-- 6. Guide -->
           <li class="nav-item">
             <a href="guide.html" class="nav-link">Guide</a>
           </li>
@@ -139,41 +148,29 @@
       </button>
     </div>
 
-    <nav class="mobile-nav" aria-label="Mobile Navigation Links">
-      <ul class="mobile-nav-list">
-        <li class="mobile-nav-item">
-          <button type="button" class="mobile-dropdown-btn" id="mobileHomeDropdownBtn" aria-expanded="false">
-            <span>Home</span>
-            <svg class="dropdown-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-          </button>
-          <ul class="mobile-subnav" id="mobileHomeDropdown">
-            <li><a href="index.html" class="mobile-subnav-link">Home 1 (Catalog &amp; Trades)</a></li>
-            <li><a href="Home 2.html" class="mobile-subnav-link">Home 2 (Industrial Depot)</a></li>
-          </ul>
-        </li>
-        <li class="mobile-nav-item">
-          <a href="About.html" class="mobile-nav-link">About</a>
-        </li>
-        <li class="mobile-nav-item">
-          <a href="products.html" class="mobile-nav-link">Products</a>
-        </li>
-        <li class="mobile-nav-item">
-          <a href="guide.html" class="mobile-nav-link">Guide</a>
-        </li>
-        <li class="mobile-nav-item">
-          <a href="pricing.html" class="mobile-nav-link">Pricing</a>
-        </li>
-        <li class="mobile-nav-item">
-          <a href="contact.html" class="mobile-nav-link active" aria-current="page">Contact</a>
-        </li>
-      </ul>
+    <nav class="mobile-drawer-nav">
+      <div>
+        <div class="mobile-nav-link">Home Versions</div>
+        <div class="mobile-submenu">
+          <a href="index.html" class="mobile-sub-link">
+            Home 1 (Flagship Showroom) <span>Retail</span>
+          </a>
+          <a href="Home 2.html" class="mobile-sub-link">
+            Home 2 (Pro Atelier &amp; Depot) <span>Depot</span>
+          </a>
+        </div>
+      </div>
+      <a href="About.html" class="mobile-nav-link">About</a>
+      <a href="products.html" class="mobile-nav-link">Products</a>
+      <a href="Services.html" class="mobile-nav-link">Services</a>
+      <a href="guide.html" class="mobile-nav-link">Guide</a>
+      <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+      <a href="contact.html" class="mobile-nav-link active" aria-current="page">Contact Us</a>
     </nav>
 
     <div class="mobile-drawer-footer">
       <button type="button" class="btn-cta open-quote-modal" style="width: 100%;">
-        Request a Project Quote
+        Get a Quote
       </button>
     </div>
   </aside>
@@ -1121,7 +1118,8 @@
           <li><a href="products.html#fittings" class="footer-link">&bull; Hardware and fittings</a></li>
           <li><a href="products.html#tools" class="footer-link">&bull; Tools and equipment</a></li>
           <li><a href="products.html#paints" class="footer-link">&bull; Paints and finishes</a></li>
-          <li><a href="index.html#services" class="footer-link">&bull; Bulk orders</a></li>
+          <li><a href="Services.html" class="footer-link">&bull; Store services</a></li>
+          <li><a href="Services Details.html?service=bulk-contractor-supply" class="footer-link">&bull; Bulk orders</a></li>
         </ul>
       </div>
 
@@ -1130,6 +1128,7 @@
         <ul class="footer-links-list">
           <li><a href="About.html" class="footer-link">&bull; About</a></li>
           <li><a href="products.html" class="footer-link">&bull; Products</a></li>
+          <li><a href="Services.html" class="footer-link">&bull; Services</a></li>
           <li><a href="guide.html" class="footer-link">&bull; Guides &amp; Color Shades</a></li>
           <li><a href="pricing.html" class="footer-link">&bull; Pricing &amp; Plans</a></li>
           <li><a href="index.html#calculator" class="footer-link">&bull; Paint Calculator</a></li>

@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services — FORGELUX Hardware &amp; Paint Store | Expert Advisory &amp; Trade Support</title>
+  <meta name="description" content="Explore FORGELUX's comprehensive services — paint consultation, custom colour mixing, hardware selection support, electrical &amp; plumbing supplies, bulk contractor supply, and home delivery assistance.">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="Services.css">
+</head>
+<body>
+
+  <!-- ========================================================================== 
+       Site Header (identical to Home 1)
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <!-- Left: Logo & Brand -->
+      <a href="index.html" class="brand-link" aria-label="FORGELUX Home">
+        <div class="logo-icon-wrap">
+          <img src="assets/images/brand_logo.jpg" alt="FORGELUX Hardware &amp; Paint Store Logo" class="brand-logo-img">
+        </div>
+        <div class="brand-meta">
+          <div class="brand-title">FORGE<span>LUX</span></div>
+          <div class="brand-tagline">HARDWARE &amp; PAINT STORE</div>
+        </div>
+      </a>
+
+      <!-- Middle: Navigation -->
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <!-- Home (Dropdown) -->
+          <li class="nav-item">
+            <button type="button" class="nav-link dropdown-toggle" id="homeDropdownToggle" aria-haspopup="true" aria-expanded="false" aria-controls="homeDropdownMenu">
+              Home
+              <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="dropdown-menu" id="homeDropdownMenu" role="menu" aria-labelledby="homeDropdownToggle">
+              <a href="index.html" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Home 1</strong>
+                  <span class="dropdown-item-desc">Flagship Showroom &amp; Retail</span>
+                </div>
+                <span class="dropdown-tag">Retail</span>
+              </a>
+              <a href="Home 2.html" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Home 2</strong>
+                  <span class="dropdown-item-desc">Pro Atelier &amp; Contractor Depot</span>
+                </div>
+                <span class="dropdown-tag">Depot</span>
+              </a>
+            </div>
+          </li>
+          <!-- About -->
+          <li class="nav-item">
+            <a href="About.html" class="nav-link">About</a>
+          </li>
+          <!-- Products -->
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">Products</a>
+          </li>
+          <!-- Services (Active) -->
+          <li class="nav-item">
+            <a href="Services.html" class="nav-link active" aria-current="page">Services</a>
+          </li>
+          <!-- Guide -->
+          <li class="nav-item">
+            <a href="guide.html" class="nav-link">Guide</a>
+          </li>
+          <!-- Pricing -->
+          <li class="nav-item">
+            <a href="pricing.html" class="nav-link">Pricing</a>
+          </li>
+          <!-- Contact -->
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Right: Controls & CTA -->
+      <div class="header-controls">
+        <button type="button" class="control-btn" id="themeToggle" aria-label="Switch between light and dark mode" title="Toggle Light / Dark Mode">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="control-btn" id="rtlToggle" aria-label="Switch between LTR and RTL layout" title="Toggle LTR / RTL Direction">
+          <span class="rtl-indicator">RTL</span>
+        </button>
+
+        <button type="button" class="btn-cta open-quote-modal" id="headerCtaBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <span>Get a Quote</span>
+        </button>
+
+        <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-backdrop" id="mobileBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <a href="index.html" class="brand-link" aria-label="FORGELUX Home">
+        <div class="logo-icon-wrap">
+          <img src="assets/images/brand_logo.jpg" alt="FORGELUX Hardware &amp; Paint Store Logo" class="brand-logo-img">
+        </div>
+        <div class="brand-meta">
+          <div class="brand-title">FORGE<span>LUX</span></div>
+          <div class="brand-tagline">HARDWARE &amp; PAINT STORE</div>
+        </div>
+      </a>
+      <button type="button" class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="mobile-drawer-nav">
+      <div>
+        <div class="mobile-nav-link">Home Versions</div>
+        <div class="mobile-submenu">
+          <a href="index.html" class="mobile-sub-link">
+            Home 1 (Flagship Showroom) <span>Retail</span>
+          </a>
+          <a href="Home 2.html" class="mobile-sub-link">
+            Home 2 (Pro Atelier &amp; Depot) <span>Depot</span>
+          </a>
+        </div>
+      </div>
+      <a href="About.html" class="mobile-nav-link">About</a>
+      <a href="products.html" class="mobile-nav-link">Products</a>
+      <a href="Services.html" class="mobile-nav-link active">Services</a>
+      <a href="guide.html" class="mobile-nav-link">Guide</a>
+      <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+    </nav>
+
+    <div class="mobile-drawer-footer">
+      <button type="button" class="btn-cta open-quote-modal" style="width: 100%;">
+        Get a Quote
+      </button>
+    </div>
+  </aside>
+
+  <!-- ========================================================================== 
+       Main Content
+       ========================================================================== -->
+  <main id="main-content">
+
+    <!-- ========================================================================== 
+         Hero Section
+         ========================================================================== -->
+    <section class="sv-hero" id="sv-hero" aria-label="Services Hero">
+      <!-- Ambient Glow for Theme Moods -->
+      <div class="sv-hero-ambient-glow" aria-hidden="true"></div>
+
+      <div class="container sv-hero-grid">
+        <!-- Left: Content -->
+        <div class="sv-hero-content">
+          <span class="hero-subtitle">Architectural Specification &bull; Trade Atelier Services</span>
+          <h1 class="sv-hero-title">
+            Expert Support for Every
+            <span class="highlight">Project &amp; Trade Need</span>
+          </h1>
+          <p class="sv-hero-desc">
+            From personalized paint consultation to bulk contractor supply, FORGELUX provides the specialist knowledge and quality products that homeowners, designers, and tradespeople rely on — project after project.
+          </p>
+          <div class="sv-hero-actions">
+            <a href="#services-grid" class="btn-cta" id="heroExploreBtn">
+              <span>Explore Our Services</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="contact.html" class="btn-outline" id="heroContactBtn">
+              Contact Us
+            </a>
+          </div>
+          <div class="sv-hero-trust">
+            <div class="trust-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Expert in-store advisors</span>
+            </div>
+            <div class="trust-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Tailored product guidance</span>
+            </div>
+            <div class="trust-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Trade &amp; homeowner ready</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Visual -->
+        <div class="sv-hero-visual">
+          <div class="sv-hero-frame">
+            <div class="hero-top-badge">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <span>FORGELUX SPECIALIST SERVICES</span>
+            </div>
+            <img src="assets/images/services_hero.jpg" alt="FORGELUX services — premium hardware and paint store interior with full product range" class="sv-hero-img" loading="eager" width="800" height="520">
+            <div class="sv-hero-glass">
+              <div>
+                <div class="hero-glass-title">6 Specialist Service Areas</div>
+                <div class="hero-glass-desc">Paint &bull; Hardware &bull; Electrical &bull; Plumbing &bull; Bulk &bull; Delivery</div>
+              </div>
+              <a href="#services-grid" class="btn-cta" style="padding: 0.45rem 0.95rem; font-size: 0.775rem; text-decoration: none;">
+                View All
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================== 
+         Services Introduction
+         ========================================================================== -->
+    <section class="section section-alt" id="sv-intro">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">What We Offer</span>
+          <h2 class="section-title">Comprehensive Trade &amp; Retail Services</h2>
+          <p class="section-desc">
+            At FORGELUX, our services extend well beyond the products on our shelves. Our trained advisors are available to guide homeowners, contractors, designers, and builders through product selection, colour decisions, compatibility questions, and project logistics. Whether you're refreshing a single room or managing a full commercial build, we have the knowledge and stock to support you.
+          </p>
+        </div>
+
+        <!-- Intro Stats Row -->
+        <div class="sv-intro-pillars">
+          <div class="sv-intro-pillar">
+            <div class="sv-pillar-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+            </div>
+            <div>
+              <div class="sv-pillar-num">6</div>
+              <div class="sv-pillar-label">Specialist Services</div>
+            </div>
+          </div>
+          <div class="sv-intro-pillar">
+            <div class="sv-pillar-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path></svg>
+            </div>
+            <div>
+              <div class="sv-pillar-num">35+</div>
+              <div class="sv-pillar-label">Years of Advisory</div>
+            </div>
+          </div>
+          <div class="sv-intro-pillar">
+            <div class="sv-pillar-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <div>
+              <div class="sv-pillar-num">Retail &amp; Trade</div>
+              <div class="sv-pillar-label">Customers Served</div>
+            </div>
+          </div>
+          <div class="sv-intro-pillar">
+            <div class="sv-pillar-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <div>
+              <div class="sv-pillar-num">Est. 1991</div>
+              <div class="sv-pillar-label">Trusted Since</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================== 
+         Six Service Cards Grid
+         ========================================================================== -->
+    <section class="section" id="services-grid" aria-label="Our Six Services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Comprehensive Architectural Services</span>
+          <h2 class="section-title">Six Ways We Support Your Project</h2>
+          <p class="section-desc">
+            Each service is backed by trained specialists and a comprehensive in-store inventory. Select any service below to learn more.
+          </p>
+        </div>
+
+        <div class="sv-cards-grid">
+
+          <!-- Card 1: Paint Consultation -->
+          <article class="sv-card" id="card-paint-consultation">
+            <div class="sv-card-media">
+              <span class="sv-card-spec">SERV 01 &bull; PAINT</span>
+              <img src="assets/images/service_paint_consultation.jpg" alt="Paint colour consultation with expert colour advisor" class="sv-card-img" loading="lazy">
+            </div>
+            <div class="sv-card-body">
+              <div class="sv-card-icon-row">
+                <div class="pillar-icon-box">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                </div>
+                <span class="sv-card-tag">Paint Advisory</span>
+              </div>
+              <h3 class="sv-card-title">Paint Consultation &amp; Colour Selection</h3>
+              <p class="sv-card-desc">Get expert guidance on choosing the right paint colours and finishes for your interior or exterior project — from wall sheens to specialist coatings.</p>
+              <ul class="sv-card-features">
+                <li>Interior &amp; exterior paint options explained</li>
+                <li>Surface and room-type guidance</li>
+                <li>Colour swatch &amp; sample selection</li>
+              </ul>
+            </div>
+            <div class="sv-card-footer">
+              <a href="Services Details.html?service=paint-consultation" class="sv-card-link" id="link-paint-consultation">
+                View Service Details
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2: Paint Mixing -->
+          <article class="sv-card" id="card-paint-mixing">
+            <div class="sv-card-media">
+              <span class="sv-card-spec">SERV 02 &bull; MIXING</span>
+              <img src="assets/images/service_paint_mixing.jpg" alt="Custom paint mixing and colour matching station" class="sv-card-img" loading="lazy">
+            </div>
+            <div class="sv-card-body">
+              <div class="sv-card-icon-row">
+                <div class="pillar-icon-box">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+                </div>
+                <span class="sv-card-tag">Custom Tinting</span>
+              </div>
+              <h3 class="sv-card-title">Custom Paint Mixing &amp; Matching</h3>
+              <p class="sv-card-desc">Match existing colours or create custom blends using our in-store computerised tinting equipment. Consistent, repeatable results every time.</p>
+              <ul class="sv-card-features">
+                <li>Computerised colour matching</li>
+                <li>Any finish — flat, satin, semi-gloss</li>
+                <li>Custom colour enquiries welcome</li>
+              </ul>
+            </div>
+            <div class="sv-card-footer">
+              <a href="Services Details.html?service=paint-mixing" class="sv-card-link" id="link-paint-mixing">
+                View Service Details
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3: Hardware Selection -->
+          <article class="sv-card" id="card-hardware-installation">
+            <div class="sv-card-media">
+              <span class="sv-card-spec">SERV 03 &bull; HARDWARE</span>
+              <img src="assets/images/service_hardware_selection.jpg" alt="Premium architectural hardware selection display" class="sv-card-img" loading="lazy">
+            </div>
+            <div class="sv-card-body">
+              <div class="sv-card-icon-row">
+                <div class="pillar-icon-box">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                </div>
+                <span class="sv-card-tag">Hardware Advisory</span>
+              </div>
+              <h3 class="sv-card-title">Hardware Selection &amp; Installation Support</h3>
+              <p class="sv-card-desc">Our hardware specialists help you choose the right fittings, handles, hinges, and accessories, along with installation guidance and product compatibility advice.</p>
+              <ul class="sv-card-features">
+                <li>Door handles, hinges &amp; cabinet hardware</li>
+                <li>Product compatibility guidance</li>
+                <li>Installation advice &amp; specification support</li>
+              </ul>
+            </div>
+            <div class="sv-card-footer">
+              <a href="Services Details.html?service=hardware-installation" class="sv-card-link" id="link-hardware-installation">
+                View Service Details
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 4: Electrical & Plumbing -->
+          <article class="sv-card" id="card-electrical-plumbing">
+            <div class="sv-card-media">
+              <span class="sv-card-spec">SERV 04 &bull; SUPPLIES</span>
+              <img src="assets/images/service_electrical_plumbing.jpg" alt="Electrical and plumbing supplies aisle" class="sv-card-img" loading="lazy">
+            </div>
+            <div class="sv-card-body">
+              <div class="sv-card-icon-row">
+                <div class="pillar-icon-box">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                </div>
+                <span class="sv-card-tag">Supplies</span>
+              </div>
+              <h3 class="sv-card-title">Electrical &amp; Plumbing Supplies</h3>
+              <p class="sv-card-desc">Browse our extensive range of electrical and plumbing products. Our team assists with product identification, compatibility checks, and material selection for your project.</p>
+              <ul class="sv-card-features">
+                <li>Electrical fittings &amp; wiring accessories</li>
+                <li>Plumbing fixtures &amp; pipe fittings</li>
+                <li>Product identification &amp; compatibility help</li>
+              </ul>
+            </div>
+            <div class="sv-card-footer">
+              <a href="Services Details.html?service=electrical-plumbing" class="sv-card-link" id="link-electrical-plumbing">
+                View Service Details
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 5: Bulk & Contractor -->
+          <article class="sv-card sv-card-featured" id="card-bulk-contractor-supply">
+            <div class="sv-card-media">
+              <span class="sv-card-spec">SERV 05 &bull; TRADE</span>
+              <img src="assets/images/service_bulk_contractor.jpg" alt="Bulk contractor supply warehouse and stock" class="sv-card-img" loading="lazy">
+            </div>
+            <div class="sv-card-body">
+              <div class="sv-card-icon-row">
+                <div class="pillar-icon-box">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                </div>
+                <span class="sv-card-tag sv-card-tag-featured">Contractor Ready</span>
+              </div>
+              <h3 class="sv-card-title">Bulk &amp; Contractor Supply</h3>
+              <p class="sv-card-desc">Serving trade professionals and contractors with bulk product availability, project-quantity sourcing, and priority counter service for commercial and residential builds.</p>
+              <ul class="sv-card-features">
+                <li>Bulk quantity enquiries welcome</li>
+                <li>Project-specific sourcing support</li>
+                <li>Trade counter &amp; account enquiries</li>
+              </ul>
+            </div>
+            <div class="sv-card-footer">
+              <a href="Services Details.html?service=bulk-contractor-supply" class="sv-card-link" id="link-bulk-contractor-supply">
+                View Service Details
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 6: Delivery -->
+          <article class="sv-card" id="card-delivery">
+            <div class="sv-card-media">
+              <span class="sv-card-spec">SERV 06 &bull; DELIVERY</span>
+              <img src="assets/images/service_delivery.jpg" alt="Home delivery and order assistance" class="sv-card-img" loading="lazy">
+            </div>
+            <div class="sv-card-body">
+              <div class="sv-card-icon-row">
+                <div class="pillar-icon-box">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                </div>
+                <span class="sv-card-tag">Delivery</span>
+              </div>
+              <h3 class="sv-card-title">Home Delivery &amp; Order Assistance</h3>
+              <p class="sv-card-desc">Ask about our delivery options and order support service. Our team can help you organise and dispatch your orders conveniently to your location.</p>
+              <ul class="sv-card-features">
+                <li>Delivery enquiries &amp; coordination</li>
+                <li>Order preparation assistance</li>
+                <li>Contact us for availability details</li>
+              </ul>
+            </div>
+            <div class="sv-card-footer">
+              <a href="Services Details.html?service=delivery" class="sv-card-link" id="link-delivery">
+                View Service Details
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================== 
+         Section 3: Technical Capabilities & Diagnostic Facility (NEW)
+         ========================================================================== -->
+    <section class="section section-alt sv-lab-section" id="capabilities" aria-label="Technical Capabilities &amp; Diagnostic Laboratory">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">LABORATORY-GRADE PRECISION</span>
+          <h2 class="section-title">Diagnostic Equipment &amp; Technical Capabilities</h2>
+          <p class="section-desc">
+            Behind every bespoke paint formulation, structural fastener audit, and key duplication is our in-house suite of industrial diagnostic instruments. Engineered for zero-tolerance reliability.
+          </p>
+        </div>
+
+        <div class="sv-lab-grid">
+          <!-- Lab Card 1 -->
+          <div class="sv-lab-card">
+            <div class="sv-lab-badge">OPTICAL ANALYSIS</div>
+            <div class="sv-lab-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="4"></circle>
+                <line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line>
+                <line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line>
+                <line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line>
+                <line x1="4.93" y1="19.07" x2="9.17" y2="14.83"></line>
+              </svg>
+            </div>
+            <h3 class="sv-lab-title">6-Axis Spectrophotometer Optical Scanner</h3>
+            <p class="sv-lab-desc">
+              Multi-angle colorimeter measuring spectral reflectance across 31 wavelength bands. Generates identical tint formulas from antique plaster, textile samples, or weathered exterior panels.
+            </p>
+            <div class="sv-lab-metric">
+              <span class="metric-value">&Delta;E &lt; 0.20</span>
+              <span class="metric-label">Micro-Tension Tolerance</span>
+            </div>
+          </div>
+
+          <!-- Lab Card 2 -->
+          <div class="sv-lab-card">
+            <div class="sv-lab-badge">STRUCTURAL VALIDATION</div>
+            <div class="sv-lab-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <polyline points="9 12 11 14 15 10"></polyline>
+              </svg>
+            </div>
+            <h3 class="sv-lab-title">Hydraulic Load &amp; Shear Testing Rig</h3>
+            <p class="sv-lab-desc">
+              Physical calibration testing bench for concealed joist brackets, heavy architectural pivot hinges, and masonry anchor assemblies. Tested against seismic and high-wind specifications.
+            </p>
+            <div class="sv-lab-metric">
+              <span class="metric-value">ANSI Grade 1</span>
+              <span class="metric-label">Certified Safe Working Load</span>
+            </div>
+          </div>
+
+          <!-- Lab Card 3 -->
+          <div class="sv-lab-card">
+            <div class="sv-lab-badge">DIGITAL MILLING</div>
+            <div class="sv-lab-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 2l-2 2m-6 6l-3-3m0 0l-3 3m3-3l3 3m0 0L4 16v4h4l6-6"></path>
+                <circle cx="17.5" cy="6.5" r="2.5"></circle>
+              </svg>
+            </div>
+            <h3 class="sv-lab-title">Computerized Laser Key &amp; Cylinder Mill</h3>
+            <p class="sv-lab-desc">
+              Optical reader and diamond-tipped CNC key duplicator for restricted master keyways, high-security mortise cylinders, and precision residential hardware with sub-micron accuracy.
+            </p>
+            <div class="sv-lab-metric">
+              <span class="metric-value">&plusmn; 0.015 mm</span>
+              <span class="metric-label">Precision Duplicate Calibration</span>
+            </div>
+          </div>
+
+          <!-- Lab Card 4 -->
+          <div class="sv-lab-card">
+            <div class="sv-lab-badge">HOMOGENEITY</div>
+            <div class="sv-lab-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v20M2 12h20"></path>
+                <circle cx="12" cy="12" r="7"></circle>
+              </svg>
+            </div>
+            <h3 class="sv-lab-title">Industrial High-Shear Pigment Disperser</h3>
+            <p class="sv-lab-desc">
+              High-velocity centrifugal vacuum blending equipment guaranteeing total pigment wetting and microscopic resin suspension for commercial batches up to 250 gallons.
+            </p>
+            <div class="sv-lab-metric">
+              <span class="metric-value">100% Homogeneous</span>
+              <span class="metric-label">Zero Pigment Agglomeration</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Facility Assurance Banner -->
+        <div class="sv-lab-banner">
+          <div class="sv-lab-banner-item">
+            <span class="sv-banner-num">48,200+</span>
+            <span class="sv-banner-text">Archived Formulation Codes</span>
+          </div>
+          <div class="sv-lab-banner-sep"></div>
+          <div class="sv-lab-banner-item">
+            <span class="sv-banner-num">&lt; 15 Min</span>
+            <span class="sv-banner-text">In-Store Color Tinting Speed</span>
+          </div>
+          <div class="sv-lab-banner-sep"></div>
+          <div class="sv-lab-banner-item">
+            <span class="sv-banner-num">100%</span>
+            <span class="sv-banner-text">Batch-to-Batch Repeatability</span>
+          </div>
+          <div class="sv-lab-banner-sep"></div>
+          <div class="sv-lab-banner-item">
+            <span class="sv-banner-num">ISO 9001</span>
+            <span class="sv-banner-text">Certified Diagnostic Protocols</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================== 
+         Section 4: Service Level Agreements & Trade Procurement Tiers (NEW)
+         ========================================================================== -->
+    <section class="section sv-tiers-section" id="trade-tiers" aria-label="Trade Procurement Tiers &amp; Service Level Agreements">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">TRANSPARENT CLIENT COMMITMENTS</span>
+          <h2 class="section-title">Service Level Agreements &amp; Account Tiers</h2>
+          <p class="section-desc">
+            We operate with clear, published service standards. Select the procurement tier aligned with your project scope and trade registration.
+          </p>
+        </div>
+
+        <div class="sv-tiers-grid">
+          <!-- Tier 1 -->
+          <div class="sv-tier-card">
+            <div class="sv-tier-header">
+              <span class="sv-tier-badge">RETAIL &amp; RESIDENTIAL</span>
+              <h3 class="sv-tier-title">Artisan &amp; Homeowner</h3>
+              <p class="sv-tier-desc">Personalized in-store consultation for private interior restorations, homeowner repaints, and bespoke hardware selection.</p>
+              <div class="sv-tier-turnaround">
+                <span class="turnaround-label">Turnaround Commitment</span>
+                <span class="turnaround-val">Same-Day In-Store Service</span>
+              </div>
+            </div>
+            <ul class="sv-tier-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Walk-in color matching &amp; trial swatches</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Complimentary 1-on-1 paint finish advisory</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Precision key duplicating while you browse</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Curbside loading assistance for heavy materials</span>
+              </li>
+            </ul>
+            <div class="sv-tier-footer">
+              <a href="contact.html" class="btn-outline sv-tier-btn">Visit Our Showroom</a>
+            </div>
+          </div>
+
+          <!-- Tier 2: Featured -->
+          <div class="sv-tier-card sv-tier-card-featured">
+            <div class="sv-tier-ribbon">MOST POPULAR FOR ATELIERS</div>
+            <div class="sv-tier-header">
+              <span class="sv-tier-badge sv-tier-badge-gold">ATELIER &bull; ARCHITECTURAL SPEC</span>
+              <h3 class="sv-tier-title">Designer &amp; Specifier Desk</h3>
+              <p class="sv-tier-desc">Dedicated specification desk tailored for interior designers, architects, and bespoke millwork studios.</p>
+              <div class="sv-tier-turnaround">
+                <span class="turnaround-label">Turnaround Commitment</span>
+                <span class="turnaround-val">15-Min Spec / 24-Hr Sample Dispatch</span>
+              </div>
+            </div>
+            <ul class="sv-tier-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Direct senior architectural hardware specifier</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Complimentary couriered finish sample chests</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Digital color archive with cloud formula recall</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Tier 1 trade discount terms &amp; 30-day billing</span>
+              </li>
+            </ul>
+            <div class="sv-tier-footer">
+              <a href="contact.html" class="btn-cta sv-tier-btn">Register Spec Account</a>
+            </div>
+          </div>
+
+          <!-- Tier 3 -->
+          <div class="sv-tier-card">
+            <div class="sv-tier-header">
+              <span class="sv-tier-badge">COMMERCIAL BUILDER</span>
+              <h3 class="sv-tier-title">Contractor Guild &amp; Depot</h3>
+              <p class="sv-tier-desc">Priority trade depot fulfillment for general contractors, commercial drywallers, and multi-unit developers.</p>
+              <div class="sv-tier-turnaround">
+                <span class="turnaround-label">Turnaround Commitment</span>
+                <span class="turnaround-val">Scheduled Staged Job-Site Dispatch</span>
+              </div>
+            </div>
+            <ul class="sv-tier-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Dedicated trade logistics manager &amp; phone line</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Flatbed boom-truck &amp; forklift job-site dispatch</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Comprehensive blueprint hardware schedule takeoffs</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Tier 2 volume pricing: up to 25% off project bundles</span>
+              </li>
+            </ul>
+            <div class="sv-tier-footer">
+              <a href="contact.html" class="btn-outline sv-tier-btn">Open Contractor Account</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================== 
+         Section 5: Unified Luxury 380px CTA Card (Identical to Home 1)
+         ========================================================================== -->
+    <section class="premium-cta-section" id="vip-cta" aria-label="Request Architectural Specification">
+      <div class="container">
+        <div class="premium-cta-card">
+          <!-- Gilded Corner Accents -->
+          <span class="cta-corner cta-corner-tl" aria-hidden="true"></span>
+          <span class="cta-corner cta-corner-tr" aria-hidden="true"></span>
+          <span class="cta-corner cta-corner-bl" aria-hidden="true"></span>
+          <span class="cta-corner cta-corner-br" aria-hidden="true"></span>
+
+          <div class="premium-cta-grid">
+            <!-- Left: Haute Editorial Presentation -->
+            <div class="premium-cta-content">
+              <div class="premium-cta-eyebrow">
+                <span class="eyebrow-line"></span>
+                <span class="eyebrow-text">FORGELUX PRIVILEGE &bull; SPECIFICATION ATELIER</span>
+                <span class="eyebrow-line"></span>
+              </div>
+
+              <h2 class="premium-cta-title">
+                Commission Bespoke Finishes &amp; <span class="highlight-gold">Architectural Services</span>
+              </h2>
+
+              <p class="premium-cta-desc">
+                Dedicated specification desk for architects, interior designers, and luxury builders. Receive rapid blueprint audits, custom patina &amp; pigment matching, and complimentary hand-curated sample chests couriered in 24 hours.
+              </p>
+
+              <div class="premium-cta-pillars">
+                <div class="cta-pillar-item">
+                  <div class="pillar-icon-box">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  </div>
+                  <div class="pillar-info">
+                    <span class="pillar-title">15-Min Spec Turnaround</span>
+                    <span class="pillar-sub">Full Blueprint Audits</span>
+                  </div>
+                </div>
+
+                <div class="cta-pillar-item">
+                  <div class="pillar-icon-box">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                  </div>
+                  <div class="pillar-info">
+                    <span class="pillar-title">Artisan Sample Chests</span>
+                    <span class="pillar-sub">Hand-Finished Castings</span>
+                  </div>
+                </div>
+
+                <div class="cta-pillar-item">
+                  <div class="pillar-icon-box">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                  </div>
+                  <div class="pillar-info">
+                    <span class="pillar-title">Direct Trade Pricing</span>
+                    <span class="pillar-sub">Tier 1 Partner Terms (-15%)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: The Private Client Portal -->
+            <div class="premium-cta-portal">
+              <div class="portal-header">
+                <span class="portal-status-pulse"></span>
+                <span class="portal-status-label">SENIOR SPECIFIER ON DUTY &bull; IMMEDIATE ACCESS</span>
+              </div>
+
+              <a href="contact.html" class="premium-cta-btn-primary" id="svCtaQuoteBtn">
+                <span class="btn-text">REQUEST PROJECT SPECIFICATION</span>
+                <span class="btn-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </span>
+              </a>
+
+              <a href="tel:+18004893674" class="premium-cta-hotline-item" aria-label="Call Direct Atelier Hotline">
+                <div class="hotline-badge-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="hotline-meta">
+                  <span class="hotline-caption">DIRECT ATELIER CONCIERGE</span>
+                  <span class="hotline-tel">+1 (800) 489-FORGE</span>
+                </div>
+              </a>
+
+              <div class="portal-hallmarks">
+                <span>&bull; AIA Continuing Partner</span>
+                <span>&bull; CSLB Validated</span>
+                <span>&bull; Mon&ndash;Fri 7AM&ndash;6:30PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================== 
+       Footer (identical to Home 1)
+       ========================================================================== -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand-link" aria-label="FORGELUX Home">
+          <div class="logo-icon-wrap">
+            <img src="assets/images/brand_logo.jpg" alt="FORGELUX Hardware &amp; Paint Store Logo" class="brand-logo-img">
+          </div>
+          <div class="brand-meta">
+            <div class="brand-title">FORGE<span>LUX</span></div>
+            <div class="brand-tagline">HARDWARE &amp; PAINT STORE</div>
+          </div>
+        </a>
+        <p class="footer-brand-statement">
+          Supplying certified architectural hardware, pigment-pure mineral paints, engineered fasteners, and specialist advisory to discerning builders and craftspeople since 1991.
+        </p>
+        <div class="footer-socials" aria-label="Social Media Links">
+          <a href="#" class="social-link" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram" title="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Houzz" title="Houzz">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="X / Twitter" title="X / Twitter">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Shop &amp; Services</h4>
+        <ul class="footer-links-list">
+          <li><a href="products.html#fittings" class="footer-link">&bull; Hardware and fittings</a></li>
+          <li><a href="products.html#tools" class="footer-link">&bull; Tools and equipment</a></li>
+          <li><a href="products.html#paints" class="footer-link">&bull; Paints and finishes</a></li>
+          <li><a href="Services.html" class="footer-link">&bull; Store services</a></li>
+          <li><a href="Services Details.html?service=bulk-contractor-supply" class="footer-link">&bull; Bulk orders</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Explore</h4>
+        <ul class="footer-links-list">
+          <li><a href="About.html" class="footer-link">&bull; About</a></li>
+          <li><a href="products.html" class="footer-link">&bull; Products</a></li>
+          <li><a href="Services.html" class="footer-link">&bull; Services</a></li>
+          <li><a href="guide.html" class="footer-link">&bull; Guides &amp; Color Shades</a></li>
+          <li><a href="pricing.html" class="footer-link">&bull; Pricing &amp; Plans</a></li>
+          <li><a href="index.html#calculator" class="footer-link">&bull; Paint Calculator</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Contact &amp; Support</h4>
+        <div class="footer-contact-list">
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <div>
+              <strong>Store Email:</strong><br>
+              concierge@forgelux.com
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <div>
+              <strong>Store Address:</strong><br>
+              450 Foundry &amp; Artisan Blvd, District 7
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <div>
+              <strong>Contact Number:</strong><br>
+              +1 (800) 489-FORGE
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <div>
+              <strong>Opening Hours:</strong><br>
+              Mon&ndash;Fri: 7:00 AM &ndash; 6:30 PM<br>
+              Sat: 8:00 AM &ndash; 5:00 PM
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div>
+          &copy; 2026 FORGELUX Hardware &amp; Paint Store. All rights reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Specification</a>
+          <a href="#">Trade Standards</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal-backdrop" id="quoteModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="quoteModalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <h2 class="modal-title" id="quoteModalTitle">Request Project Specification Quote</h2>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">
+            Immediate trade estimation backed by Palette 4 architectural standards
+          </p>
+        </div>
+        <button type="button" class="modal-close" id="quoteModalClose" aria-label="Close dialog">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <form id="quoteForm">
+        <div class="form-group-grid">
+          <div class="form-group">
+            <label for="quoteCategory" class="form-label">Material Category</label>
+            <select id="quoteCategory" class="form-select">
+              <option value="hardware">Architectural Hardware &amp; Mortise Sets</option>
+              <option value="paint">Bespoke Mineral Paint &amp; Tinting</option>
+              <option value="tools">Precision Artisan Tooling</option>
+              <option value="bulk">Bulk Fasteners &amp; Structural Hardware</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="quoteQuantity" class="form-label">Quantity / Coverage (Sq Ft or Units)</label>
+            <input type="number" id="quoteQuantity" class="form-input" value="150" min="10" step="10">
+          </div>
+        </div>
+
+        <div class="form-group-grid">
+          <div class="form-group">
+            <label for="quoteGrade" class="form-label">Procurement Tier</label>
+            <select id="quoteGrade" class="form-select">
+              <option value="retail">Studio / Retail Standard</option>
+              <option value="trade" selected>Licensed Trade Contractor (-15%)</option>
+              <option value="architectural">Architectural Custom Specification (+35%)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="quoteFinish" class="form-label">Preferred Finish</label>
+            <select id="quoteFinish" class="form-select">
+              <option value="copper-brown">Copper Brown Patina (#B45309)</option>
+              <option value="copper-gold">Burnished Copper Gold (#F59E0B)</option>
+              <option value="cream">Warm Cream Enamel (#FDF6E3)</option>
+              <option value="charcoal">Smoked Charcoal Bronze (#2E2E2E)</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="background: var(--bg-surface-accent); border: 1px solid var(--border-medium); border-radius: var(--radius-sm); padding: 1rem; margin-bottom: 1.25rem; display: flex; align-items: center; justify-content: space-between;">
+          <div>
+            <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--c-primary); letter-spacing: 0.08em; display: block;">
+              Estimated Trade Specification Total
+            </span>
+            <span style="font-size: 0.75rem; color: var(--text-muted);">
+              Excludes freight discounts and specialized job-site crane delivery
+            </span>
+          </div>
+          <div style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: var(--c-primary);" id="quoteEstimatedValue">
+            $2,295
+          </div>
+        </div>
+
+        <div class="form-group-grid">
+          <div class="form-group">
+            <label for="quoteClientName" class="form-label">Your Name *</label>
+            <input type="text" id="quoteClientName" class="form-input" placeholder="e.g. Marcus Stone" required>
+          </div>
+          <div class="form-group">
+            <label for="quoteClientEmail" class="form-label">Email Address *</label>
+            <input type="email" id="quoteClientEmail" class="form-input" placeholder="e.g. mstone@forgearchitecture.com" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="quoteNotes" class="form-label">Job Site Location &amp; Requirements</label>
+          <textarea id="quoteNotes" class="form-textarea" style="min-height: 80px;" placeholder="Include blueprint references, delivery date requirements, or custom door handings..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-cta" style="width: 100%; margin-top: 1rem;">
+          Confirm &amp; Transmit Quotation Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+  <script src="services.js"></script>
+</body>
+</html>

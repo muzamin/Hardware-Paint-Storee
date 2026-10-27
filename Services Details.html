@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title is set dynamically by JS -->
+  <title>Service Details — FORGELUX Hardware &amp; Paint Store</title>
+  <meta name="description" content="Detailed information about FORGELUX specialist services — expert product guidance, colour consultation, hardware advisory, and trade support.">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="Services details.css">
+</head>
+<body>
+
+  <!-- ========================================================================== 
+       Site Header (identical to Home 1)
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-link" aria-label="FORGELUX Home">
+        <div class="logo-icon-wrap">
+          <img src="assets/images/brand_logo.jpg" alt="FORGELUX Hardware &amp; Paint Store Logo" class="brand-logo-img">
+        </div>
+        <div class="brand-meta">
+          <div class="brand-title">FORGE<span>LUX</span></div>
+          <div class="brand-tagline">HARDWARE &amp; PAINT STORE</div>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <button type="button" class="nav-link dropdown-toggle" id="homeDropdownToggle" aria-haspopup="true" aria-expanded="false" aria-controls="homeDropdownMenu">
+              Home
+              <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="dropdown-menu" id="homeDropdownMenu" role="menu" aria-labelledby="homeDropdownToggle">
+              <a href="index.html" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Home 1</strong>
+                  <span class="dropdown-item-desc">Flagship Showroom &amp; Retail</span>
+                </div>
+                <span class="dropdown-tag">Retail</span>
+              </a>
+              <a href="Home 2.html" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Home 2</strong>
+                  <span class="dropdown-item-desc">Pro Atelier &amp; Contractor Depot</span>
+                </div>
+                <span class="dropdown-tag">Depot</span>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="About.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+          <li class="nav-item"><a href="Services.html" class="nav-link active">Services</a></li>
+          <li class="nav-item"><a href="guide.html" class="nav-link">Guide</a></li>
+          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-controls">
+        <button type="button" class="control-btn" id="themeToggle" aria-label="Switch between light and dark mode" title="Toggle Light / Dark Mode">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button type="button" class="control-btn" id="rtlToggle" aria-label="Switch between LTR and RTL layout" title="Toggle LTR / RTL Direction">
+          <span class="rtl-indicator">RTL</span>
+        </button>
+        <button type="button" class="btn-cta open-quote-modal" id="headerCtaBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <span>Get a Quote</span>
+        </button>
+        <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-backdrop" id="mobileBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <a href="index.html" class="brand-link" aria-label="FORGELUX Home">
+        <div class="logo-icon-wrap">
+          <img src="assets/images/brand_logo.jpg" alt="FORGELUX Hardware &amp; Paint Store Logo" class="brand-logo-img">
+        </div>
+        <div class="brand-meta">
+          <div class="brand-title">FORGE<span>LUX</span></div>
+          <div class="brand-tagline">HARDWARE &amp; PAINT STORE</div>
+        </div>
+      </a>
+      <button type="button" class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-drawer-nav">
+      <div>
+        <div class="mobile-nav-link">Home Versions</div>
+        <div class="mobile-submenu">
+          <a href="index.html" class="mobile-sub-link">Home 1 (Flagship Showroom) <span>Retail</span></a>
+          <a href="Home 2.html" class="mobile-sub-link">Home 2 (Pro Atelier &amp; Depot) <span>Depot</span></a>
+        </div>
+      </div>
+      <a href="About.html" class="mobile-nav-link">About</a>
+      <a href="products.html" class="mobile-nav-link">Products</a>
+      <a href="Services.html" class="mobile-nav-link active">Services</a>
+      <a href="guide.html" class="mobile-nav-link">Guide</a>
+      <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+    </nav>
+    <div class="mobile-drawer-footer">
+      <button type="button" class="btn-cta open-quote-modal" style="width: 100%;">
+        Get a Quote
+      </button>
+    </div>
+  </aside>
+
+  <!-- ========================================================================== 
+       Main Content — All rendered dynamically by Services details.js
+       ========================================================================== -->
+  <main id="main-content">
+
+    <!-- Section A: Service Hero (dynamically populated) -->
+    <section class="sd-hero" id="sd-hero" aria-label="Service Details Hero">
+      <div class="container sd-hero-inner">
+        <!-- Breadcrumb -->
+        <nav class="sd-breadcrumb" aria-label="Breadcrumb" id="sd-breadcrumb">
+          <a href="index.html" class="sd-breadcrumb-link">Home</a>
+          <span class="sd-breadcrumb-sep" aria-hidden="true">›</span>
+          <a href="Services.html" class="sd-breadcrumb-link">Services</a>
+          <span class="sd-breadcrumb-sep" aria-hidden="true">›</span>
+          <span class="sd-breadcrumb-current" id="sd-breadcrumb-current">Service</span>
+        </nav>
+
+        <div class="sd-hero-grid">
+          <!-- Left: Text Content -->
+          <div class="sd-hero-content">
+            <div class="sd-hero-badge-wrap">
+              <span class="badge-pulsing-dot"></span>
+              <span class="sd-hero-eyebrow" id="sd-hero-eyebrow">SPECIALIST SERVICE</span>
+            </div>
+            <h1 class="sd-hero-title" id="sd-hero-title">Loading service…</h1>
+            <p class="sd-hero-desc" id="sd-hero-desc"></p>
+            
+            <!-- Luxury Spec Chips Bar -->
+            <div class="sd-hero-specs-row">
+              <div class="sd-spec-chip">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span id="sd-spec-turnaround">Immediate In-Store Consultation</span>
+              </div>
+              <div class="sd-spec-chip">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+                <span id="sd-spec-guarantee">ANSI Grade 1 &amp; Lab Certified</span>
+              </div>
+              <div class="sd-spec-chip">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <span id="sd-spec-level">Senior Technical Specifier</span>
+              </div>
+            </div>
+
+            <div class="sd-hero-actions">
+              <a href="contact.html" class="btn-cta" id="sd-enquire-btn">
+                <span>Enquire About This Service</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="Services.html" class="btn-outline" id="sd-back-btn">
+                &larr; Explore All Services
+              </a>
+            </div>
+          </div>
+          <!-- Right: Image Frame with Haute Accents -->
+          <div class="sd-hero-visual">
+            <div class="sd-hero-frame">
+              <div class="hero-top-badge" id="sd-hero-badge">
+                <span class="badge-pulsing-dot"></span>
+                <span id="sd-badge-text">FORGELUX SPECIALIST ADVISORY</span>
+              </div>
+
+              <!-- Top Provenance Stamp -->
+              <div class="hero-top-provenance">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <span>ATELIER SPECIFICATION &bull; EST. 1991</span>
+              </div>
+
+              <img src="" alt="" class="sd-hero-img" id="sd-hero-img" loading="eager" width="700" height="480">
+
+              <!-- Floating Bottom Seal Card -->
+              <div class="hero-floating-glass-card">
+                <div>
+                  <div class="hero-glass-title" id="sd-floating-title">Master Advisory Session</div>
+                  <div class="hero-glass-desc" id="sd-floating-desc">1-on-1 technical consultation &bull; Walk-ins &amp; trade bookings</div>
+                </div>
+                <a href="contact.html" class="btn-cta" style="padding: 0.45rem 0.95rem; font-size: 0.775rem;">
+                  Book Session
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section B: Detailed Description -->
+    <section class="section section-alt" id="sd-detail">
+      <div class="container sd-detail-grid">
+        <!-- Left: Body Text -->
+        <div class="sd-detail-body" id="sd-detail-body">
+          <!-- Populated by JS -->
+        </div>
+        <!-- Right: Features & Concierge Sidebar -->
+        <aside class="sd-detail-aside">
+          <div class="sd-feature-box">
+            <div class="sd-feature-box-header">
+              <div class="sd-box-header-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+              </div>
+              <div class="sd-box-header-titles">
+                <span class="sd-feature-box-badge">OFFICIAL SPECIFICATION</span>
+                <span class="sd-feature-box-title">Key Service Highlights</span>
+              </div>
+            </div>
+            <ul class="sd-feature-list" id="sd-feature-list">
+              <!-- Populated by JS -->
+            </ul>
+          </div>
+
+          <!-- Luxury Concierge & Hotline Card -->
+          <div class="sd-concierge-card">
+            <!-- Gilded Corner Accents -->
+            <span class="concierge-corner concierge-corner-tl" aria-hidden="true"></span>
+            <span class="concierge-corner concierge-corner-tr" aria-hidden="true"></span>
+            <span class="concierge-corner concierge-corner-bl" aria-hidden="true"></span>
+            <span class="concierge-corner concierge-corner-br" aria-hidden="true"></span>
+
+            <div class="sd-concierge-badge">
+              <span class="badge-pulsing-dot"></span>
+              <span>SPECIFICATION DESK ACTIVE</span>
+            </div>
+            <h4 class="sd-concierge-title">Direct Technical Advisory</h4>
+            <p class="sd-concierge-desc">Speak directly with our on-duty paint consultants, certified hardware specifiers, and trade supply managers.</p>
+            
+            <a href="tel:+18004893674" class="sd-concierge-tel">
+              <span class="tel-icon-wrap" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </span>
+              <span class="tel-text">+1 (800) 489-FORGE</span>
+            </a>
+            
+            <a href="contact.html" class="btn-cta sd-concierge-btn">
+              <span>Request Blueprint Consultation</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+
+            <!-- Mini Credentials Chips -->
+            <div class="sd-concierge-credentials">
+              <div class="cred-chip">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <span>ANSI/BHMA Certified</span>
+              </div>
+              <div class="cred-chip">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                <span>15-Min Response SLA</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trade Counter & Express Will-Call Card -->
+          <div class="sd-depot-card" id="sd-depot-card">
+            <div class="sd-depot-header">
+              <div class="sd-depot-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </div>
+              <div class="sd-depot-titles">
+                <span class="sd-depot-badge">DEPOT &amp; WILL-CALL</span>
+                <h4 class="sd-depot-title">Trade Counter &amp; Pickup</h4>
+              </div>
+            </div>
+
+            <p class="sd-depot-desc">
+              Pre-staged contractor orders &amp; walk-in material counter at Loading Bay 4.
+            </p>
+
+            <div class="sd-depot-schedule">
+              <div class="depot-schedule-row">
+                <span class="sched-day">Mon &ndash; Fri (Trade Early Access)</span>
+                <span class="sched-time">7:00 AM &ndash; 6:30 PM</span>
+              </div>
+              <div class="depot-schedule-row">
+                <span class="sched-day">Saturday (Showroom &amp; Will-Call)</span>
+                <span class="sched-time">8:00 AM &ndash; 5:00 PM</span>
+              </div>
+            </div>
+
+            <!-- Express Staging & Will-Call Protocols -->
+            <div class="sd-depot-perks">
+              <div class="depot-perks-header">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>WILL-CALL &amp; STAGING PROTOCOL</span>
+              </div>
+              <ul class="depot-perks-list">
+                <li>
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Pre-tinted batches held in climate-regulated staging</span>
+                </li>
+                <li>
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Direct forklift loading for pallets &amp; commercial sundries</span>
+                </li>
+                <li>
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Digital chromatic formulas archived for seamless reorders</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="sd-depot-footer">
+              <div class="sd-depot-chips">
+                <div class="depot-chip">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>&lt; 2-Hr Staging SLA</span>
+                </div>
+                <div class="depot-chip">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                  <span>Loading Bay 4 Direct</span>
+                </div>
+              </div>
+              
+              <a href="contact.html" class="sd-depot-link">
+                <span>View Depot Location &amp; Directions</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Section C: Benefits -->
+    <section class="section" id="sd-benefits" aria-label="Service Benefits">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle" id="sd-benefits-subtitle">Service Benefits</span>
+          <h2 class="section-title" id="sd-benefits-title">Why Choose This Service</h2>
+        </div>
+        <div class="sd-benefits-grid" id="sd-benefits-grid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Section D: How It Works -->
+    <section class="section section-alt" id="sd-how" aria-label="How It Works">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">ARCHITECTURAL WORKFLOW</span>
+          <h2 class="section-title">How It Works</h2>
+          <p class="section-desc">A structured, laboratory-calibrated procurement sequence designed for total project confidence.</p>
+        </div>
+        <div class="sd-steps-row" id="sd-steps-row">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Section D.2: Haute Section — Laboratory Verification & Architectural Benchmarks -->
+    <section class="section sd-benchmarks-section" id="sd-benchmarks" aria-label="Laboratory Verification and Architectural Benchmarks">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">RIGOROUS SPECIFICATION BENCHMARKS</span>
+          <h2 class="section-title">Engineered For Architectural &amp; Trade Integrity</h2>
+          <p class="section-desc">Every batch, fixture, and blueprint schedule processed through FORGELUX meets uncompromising laboratory and commercial standards.</p>
+        </div>
+        
+        <div class="sd-benchmarks-grid">
+          <div class="sd-benchmark-card">
+            <div class="sd-bench-header">
+              <div class="sd-bench-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+              </div>
+              <div class="sd-bench-metric">&Delta;E &lt; 0.3</div>
+            </div>
+            <h3 class="sd-bench-title">Spectrophotometer Accuracy</h3>
+            <p class="sd-bench-desc">Sub-visual chromatic variance guarantee on all custom formulations, ensuring flawless batch-to-batch consistency and spot touchups.</p>
+            <div class="sd-bench-tag">ASTM E308 Certified</div>
+          </div>
+
+          <div class="sd-benchmark-card">
+            <div class="sd-bench-header">
+              <div class="sd-bench-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+              </div>
+              <div class="sd-bench-metric">1,000,000+</div>
+            </div>
+            <h3 class="sd-bench-title">ANSI/BHMA Grade 1 Testing</h3>
+            <p class="sd-bench-desc">Commercial mortise locks, ball-bearing pivots, and exit devices cycle-tested to exceed heavy-traffic commercial building codes.</p>
+            <div class="sd-bench-tag">Commercial Cycle Rating</div>
+          </div>
+
+          <div class="sd-benchmark-card">
+            <div class="sd-bench-header">
+              <div class="sd-bench-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <div class="sd-bench-metric">&lt; 120 Min</div>
+            </div>
+            <h3 class="sd-bench-title">Rapid Blueprint Takeoff</h3>
+            <p class="sd-bench-desc">Dedicated estimator desk extracts door schedules, hardware finishes, and paint gallonages directly from architectural PDF and CAD plans.</p>
+            <div class="sd-bench-tag">Expedited Trade Service</div>
+          </div>
+
+          <div class="sd-benchmark-card">
+            <div class="sd-bench-header">
+              <div class="sd-bench-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+              </div>
+              <div class="sd-bench-metric">100% Secure</div>
+            </div>
+            <h3 class="sd-bench-title">Climate-Regulated Dispatch</h3>
+            <p class="sd-bench-desc">Palletized deliveries loaded in temperature-monitored vehicles to maintain paint emulsion stability, with boom crane drop options.</p>
+            <div class="sd-bench-tag">Site-Direct Logistics</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section E: Related Services -->
+    <section class="section" id="sd-related" aria-label="Related Services">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Explore Further</span>
+          <h2 class="section-title">Related Services</h2>
+          <p class="section-desc">These services complement what you're looking at and may also be useful for your project.</p>
+        </div>
+        <div class="sd-related-grid" id="sd-related-grid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Section F: FAQ Accordion -->
+    <section class="section section-alt" id="sd-faq" aria-label="Frequently Asked Questions">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Common Questions</span>
+          <h2 class="section-title" id="sd-faq-title">Frequently Asked Questions</h2>
+          <p class="section-desc">Find answers to common questions about this service below.</p>
+        </div>
+        <div class="sd-faq-wrap" id="sd-faq-wrap" role="list">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Section G: Premium CTA Card (Exact 380px Height from Home 1) -->
+    <section class="premium-cta-section" id="sd-cta" aria-label="Enquire Now">
+      <div class="container">
+        <div class="premium-cta-card">
+          <!-- Gilded Corner Accents -->
+          <span class="cta-corner cta-corner-tl" aria-hidden="true"></span>
+          <span class="cta-corner cta-corner-tr" aria-hidden="true"></span>
+          <span class="cta-corner cta-corner-bl" aria-hidden="true"></span>
+          <span class="cta-corner cta-corner-br" aria-hidden="true"></span>
+
+          <div class="premium-cta-grid">
+            <!-- Left: Content -->
+            <div class="premium-cta-content">
+              <div class="premium-cta-eyebrow">
+                <span class="eyebrow-line"></span>
+                <span class="eyebrow-text">FORGELUX PRIVILEGE &bull; SPECIFICATION ATELIER</span>
+                <span class="eyebrow-line"></span>
+              </div>
+
+              <h2 class="premium-cta-title" id="sd-cta-title">
+                Ready to Schedule Your <span class="highlight-gold" id="sd-cta-highlight">Specialist Session?</span>
+              </h2>
+
+              <p class="premium-cta-desc" id="sd-cta-desc">
+                Dedicated specification desk for architects, interior designers, and luxury builders. Receive rapid blueprint audits, custom patina &amp; pigment matching, and complimentary hand-curated sample chests couriered in 24 hours.
+              </p>
+
+              <div class="premium-cta-pillars">
+                <div class="cta-pillar-item">
+                  <div class="pillar-icon-box">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  </div>
+                  <div class="pillar-info">
+                    <span class="pillar-title">15-Min Spec Turnaround</span>
+                    <span class="pillar-sub">Full Blueprint Audits</span>
+                  </div>
+                </div>
+
+                <div class="cta-pillar-item">
+                  <div class="pillar-icon-box">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                  </div>
+                  <div class="pillar-info">
+                    <span class="pillar-title">Artisan Sample Chests</span>
+                    <span class="pillar-sub">Hand-Finished Castings</span>
+                  </div>
+                </div>
+
+                <div class="cta-pillar-item">
+                  <div class="pillar-icon-box">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                  </div>
+                  <div class="pillar-info">
+                    <span class="pillar-title">Direct Trade Pricing</span>
+                    <span class="pillar-sub">Tier 1 Partner Terms (-15%)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: The Private Client Portal -->
+            <div class="premium-cta-portal">
+              <div class="portal-header">
+                <span class="portal-status-pulse"></span>
+                <span class="portal-status-label">SENIOR SPECIFIER ON DUTY &bull; IMMEDIATE ACCESS</span>
+              </div>
+
+              <a href="contact.html" class="premium-cta-btn-primary" id="sd-cta-primary-btn">
+                <span class="btn-text">REQUEST THIS SERVICE</span>
+                <span class="btn-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </span>
+              </a>
+
+              <a href="tel:+18004893674" class="premium-cta-hotline-item" aria-label="Call Direct Atelier Hotline">
+                <div class="hotline-badge-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="hotline-meta">
+                  <span class="hotline-caption">DIRECT ATELIER CONCIERGE</span>
+                  <span class="hotline-tel">+1 (800) 489-FORGE</span>
+                </div>
+              </a>
+
+              <a href="Services.html" class="sd-cta-secondary-link" id="sd-cta-secondary-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                <span>Return to All Services</span>
+              </a>
+
+              <div class="portal-hallmarks">
+                <span>&bull; AIA Continuing Partner</span>
+                <span>&bull; CSLB Validated</span>
+                <span>&bull; Mon&ndash;Fri 7AM&ndash;6:30PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================== 
+       Footer (identical to Home 1)
+       ========================================================================== -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand-link" aria-label="FORGELUX Home">
+          <div class="logo-icon-wrap">
+            <img src="assets/images/brand_logo.jpg" alt="FORGELUX Hardware &amp; Paint Store Logo" class="brand-logo-img">
+          </div>
+          <div class="brand-meta">
+            <div class="brand-title">FORGE<span>LUX</span></div>
+            <div class="brand-tagline">HARDWARE &amp; PAINT STORE</div>
+          </div>
+        </a>
+        <p class="footer-brand-statement">
+          Supplying certified architectural hardware, pigment-pure mineral paints, engineered fasteners, and specialist advisory to discerning builders and craftspeople since 1991.
+        </p>
+        <div class="footer-socials" aria-label="Social Media Links">
+          <a href="#" class="social-link" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+          <a href="#" class="social-link" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+          <a href="#" class="social-link" aria-label="Houzz" title="Houzz"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg></a>
+          <a href="#" class="social-link" aria-label="X / Twitter" title="X / Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Shop &amp; Services</h4>
+        <ul class="footer-links-list">
+          <li><a href="products.html#fittings" class="footer-link">&bull; Hardware and fittings</a></li>
+          <li><a href="products.html#tools" class="footer-link">&bull; Tools and equipment</a></li>
+          <li><a href="products.html#paints" class="footer-link">&bull; Paints and finishes</a></li>
+          <li><a href="Services.html" class="footer-link">&bull; Store services</a></li>
+          <li><a href="Services Details.html?service=bulk-contractor-supply" class="footer-link">&bull; Bulk orders</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Explore</h4>
+        <ul class="footer-links-list">
+          <li><a href="About.html" class="footer-link">&bull; About</a></li>
+          <li><a href="products.html" class="footer-link">&bull; Products</a></li>
+          <li><a href="Services.html" class="footer-link">&bull; Services</a></li>
+          <li><a href="guide.html" class="footer-link">&bull; Guides &amp; Color Shades</a></li>
+          <li><a href="pricing.html" class="footer-link">&bull; Pricing &amp; Plans</a></li>
+          <li><a href="index.html#calculator" class="footer-link">&bull; Paint Calculator</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Contact &amp; Support</h4>
+        <div class="footer-contact-list">
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <div><strong>Store Email:</strong><br>concierge@forgelux.com</div>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <div><strong>Store Address:</strong><br>450 Foundry &amp; Artisan Blvd, District 7</div>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <div><strong>Contact Number:</strong><br>+1 (800) 489-FORGE</div>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <div><strong>Opening Hours:</strong><br>Mon&ndash;Fri: 7:00 AM &ndash; 6:30 PM<br>Sat: 8:00 AM &ndash; 5:00 PM</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div>&copy; 2026 FORGELUX Hardware &amp; Paint Store. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Specification</a>
+          <a href="#">Trade Standards</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal-backdrop" id="quoteModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="quoteModalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <h2 class="modal-title" id="quoteModalTitle">Request Project Specification Quote</h2>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">
+            Immediate trade estimation backed by Palette 4 architectural standards
+          </p>
+        </div>
+        <button type="button" class="modal-close" id="quoteModalClose" aria-label="Close dialog">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <form id="quoteForm">
+        <div class="form-group-grid">
+          <div class="form-group">
+            <label for="quoteCategory" class="form-label">Material Category</label>
+            <select id="quoteCategory" class="form-select">
+              <option value="hardware">Architectural Hardware &amp; Mortise Sets</option>
+              <option value="paint">Bespoke Mineral Paint &amp; Tinting</option>
+              <option value="tools">Precision Artisan Tooling</option>
+              <option value="bulk">Bulk Fasteners &amp; Structural Hardware</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="quoteQuantity" class="form-label">Quantity / Coverage (Sq Ft or Units)</label>
+            <input type="number" id="quoteQuantity" class="form-input" value="150" min="10" step="10">
+          </div>
+        </div>
+
+        <div class="form-group-grid">
+          <div class="form-group">
+            <label for="quoteGrade" class="form-label">Procurement Tier</label>
+            <select id="quoteGrade" class="form-select">
+              <option value="retail">Studio / Retail Standard</option>
+              <option value="trade" selected>Licensed Trade Contractor (-15%)</option>
+              <option value="architectural">Architectural Custom Specification (+35%)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="quoteFinish" class="form-label">Preferred Finish</label>
+            <select id="quoteFinish" class="form-select">
+              <option value="copper-brown">Copper Brown Patina (#B45309)</option>
+              <option value="copper-gold">Burnished Copper Gold (#F59E0B)</option>
+              <option value="cream">Warm Cream Enamel (#FDF6E3)</option>
+              <option value="charcoal">Smoked Charcoal Bronze (#2E2E2E)</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="background: var(--bg-surface-accent); border: 1px solid var(--border-medium); border-radius: var(--radius-sm); padding: 1rem; margin-bottom: 1.25rem; display: flex; align-items: center; justify-content: space-between;">
+          <div>
+            <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--c-primary); letter-spacing: 0.08em; display: block;">
+              Estimated Trade Specification Total
+            </span>
+            <span style="font-size: 0.75rem; color: var(--text-muted);">
+              Excludes freight discounts and specialized job-site crane delivery
+            </span>
+          </div>
+          <div style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: var(--c-primary);" id="quoteEstimatedValue">
+            $2,295
+          </div>
+        </div>
+
+        <div class="form-group-grid">
+          <div class="form-group">
+            <label for="quoteClientName" class="form-label">Your Name *</label>
+            <input type="text" id="quoteClientName" class="form-input" placeholder="e.g. Marcus Stone" required>
+          </div>
+          <div class="form-group">
+            <label for="quoteClientEmail" class="form-label">Email Address *</label>
+            <input type="email" id="quoteClientEmail" class="form-input" placeholder="e.g. mstone@forgearchitecture.com" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="quoteNotes" class="form-label">Job Site Location &amp; Requirements</label>
+          <textarea id="quoteNotes" class="form-textarea" style="min-height: 80px;" placeholder="Include blueprint references, delivery date requirements, or custom door handings..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-cta" style="width: 100%; margin-top: 1rem;">
+          Confirm &amp; Transmit Quotation Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="Services details.js"></script>
+</body>
+</html>

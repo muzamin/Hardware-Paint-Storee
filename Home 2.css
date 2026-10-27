@@ -852,9 +852,7 @@ ul, ol {
 }
 
 /* ==========================================================================
-   SECTION 1 — Ultra-Premium Screen-Fitted Trade Depot Hero Banner
-   (Left Column: Editorial Stacked Headline, Rich Para, Actions & Badges;
-    Right Column: Curated 3-Image Architectural Showcase with Premium Micro-Hover)
+   SECTION 1 — Centered Trade Depot Hero Banner
    ========================================================================== */
 .h2-hero {
   position: relative;
@@ -869,16 +867,14 @@ ul, ol {
   overflow: hidden;
   box-sizing: border-box;
   background:
-    radial-gradient(ellipse 950px 580px at 75% 55%, rgba(245, 158, 11, 0.12) 0%, transparent 70%),
-    radial-gradient(circle 650px at 15% 25%, rgba(180, 83, 9, 0.07) 0%, transparent 60%),
-    linear-gradient(180deg, #FFFFFF 0%, #FAF4E9 40%, #F5EADB 80%, #EDE0CA 100%);
+    linear-gradient(135deg, rgba(253, 246, 227, 0.92), rgba(255, 253, 248, 0.86)),
+    url("assets/images/trade_depot_hero.jpg") center / cover no-repeat;
 }
 
 [data-theme="dark"] .h2-hero {
   background:
-    radial-gradient(ellipse 1000px 620px at 75% 55%, rgba(245, 158, 11, 0.16) 0%, transparent 70%),
-    radial-gradient(circle 700px at 15% 25%, rgba(180, 83, 9, 0.14) 0%, transparent 60%),
-    linear-gradient(180deg, #131110 0%, #1A1714 45%, #221D17 80%, #171412 100%);
+    linear-gradient(rgba(24, 18, 12, 0.72), rgba(24, 18, 12, 0.72)),
+    url("assets/images/trade_depot_hero.jpg") center / cover no-repeat;
 }
 
 /* Ambient Radial Glow & Architectural Grid Background */
@@ -920,9 +916,9 @@ ul, ol {
 
 /* 2-Column Hero Grid: Left Content, Right 3-Image Showcase */
 .h2-hero-container {
-  display: grid;
-  grid-template-columns: 1.05fr 1.05fr;
+  display: flex;
   align-items: center;
+  justify-content: center;
   height: 100%;
   width: 100%;
   gap: clamp(1.25rem, 2.5vw, 3rem);
@@ -935,53 +931,63 @@ ul, ol {
 .h2-hero-left-col {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   gap: clamp(0.45rem, 1vh, 0.75rem);
-  max-width: 620px;
+  max-width: 850px;
+  width: 100%;
   z-index: 3;
+  text-align: center;
+}
+
+.h2-hero .hero-subtitle {
+  color: #92400E;
 }
 
 .h2-hero-title {
   font-family: var(--font-heading);
-  font-size: clamp(1.85rem, 2.5vw, 2.45rem);
+  font-size: clamp(2.75rem, 5vw, 5rem);
   font-weight: 900;
   line-height: 1.08;
   letter-spacing: -0.015em;
-  color: var(--text-main, #2E2E2E);
+  color: #2E2E2E;
   text-transform: uppercase;
   margin: 0;
 }
 
-[data-theme="dark"] .h2-hero-title {
-  color: #FFFFFF;
-}
-
 .h2-hero-highlight {
   color: var(--c-primary);
-  background: linear-gradient(135deg, #B45309 0%, #D97706 55%, #F59E0B 100%);
+  background: linear-gradient(135deg, #78350F 0%, #B45309 55%, #D97706 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
 
 [data-theme="dark"] .h2-hero-highlight {
-  background: linear-gradient(135deg, #FFF9EB 0%, #FDE68A 30%, #F59E0B 75%, #D97706 100%);
+  background: linear-gradient(135deg, #FFF7D6 0%, #FDE68A 45%, #F59E0B 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+[data-theme="dark"] .h2-hero .hero-subtitle {
+  color: #FDE68A;
+}
+
+[data-theme="dark"] .h2-hero-title {
+  color: #FFFFFF;
+}
+
 .h2-hero-desc {
   font-family: var(--font-sans);
-  font-size: clamp(0.84rem, 0.95vw, 0.94rem);
-  color: var(--text-muted, #555555);
+  font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+  color: rgba(46, 46, 46, 0.88);
   line-height: 1.52;
   margin: 0;
-  max-width: 520px;
+  max-width: 720px;
 }
 
 [data-theme="dark"] .h2-hero-desc {
-  color: rgba(253, 246, 227, 0.85);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 /* Actions: Classy Matched-Size Hero Action Twin Buttons */
@@ -992,6 +998,7 @@ ul, ol {
   flex-wrap: wrap;
   margin-top: 0.25rem;
   width: 100%;
+  justify-content: center;
 }
 
 .h2-hero-shop-btn,
@@ -1020,6 +1027,12 @@ ul, ol {
   box-shadow: 0 2px 6px rgba(180, 83, 9, 0.18);
   color: var(--c-cream, #FDF6E3) !important;
   text-decoration: none;
+}
+
+.h2-hero .h2-hero-quote-btn {
+  color: #2E2E2E;
+  border-color: rgba(146, 64, 14, 0.55);
+  background: rgba(255, 255, 255, 0.58);
 }
 
 .h2-hero-shop-btn svg {
@@ -1087,6 +1100,7 @@ ul, ol {
 .h2-hero-trust-row {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.55rem 0.85rem;
   flex-wrap: wrap;
   margin-top: 0.25rem;
@@ -1099,9 +1113,9 @@ ul, ol {
   font-size: 0.74rem;
   font-weight: 700;
   letter-spacing: 0.03em;
-  color: var(--text-main);
-  background: rgba(255, 255, 255, 0.75);
-  border: 1px solid rgba(180, 83, 9, 0.18);
+  color: #2E2E2E;
+  background: rgba(255, 253, 248, 0.78);
+  border: 1px solid rgba(146, 64, 14, 0.28);
   padding: 0.32rem 0.8rem;
   border-radius: var(--radius-full, 9999px);
   backdrop-filter: blur(8px);
@@ -1124,9 +1138,9 @@ ul, ol {
 }
 
 [data-theme="dark"] .h2-trust-pill {
-  background: rgba(255, 255, 255, 0.04);
-  border-color: rgba(245, 158, 11, 0.2);
-  color: rgba(253, 246, 227, 0.85);
+  background: rgba(24, 18, 12, 0.55);
+  border-color: rgba(255, 255, 255, 0.28);
+  color: #FFFFFF;
 }
 
 /* ==========================================================================
@@ -1145,6 +1159,7 @@ ul, ol {
   margin-left: auto;
   align-self: center;
   z-index: 2;
+  display: none;
 }
 
 .h2-gallery-ambient-glow {
@@ -1365,8 +1380,8 @@ ul, ol {
 }
 
 [dir="rtl"] .h2-hero-left-col {
-  align-items: flex-start;
-  text-align: right;
+  align-items: center;
+  text-align: center;
 }
 
 [dir="rtl"] .h2-hero-shop-btn svg {
