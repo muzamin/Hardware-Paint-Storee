@@ -38,12 +38,12 @@ function initPricingBillingToggle() {
       // Pro Plan: $199/mo (billed annually: $2,388/yr, saving $600)
       if (proAmount) proAmount.textContent = '199';
       if (proPeriod) proPeriod.textContent = '/ month, billed annually';
-      if (proSavings) proSavings.textContent = '★ Save $600/year with annual trade commitment';
+      if (proSavings) proSavings.textContent = '\u2605 Save $600/year with annual trade commitment';
 
       // Enterprise: $649/mo (billed annually: $7,788/yr, saving $1,800)
       if (entAmount) entAmount.textContent = '649';
       if (entPeriod) entPeriod.textContent = '/ month, billed annually';
-      if (entSavings) entSavings.textContent = '★ Save $1,800/year + free site crane staging';
+      if (entSavings) entSavings.textContent = '\u2605 Save $1,800/year + free site crane staging';
     } else {
       toggleBtn.classList.remove('is-annual');
       toggleBtn.setAttribute('aria-checked', 'false');

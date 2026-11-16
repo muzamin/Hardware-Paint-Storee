@@ -222,7 +222,7 @@
   min-height: 44px;
   padding: 0 1.45rem;
   font-family: var(--font-heading);
-  font-size: 0.85rem;
+  font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -252,6 +252,20 @@
   color: var(--c-cream, #FDF6E3) !important;
 }
 
+[data-theme="dark"] .guide-hero-actions .btn-cta {
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+  color: #12100E !important;
+  font-weight: 800;
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 0 14px rgba(245, 158, 11, 0.28);
+}
+
+[data-theme="dark"] .guide-hero-actions .btn-cta:hover {
+  background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%);
+  color: #12100E !important;
+  box-shadow: 0 4px 18px rgba(245, 158, 11, 0.45);
+}
+
 .guide-hero-actions .btn-outline,
 .guide-hero-actions .btn-outline-classy {
   background: transparent;
@@ -271,7 +285,14 @@
 [data-theme="dark"] .guide-hero-actions .btn-outline-classy {
   background: transparent;
   border-color: rgba(245, 158, 11, 0.35);
-  color: #FDF6E3;
+  color: #FDF6E3 !important;
+}
+
+[data-theme="dark"] .guide-hero-actions .btn-outline:hover,
+[data-theme="dark"] .guide-hero-actions .btn-outline-classy:hover {
+  background: rgba(245, 158, 11, 0.16);
+  border-color: var(--c-secondary);
+  color: var(--c-secondary) !important;
 }
 
 /* 4-Metric Clean Horizontal Stats Strip */
@@ -1214,6 +1235,10 @@
   line-height: 1.45;
 }
 
+[data-theme="dark"] .mistake-fix {
+  color: #86EFAC;
+}
+
 /* --------------------------------------------------------------------------
    SECTION 04: Materials & Finish Guide ("The Right Finish Makes the Difference")
    -------------------------------------------------------------------------- */
@@ -2004,6 +2029,19 @@
     width: 100%;
     box-sizing: border-box;
     overflow: hidden;
+    min-width: 0;
+  }
+  .calc-interactive-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+    min-width: 0;
+  }
+  .calc-fields-col,
+  .calc-summary-card {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
   }
   .calc-unit-bar {
     flex-direction: column;
@@ -2081,9 +2119,128 @@
     padding: 0.75rem 0.85rem;
     font-size: 0.78rem;
   }
+  .calc-container-card {
+    padding: 1.15rem 0.85rem;
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 0;
+  }
+  .calc-summary-card {
+    padding: 1.25rem 0.85rem;
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 0;
+    gap: 1.1rem;
+  }
+  .calc-summary-title {
+    font-size: 1.25rem;
+    word-break: break-word;
+  }
+  .calc-breakdown-box {
+    padding: 0.85rem 0.7rem;
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 0;
+  }
+  .breakdown-row {
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.2rem 0.5rem;
+    font-size: 0.78rem;
+  }
+  .breakdown-row span {
+    flex: 1 1 auto;
+    min-width: 110px;
+  }
+  .breakdown-row strong {
+    margin-left: auto;
+    text-align: right;
+    flex-shrink: 0;
+  }
+  .breakdown-row.total-breakdown {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+  }
+  .breakdown-row.total-breakdown span {
+    font-size: 0.82rem;
+    font-weight: 700;
+  }
+  .breakdown-row.total-breakdown strong {
+    align-self: flex-end;
+    font-size: 1.25rem;
+    line-height: 1.15;
+    word-break: break-word;
+    text-align: right;
+  }
+  .calc-note-box {
+    font-size: 0.72rem;
+    line-height: 1.45;
+    word-break: break-word;
+    text-wrap: pretty;
+  }
+  .calc-summary-card .btn-cta,
+  #calcAddToQuote {
+    white-space: normal !important;
+    height: auto !important;
+    min-height: 44px !important;
+    padding: 0.75rem 0.95rem !important;
+    font-size: 0.8rem !important;
+    line-height: 1.25 !important;
+    text-align: center !important;
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.45rem !important;
+    box-sizing: border-box !important;
+  }
+  .calc-summary-card .btn-cta span,
+  #calcAddToQuote span {
+    white-space: normal !important;
+    text-align: center !important;
+    word-break: break-word !important;
+    line-height: 1.25 !important;
+  }
+  .calc-summary-card .btn-cta svg,
+  #calcAddToQuote svg {
+    flex-shrink: 0 !important;
+  }
+  .btn-cta,
+  .btn-outline,
+  .btn-outline-classy {
+    white-space: normal !important;
+    height: auto !important;
+    min-height: 44px !important;
+    padding: 0.75rem 1.15rem !important;
+    font-size: 0.82rem !important;
+    line-height: 1.3 !important;
+    text-align: center !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .btn-cta span,
+  .btn-outline span,
+  .btn-outline-classy span {
+    white-space: normal !important;
+    word-break: break-word !important;
+    text-align: center !important;
+    line-height: 1.25 !important;
+  }
+  .btn-cta svg,
+  .btn-outline svg,
+  .btn-outline-classy svg {
+    flex-shrink: 0 !important;
+  }
 }
 
 @media (max-width: 380px) {
+  .btn-cta,
+  .btn-outline,
+  .btn-outline-classy {
+    padding: 0.7rem 0.85rem !important;
+    font-size: 0.78rem !important;
+  }
   .guide-hero-title {
     font-size: clamp(1.65rem, 7.5vw, 2.05rem);
   }
@@ -2099,11 +2256,35 @@
   .detail-section-card {
     padding: 1.15rem 0.85rem;
   }
+  .calc-container-card {
+    padding: 0.95rem 0.65rem;
+  }
   .calc-summary-card {
-    padding: 1.15rem 0.85rem;
+    padding: 1rem 0.65rem;
+    gap: 0.95rem;
+  }
+  .calc-summary-tag {
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+  }
+  .calc-summary-title {
+    font-size: 1.15rem;
+  }
+  .calc-breakdown-box {
+    padding: 0.75rem 0.55rem;
+    gap: 0.5rem;
+  }
+  .breakdown-row {
+    font-size: 0.75rem;
+  }
+  .breakdown-row.total-breakdown strong {
+    font-size: 1.15rem;
   }
   .calc-metric-box {
     padding: 0.65rem 0.45rem;
+  }
+  .calc-metric-num {
+    font-size: 1.35rem;
   }
   .metric-val {
     font-size: 1.1rem;
@@ -2118,5 +2299,10 @@
   }
   .swatch-card {
     padding: 0.85rem;
+  }
+  .calc-summary-card .btn-cta,
+  #calcAddToQuote {
+    padding: 0.68rem 0.75rem !important;
+    font-size: 0.76rem !important;
   }
 }

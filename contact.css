@@ -242,7 +242,7 @@
   min-height: 44px;
   padding: 0 1.45rem;
   font-family: var(--font-heading);
-  font-size: 0.85rem;
+  font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -272,6 +272,20 @@
   color: var(--c-cream, #FDF6E3) !important;
 }
 
+[data-theme="dark"] .contact-hero-actions .btn-cta {
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+  color: #12100E !important;
+  font-weight: 800;
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 0 14px rgba(245, 158, 11, 0.28);
+}
+
+[data-theme="dark"] .contact-hero-actions .btn-cta:hover {
+  background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%);
+  color: #12100E !important;
+  box-shadow: 0 4px 18px rgba(245, 158, 11, 0.45);
+}
+
 .contact-hero-actions .btn-outline,
 .contact-hero-actions .btn-outline-classy {
   background: transparent;
@@ -290,8 +304,15 @@
 [data-theme="dark"] .contact-hero-actions .btn-outline,
 [data-theme="dark"] .contact-hero-actions .btn-outline-classy {
   background: transparent;
-  border-color: rgba(245, 158, 11, 0.35);
-  color: #FDF6E3;
+  border-color: rgba(245, 158, 11, 0.45);
+  color: #FDF6E3 !important;
+}
+
+[data-theme="dark"] .contact-hero-actions .btn-outline:hover,
+[data-theme="dark"] .contact-hero-actions .btn-outline-classy:hover {
+  background: rgba(245, 158, 11, 0.16);
+  border-color: var(--c-secondary);
+  color: var(--c-secondary) !important;
 }
 
 /* Feature Check Pills Strip (Matching Reference Bottom-Left Row) */
@@ -1042,6 +1063,10 @@
   background-size: 14px;
 }
 
+[data-theme="dark"] .contact-select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23F59E0B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+}
+
 .contact-textarea {
   padding-left: 1rem;
   min-height: 125px;
@@ -1187,6 +1212,20 @@
   background: linear-gradient(135deg, #92400E 0%, #78350F 100%);
   transform: translateY(-1px);
   box-shadow: 0 3px 10px rgba(180, 83, 9, 0.2);
+}
+
+[data-theme="dark"] .contact-submit-btn {
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+  color: #12100E !important;
+  font-weight: 800;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 0 14px rgba(245, 158, 11, 0.28);
+}
+
+[data-theme="dark"] .contact-submit-btn:hover {
+  background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%);
+  color: #12100E !important;
+  box-shadow: 0 4px 18px rgba(245, 158, 11, 0.45);
 }
 
 .contact-submit-btn:active {
@@ -1853,6 +1892,20 @@
   transform: translateX(3px);
 }
 
+[data-theme="dark"] .btn-gallery-primary {
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+  color: #12100E !important;
+  font-weight: 800;
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 0 14px rgba(245, 158, 11, 0.28);
+}
+
+[data-theme="dark"] .btn-gallery-primary:hover {
+  background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%);
+  color: #12100E !important;
+  box-shadow: 0 4px 18px rgba(245, 158, 11, 0.45);
+}
+
 .btn-gallery-secondary {
   background: var(--bg-surface-elevated);
   color: var(--text-main);
@@ -1864,6 +1917,17 @@
   color: var(--c-primary);
   background: var(--bg-surface-accent);
   transform: translateY(-2px);
+}
+
+[data-theme="dark"] .btn-gallery-secondary {
+  border-color: rgba(245, 158, 11, 0.35);
+  color: var(--text-main);
+}
+
+[data-theme="dark"] .btn-gallery-secondary:hover {
+  background: rgba(245, 158, 11, 0.16);
+  border-color: var(--c-secondary);
+  color: var(--c-secondary);
 }
 
 /* --------------------------------------------------------------------------

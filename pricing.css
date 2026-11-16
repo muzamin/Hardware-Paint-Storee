@@ -196,7 +196,7 @@
   min-height: 44px;
   padding: 0 1.45rem;
   font-family: var(--font-heading);
-  font-size: 0.85rem;
+  font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -226,6 +226,20 @@
   color: var(--c-cream, #FDF6E3) !important;
 }
 
+[data-theme="dark"] .pricing-hero-actions .btn-cta {
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+  color: #12100E !important;
+  font-weight: 800;
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 0 14px rgba(245, 158, 11, 0.28);
+}
+
+[data-theme="dark"] .pricing-hero-actions .btn-cta:hover {
+  background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%);
+  color: #12100E !important;
+  box-shadow: 0 4px 18px rgba(245, 158, 11, 0.45);
+}
+
 .pricing-hero-actions .btn-outline,
 .btn-outline-classy {
   background: transparent;
@@ -244,8 +258,15 @@
 [data-theme="dark"] .pricing-hero-actions .btn-outline,
 [data-theme="dark"] .btn-outline-classy {
   background: transparent;
-  border-color: rgba(245, 158, 11, 0.35);
-  color: #FDF6E3;
+  border-color: rgba(245, 158, 11, 0.45);
+  color: #FDF6E3 !important;
+}
+
+[data-theme="dark"] .pricing-hero-actions .btn-outline:hover,
+[data-theme="dark"] .btn-outline-classy:hover {
+  background: rgba(245, 158, 11, 0.16);
+  border-color: var(--c-secondary);
+  color: var(--c-secondary) !important;
 }
 
 /* 4-Metric Clean Horizontal Stats Strip */
@@ -612,7 +633,7 @@
   font-family: var(--font-heading);
   font-size: 0.68rem;
   font-weight: 800;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   text-decoration: none;
   box-shadow: 0 2px 8px rgba(180, 83, 9, 0.25);
   transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
@@ -623,6 +644,7 @@
 .tier-action-pill svg {
   color: #FBBF24;
   transition: transform 0.25s ease;
+  flex-shrink: 0;
 }
 
 .tier-action-pill:hover {
@@ -654,7 +676,7 @@
   font-size: 0.66rem;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   text-decoration: none;
   border: 1px solid rgba(245, 158, 11, 0.55);
   box-shadow: 0 4px 12px rgba(180, 83, 9, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
@@ -666,6 +688,7 @@
 
 .btn-tier-cta svg {
   transition: transform 0.25s ease;
+  flex-shrink: 0;
 }
 
 .btn-tier-cta:hover {
@@ -678,6 +701,20 @@
 
 .btn-tier-cta:hover svg {
   transform: translateX(3px);
+}
+
+[data-theme="dark"] .btn-tier-cta {
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+  color: #12100E !important;
+  font-weight: 800;
+  border-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.4);
+}
+
+[data-theme="dark"] .btn-tier-cta:hover {
+  background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%);
+  color: #12100E !important;
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.6);
 }
 
 /* --------------------------------------------------------------------------
@@ -1627,6 +1664,45 @@
 /* --------------------------------------------------------------------------
    Responsive Layouts
    -------------------------------------------------------------------------- */
+@media (max-width: 1150px) {
+  .pricing-tier-card {
+    padding: 0.65rem 0.65rem 0.75rem;
+  }
+  .tier-card-footer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.35rem;
+    padding-top: 0.45rem;
+  }
+  .tier-stat-badge {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .stat-highlight {
+    font-size: 0.92rem;
+  }
+  .stat-name {
+    font-size: 0.58rem;
+  }
+  .btn-tier-cta,
+  .tier-action-pill {
+    width: 100%;
+    height: 28px;
+    padding: 0 0.45rem;
+    font-size: 0.64rem;
+    letter-spacing: 0.02em;
+    justify-content: center;
+    box-sizing: border-box;
+    white-space: nowrap;
+  }
+  .btn-tier-cta svg,
+  .tier-action-pill svg {
+    flex-shrink: 0;
+  }
+}
+
 @media (max-width: 1024px) {
   .pricing-cards-grid {
     grid-template-columns: 1fr;

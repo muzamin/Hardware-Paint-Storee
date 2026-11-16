@@ -267,7 +267,7 @@
   min-height: 44px;
   padding: 0 1.45rem;
   font-family: var(--font-heading);
-  font-size: 0.85rem;
+  font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -296,6 +296,20 @@
   color: var(--c-cream, #FDF6E3) !important;
 }
 
+[data-theme="dark"] .about-hero-btn-primary {
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+  color: #12100E !important;
+  font-weight: 800;
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 0 14px rgba(245, 158, 11, 0.28);
+}
+
+[data-theme="dark"] .about-hero-btn-primary:hover {
+  background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%);
+  color: #12100E !important;
+  box-shadow: 0 4px 18px rgba(245, 158, 11, 0.45);
+}
+
 .about-hero-btn-secondary,
 .btn-hero-secondary {
   background: transparent;
@@ -314,8 +328,15 @@
 [data-theme="dark"] .about-hero-btn-secondary,
 [data-theme="dark"] .btn-hero-secondary {
   background: transparent;
-  border-color: rgba(245, 158, 11, 0.35);
-  color: #FDF6E3;
+  border-color: rgba(245, 158, 11, 0.45);
+  color: #FDF6E3 !important;
+}
+
+[data-theme="dark"] .about-hero-btn-secondary:hover,
+[data-theme="dark"] .btn-hero-secondary:hover {
+  background: rgba(245, 158, 11, 0.16);
+  border-color: var(--c-secondary);
+  color: var(--c-secondary) !important;
 }
 
 .hero-badge-dot,
